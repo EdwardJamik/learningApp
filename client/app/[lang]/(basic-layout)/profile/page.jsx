@@ -39,7 +39,7 @@ export default function Account() {
 	useEffect(() => {
 		const fetchProfile = async () => {
 			try {
-				const res = await fetch('http://localhost:5000/api/profile', {
+				const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/profile`, {
 					credentials: 'include'
 				});
 				
@@ -89,7 +89,7 @@ export default function Account() {
 		setMessage('');
 		
 		try {
-			const res = await fetch('http://localhost:5000/api/profile', {
+			const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/profile`, {
 				method: 'PUT',
 				headers: { 'Content-Type': 'application/json' },
 				credentials: 'include',
@@ -120,7 +120,7 @@ export default function Account() {
 		formData.append('avatar', avatarFile);
 		
 		try {
-			const res = await fetch('http://localhost:5000/api/profile/avatar', {
+			const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/profile/avatar`, {
 				method: 'POST',
 				credentials: 'include',
 				body: formData
@@ -149,7 +149,7 @@ export default function Account() {
 		setIsLoading(true);
 		
 		try {
-			const res = await fetch('http://localhost:5000/api/profile/avatar', {
+			const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/profile/avatar`, {
 				method: 'DELETE',
 				credentials: 'include'
 			});
@@ -189,7 +189,7 @@ export default function Account() {
 		setPasswordMessage('');
 		
 		try {
-			const res = await fetch('http://localhost:5000/api/profile/password', {
+			const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/profile/password`, {
 				method: 'PUT',
 				headers: { 'Content-Type': 'application/json' },
 				credentials: 'include',
@@ -216,10 +216,12 @@ export default function Account() {
 		}
 	};
 	
-	if (loading) return <div>Завантаження...</div>;
+	if (loading) return <div>
+		{/*Завантаження...*/}
+	</div>;
 	if (!user) return null;
 	
-	const displayAvatar = avatarPreview || (profile.avatar_url ? `http://localhost:5000${profile.avatar_url}` : null);
+	const displayAvatar = avatarPreview || (profile.avatar_url ? `${process.env.NEXT_PUBLIC_API_URL}${profile.avatar_url}` : null);
 	
 	return (
 		<section className="acaunt-section">

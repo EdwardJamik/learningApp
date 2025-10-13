@@ -19,7 +19,9 @@ export default function Account() {
 		}
 	}, [user, loading, router]);
 	
-	if (loading) return <div>Завантаження...</div>;
+	if (loading) return <div>
+		{/*Завантаження...*/}
+	</div>;
 	if (!user) return null;
 	
 	return (

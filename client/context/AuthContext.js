@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
 	const checkAuth = useCallback(async () => {
 		console.log("Checking auth...");
 		try {
-			const res = await fetch("http://localhost:5000/api/auth/me", {
+			const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/me`, {
 				credentials: "include"
 			});
 			
@@ -44,7 +44,7 @@ export const AuthProvider = ({ children }) => {
 	const logout = useCallback(async () => {
 		console.log("Logging out...");
 		try {
-			await fetch("http://localhost:5000/api/auth/logout", {
+			await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/logout`, {
 				method: "POST",
 				credentials: "include"
 			});
