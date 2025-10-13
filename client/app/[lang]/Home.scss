@@ -1,0 +1,306 @@
+.home {
+	& .container {
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 860px;
+		margin: 0 30px;
+		background-image: url('../assets/Home/fon.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right bottom;
+		border-radius: 40px;
+		padding: 0 6dvw;
+
+		@media screen and (max-width: 1210px) {
+			padding: 0 14px;
+			height: 100%;
+		}
+
+		@media screen and (max-width: 1120px) {
+			display: flex;
+			flex-direction: column;
+			padding: 0 20px;
+			margin: 0;
+			border-radius: 0;
+			background-color: #dddffd;
+			background-image: url('../assets/Home/fon-mob.png');;
+			background-repeat: no-repeat;
+			background-size: 560px;
+			background-position: bottom right;
+		}
+
+		&::after {
+			content: " ";
+			position: relative;
+			background-image: url('../assets/Home/joker.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center right;
+			width: 100%;
+			height: 860px;
+			max-height: 860px;
+			max-width: 830px;
+			display: flex;
+			align-items: center;
+
+			@media screen and (max-width: 1210px) {
+				max-width: 100%;
+			}
+
+			@media screen and (max-width: 1120px) {
+				max-width: 380px;
+				height: 380px;
+			}
+		}
+
+		& .left-side {
+			width: 36dvw;
+			padding: 155px 0 80px 0;
+			min-width: 660px;
+			height: 100%;
+
+			@media screen and (max-width: 1120px) {
+				padding: 60px 0 20px 0;
+				min-width: auto;
+				width: 100%;
+			}
+
+			& .title {
+				position: relative;
+				display: flex;
+				align-items: flex-end;
+				width: 612px;
+				z-index: 2;
+				@media screen and (max-width: 1120px) {
+					align-items: center;
+					gap: 20px;
+					justify-content: center;
+					width: auto;
+				}
+				& h1 {
+					font-weight: 500;
+					font-size: 100px;
+					line-height: 110px;
+					letter-spacing: 0%;
+					vertical-align: middle;
+					text-transform: lowercase;
+					min-width: 600px;
+					@media screen and (max-width: 1120px) {
+						display: flex;
+						flex-direction: column;
+						font-size: 20px;
+						line-height: 30px;
+						min-width: auto;
+					}
+					& span {
+						font-family: Caveat;
+						font-weight: 700;
+						font-style: Bold;
+						font-size: 140px;
+						line-height: 110px;
+						letter-spacing: 0%;
+						vertical-align: middle;
+						text-transform: uppercase;
+						color: #838efc;
+						@media screen and (max-width: 1120px) {
+							font-size: 51px;
+							color: #3a4cff;
+							text-transform: capitalize;
+							line-height: 56px;
+						}
+					}
+				}
+
+				& h2 {
+					position: absolute;
+					right: 0;
+					bottom: 22px;
+					font-weight: 500;
+					font-style: Medium;
+					font-size: 30px;
+					line-height: 40px;
+					letter-spacing: 0%;
+					vertical-align: middle;
+					text-transform: lowercase;
+					@media screen and (max-width: 1120px) {
+						position: relative;
+						bottom: auto;
+						font-size: 17px;
+						text-transform: initial;
+					}
+					& span {
+						display: flex;
+						align-items: center;
+						font-weight: 500;
+						font-size: 30px;
+						line-height: 110px;
+						letter-spacing: 0%;
+						background-color: #838efc;
+						height: 40px;
+						padding: 0 22px;
+						color: #ffffff;
+						border-radius: 100px;
+
+						@media screen and (max-width: 1120px) {
+							background-color: #3a4cff;
+							font-size: 15px;
+							max-width: 170px;
+							padding: 0 12px;
+							text-transform: lowercase;
+						}
+					}
+				}
+			}
+
+			& .other-info {
+				position: absolute;
+				display: flex;
+				gap: 20px;
+				width: 100%;
+				padding-top: 84px;
+				z-index: 2;
+				flex-wrap: wrap;
+				@media screen and (max-width: 1120px) {
+					gap: 16px;
+				}
+				@media screen and (max-width: 1210px) {
+					position: relative;
+					gap: 0;
+					justify-content: space-between;
+				}
+
+				@media screen and (max-width: 1120px) {
+					flex-direction: column;
+					flex-wrap: nowrap;
+					padding-top: 20px;
+					gap: 16px;
+				}
+				& .first-lesson,
+				& .learning-eng {
+					position: relative;
+					max-width: 216px;
+					width: 100%;
+					height: 120px;
+					background: #ffffff99;
+					border-radius: 30px;
+					padding: 40px 32px;
+
+					@media screen and (max-width: 1120px) {
+						max-width: 100%;
+						padding: 20px 56px 20px 32px;
+						height: auto;
+					}
+
+					& h3 {
+						font-weight: 500;
+						font-size: 18px;
+						line-height: 28px;
+						letter-spacing: 0%;
+						vertical-align: middle;
+
+						@media screen and (max-width: 1120px) {
+							font-size: 15px;
+							& br {
+								display: none;
+							}
+						}
+						& b {
+							font-weight: 700;
+							font-size: 18px;
+							line-height: 28px;
+						}
+					}
+
+					& svg {
+						position: absolute;
+						top: 10px;
+						right: 10px;
+
+						@media screen and (max-width: 1120px) {
+							top: 50%;
+							transform: translate(0%, -50%);
+						}
+					}
+				}
+
+				& .learning-eng {
+					max-width: 348px;
+					width: 100%;
+
+					@media screen and (max-width: 1120px) {
+						max-width: 100%;
+					}
+				}
+
+				& .social-link {
+					max-width: 400px;
+					width: 100%;
+
+					@media screen and (max-width: 1210px) {
+						max-width: 100%;
+					}
+
+					@media screen and (max-width: 1120px) {
+						display: flex;
+						align-items: center;
+						gap: 16px;
+					}
+
+					& .button-filled {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						max-width: 400px;
+						width: 100%;
+						height: 90px;
+
+						font-weight: 500;
+						font-size: 20px;
+						line-height: 110px;
+						letter-spacing: 0%;
+						margin-top: 30px;
+
+						@media screen and (max-width: 1210px) {
+							max-width: 100%;
+						}
+
+						@media screen and (max-width: 1120px) {
+							margin: 0;
+							height: 60px;
+							font-size: 14px;
+							padding: 0 18px;
+						}
+					}
+
+					& .social-link-list {
+						padding-top: 30px;
+						display: flex;
+						justify-content: center;
+						gap: 16px;
+
+						@media screen and (max-width: 1120px) {
+							padding: 0;
+						}
+
+						& svg {
+							@media screen and (max-width: 1120px) {
+								width: 35px;
+								height: 35px;
+							}
+							& path {
+								&:hover {
+									&:not(.not-filled) {
+										fill: #3a4cff;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

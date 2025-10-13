@@ -1,0 +1,161 @@
+body{
+	font-family: "Nunito Sans", sans-serif;
+}
+
+.title-div-one {
+    background-image: url(/img/Frame75.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 65px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+h1.title-page-h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.title-div-two {
+    max-width: 1380px;
+    width: 100%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: white;
+  color: black;
+  border: 2px solid red;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+
+  /* позиціонування */
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* анімація появи */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.div-lesons {
+	margin: 50px 0px;
+	padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-lesons {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    max-width: 1385px;
+    width: 100%;
+}
+
+.leson {
+    max-width: 594px;
+    display: flex;
+    border: solid 1px #838EFC;
+    border-radius: 40px;
+    padding: 40px 40px 0px 40px;
+}
+
+.icon-leson > img {
+    max-width: 364px;
+    width: 100%;
+}
+
+.zagolovok-leson-div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+h2.zagolovok-leson {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+}
+
+h3.pidzagolovok-leson {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.info-leson {
+    max-width: 300px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fon{
+	background-color: #E7E8FE;
+}
+
+@media screen and (max-width: 1450px) {
+
+.leson {
+    flex-direction: column;
+    align-items: center;
+}		
+
+.grid-lesons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    max-width: 830px;
+    width: 100%;
+}
+
+.title-page-h1{
+	text-align: center;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+.grid-lesons {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+h1.title-page-h1 {
+    font-size: 26px;
+}
+
+h2.zagolovok-leson {
+    font-size: 26px;
+}
+
+h3.pidzagolovok-leson {
+    font-size: 19px;
+}
+
+.info-leson {
+    font-size: 15px;
+}
+
+}

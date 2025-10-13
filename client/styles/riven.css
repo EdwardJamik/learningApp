@@ -1,0 +1,417 @@
+body{
+	font-family: "Nunito Sans", sans-serif;
+}
+
+.title-div-one {
+    background-image: url(/img/Frame75.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 65px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+h1.title-page-h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.title-div-two {
+    max-width: 1380px;
+    width: 100%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: white;
+  color: black;
+  border: 2px solid red;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+
+  /* позиціонування */
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* анімація появи */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.div-lesons {
+    margin: 50px 0px 30px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-lesons {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    max-width: 1385px;
+    width: 100%;
+}
+
+.leson {
+    max-width: 594px;
+    display: flex;
+    border: solid 1px #838EFC;
+    border-radius: 40px;
+    padding: 40px 40px 0px 40px;
+}
+
+.icon-leson > img {
+    max-width: 364px;
+    width: 100%;
+}
+
+.zagolovok-leson-div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+h2.zagolovok-leson {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+}
+
+h3.pidzagolovok-leson {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.info-leson {
+    max-width: 300px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.kol-rozdilov {
+    padding: 30px;
+    border: solid 1px #838EFC;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h3.h3-info-roz {
+    font-size: 26px;
+    margin: 0;
+}
+
+.div-info-roz {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-rlv-rozdil {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    background: #FE502D;
+    border: none;
+    border-radius: 88px;
+    color: #fff;
+    padding: 20px 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-rlv-rozdil:hover {
+    background: #FF704D;
+}
+
+.progress-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.circular-chart {
+  width: 100%;
+  height: 100%;
+  transform: rotate(360deg); /* щоб починалося зверху */
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  stroke: #ff5a1f;
+
+  stroke-dasharray: 70, 100; 
+  stroke-dashoffset: 70;
+  animation: progress 1.5s ease-out forwards;
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    color: #000;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+}
+
+@keyframes progress {
+  from { stroke-dashoffset: 70; }
+  to   { stroke-dashoffset: 0; }
+}
+
+.flex-div-progres-div {
+    max-width: 1385px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.div-progres-tests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.flex-text-test {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.test-progres-golov {
+    border: solid 1px #838EFC;
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+h3.zagolovok-test-prog {
+    font-size: 26px;
+    margin: 0;
+    font-weight: 800;
+}
+
+.texts-progres-test {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn-progres-test {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    background: #FE502D;
+    border: none;
+    border-radius: 88px;
+    color: #fff;
+    padding: 20px 50px;
+    max-width: 300px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.btn-progres-test:hover {
+    background: #FF704D;
+}
+
+.btn-progres-test-two {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    border: solid 1px #FE502D;
+    border-radius: 88px;
+    color: #FE502D;
+    padding: 20px 50px;
+    max-width: 300px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    background: none;
+}
+
+.btn-progres-test-two:hover {
+    background: #FF704D;
+    color: #fff;
+}
+
+.div-btn-progres-test {
+    display: flex;
+    gap: 30px;
+}
+
+.div-ful-dostup {
+    max-width: 1305px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E7E8FE;
+    padding: 40px;
+    border-radius: 40px;
+    margin: 30px;
+    align-items: center;
+}
+
+section.full-dostup {
+    display: flex;
+    justify-content: center;
+}
+
+h3.ful-dostup {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+@media screen and (max-width: 1450px) {
+
+.leson {
+    flex-direction: column;
+    align-items: center;
+}		
+
+.grid-lesons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    max-width: 830px;
+    width: 100%;
+}
+
+.title-page-h1{
+	text-align: center;
+}
+
+h3.ful-dostup {
+    font-size: 26px;
+    text-align: center;
+}
+
+.div-ful-dostup {
+    align-items: center;
+    flex-direction: column;
+}
+
+}
+
+@media screen and (max-width: 750px) {
+
+.div-btn-progres-test {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.btn-progres-test {
+    max-width: 1000px;
+}
+
+.btn-progres-test-two {
+    max-width: 1000px;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+
+.grid-lesons {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+h1.title-page-h1 {
+    font-size: 26px;
+}
+
+h2.zagolovok-leson {
+    font-size: 26px;
+}
+
+h3.pidzagolovok-leson {
+    font-size: 19px;
+}
+
+.info-leson {
+    font-size: 15px;
+}
+
+.kol-rozdilov {
+    gap: 20px;
+}
+
+h3.h3-info-roz {
+    font-size: 22px;
+}
+
+.div-info-roz {
+    font-size: 15px;
+}
+
+h3.zagolovok-test-prog {
+    font-size: 19px;
+}
+
+.texts-progres-test {
+    font-size: 15px;
+}
+
+.btn-progres-test {
+    font-size: 17px;
+}
+
+.btn-progres-test-two {
+    font-size: 17px;
+}
+
+.div-btn-progres-test {
+    gap: 12px;
+}
+
+}

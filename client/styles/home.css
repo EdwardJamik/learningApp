@@ -1,0 +1,263 @@
+h1, h2, h3, h4{
+    margin: 0;
+}
+section.section-baner {
+    background: url(/img/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    height: 95vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.golov-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.golov-div-w {
+    max-width: 1385px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h1.zagolovok-baner {
+    color: #838EFC;
+    font-size: 140px;
+    line-height: 110px;
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+}
+
+h2.zag-two {
+    font-size: 100px;
+    font-weight: normal;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 110px;
+}
+
+.one-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div-mi {
+    color: #232530;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fon-t {
+    color: #fff;
+    background: #838EFC;
+    border-radius: 40px;
+    padding: 0px 20px;
+}
+
+.podz-div {
+    position: relative;
+    top: -104px;
+    left: 80px;
+}
+
+.block-obshch {
+    background: #fff;
+    border-radius: 30px;
+    padding: 10px 10px 10px 35px;
+}
+
+
+
+.flex-obblock {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.blok-ob-text {
+    font-size: 18px;
+    padding: 30px 0px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+button.btn-per, a.btn-per {
+    display: block;
+    background: #FE502D;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 34px 49px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+button.btn-per:hover, a.btn-per:hover {
+	cursor: pointer;
+    background: #FF704D;
+}
+
+.soc-mereg > img {
+	width: 40px;
+}
+
+.blok-soc-baner {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.blok-soc-baner .mereg{
+    display: flex;
+    gap: 6px;
+}
+
+.golov-flex {
+    padding: 20px 20px;
+}
+
+.rwo-section {
+	  max-width: 692px;
+    max-height: 860px;
+    width: 100%;
+}
+
+.rwo-section > img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1450px) {
+
+	.podz-div {
+    position: relative;
+    top: -104px;
+    left: 30%;
+}
+}
+
+.flex-block-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки по 1fr */
+    gap: 20px;
+    max-width: 1000px;
+    position: absolute;
+    top: 700px;
+}
+
+/* Планшети – 2 колонки */
+@media screen and (max-width: 992px) {
+	.golov-div-w {
+    align-items: flex-end;
+}
+		.block-obshch {
+    height: 90%;
+}
+    .flex-block-section {
+        grid-template-columns: repeat(2, 1fr);
+        position: static; /* краще, щоб не з’їжджало */
+    }
+     .flex-block-section > div:last-child {
+        grid-column: span 2;
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .flex-block-section {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    .podz-div {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    h1.zagolovok-baner {
+    font-size: 100px;
+	}
+	h2.zag-two {
+    font-size: 40px;
+    line-height: 40px;
+	}
+	.flex-oneblock {
+    display: flex;
+    justify-content: space-between;
+
+	}
+	.golov-div-w {
+    flex-direction: column;
+}
+.flex-oneblock {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .golov-div-w {
+        align-items: normal;
+    }
+    .rwo-section {
+    display: flex;
+    justify-content: center;
+	}
+	.golov-div-w {
+    gap: 20px;
+	}
+	.rwo-section > img {
+    width: 50%;
+	}
+	.div-mi {
+    font-size: 23px;
+}
+}
+
+
+
+/* Мобільні – 1 колонка */
+@media screen and (max-width: 616px) {
+    .flex-block-section {
+        grid-template-columns: 1fr;
+    }
+    h1.zagolovok-baner {
+        font-size: 50px;
+        line-height: 40px;
+    }
+    h2.zag-two {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .div-mi {
+        font-size: 17px;
+    }
+        .flex-block-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .blok-ob-text {
+    padding: 20px 0px;
+	}
+	.flex-obblock {
+    justify-content: space-between;
+	}
+	button.btn-per, a.btn-per {
+    padding: 19px 21px;
+    font-size: 14px;
+	}
+	.blok-soc-baner {
+    margin-top: 0px;
+	}
+	.golov-flex {
+    height: 90vh;
+	}
+}

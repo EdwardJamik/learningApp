@@ -1,0 +1,256 @@
+@charset "UTF-8";
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.progress-wrapper {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+.circular-chart {
+  width: 100%;
+  height: 100%;
+  transform: rotate(360deg); /* щоб починалося зверху */
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  stroke: #ff5a1f;
+  stroke-dasharray: 70, 100;
+  stroke-dashoffset: 70;
+  animation: progress 1.5s ease-out forwards;
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #000;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+}
+
+@keyframes progress {
+  from {
+    stroke-dashoffset: 70;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.flex-section-golov {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1385px;
+  width: 100%;
+  gap: 30px;
+}
+
+.one-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 40px 0px 40px;
+}
+
+.baner-level {
+  max-width: 828px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.level-info-div {
+  max-width: 583px;
+  width: 100%;
+}
+
+.info-level {
+  padding: 40px;
+  border: solid 1px #838efc;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.zagolovok-level {
+  display: flex;
+  background-color: #e7e8fe;
+  border-radius: 100px;
+  padding: 0px 15px;
+}
+
+.level-pokaz-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-level-div {
+  max-width: 280px;
+  width: 100%;
+}
+
+h2.zagolovok-lev-h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.text-level-div {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.baner-level > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* обрізає, а не розтягує */
+  -o-object-position: center;
+     object-position: center; /* центрування по центру (можна top / left і т.д.) */
+  border-radius: 20px;
+}
+
+h2.podzagolovok-level {
+  padding: 0;
+}
+
+.level-btn {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  background: #fe502d;
+  border: none;
+  border-radius: 88px;
+  color: #fff;
+  padding: 20px 0px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.level-btn:hover {
+  background: #ff704d;
+}
+
+.two-section {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-two-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1380px;
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 40px;
+}
+
+.div-plaz {
+  border: solid 1px #838efc;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-total-progres {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.icon-total-fine > img {
+  max-width: 40px;
+  width: 100%;
+}
+
+.text-total-fine {
+  display: flex;
+  font-size: 26px;
+  font-weight: 800;
+  gap: 6px;
+}
+
+.number-total-fine {
+  color: #fe502d;
+}
+
+.text-total {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1140px) {
+  .percentage {
+    font-size: 25px;
+  }
+  h2.zagolovok-lev-h2 {
+    font-size: 30px;
+  }
+  .text-level-div {
+    font-size: 15px;
+  }
+  h3.medal-h3 {
+    font-size: 15px;
+  }
+  .level-btn {
+    font-size: 17px;
+  }
+  .level-pokaz-div {
+    gap: 16px;
+  }
+  .flex-two-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  .flex-section-golov {
+    flex-direction: column;
+  }
+  .level-info-div {
+    max-width: 1000px;
+    width: 100%;
+  }
+  .one-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px 0px 20px;
+  }
+  h2.zagolovok-lev-h2 {
+    font-size: 19px;
+  }
+  .percentage {
+    font-size: 19px;
+  }
+  .info-level {
+    padding: 30px;
+  }
+  .level-pokaz-div {
+    align-items: center;
+  }
+  .flex-two-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    padding: 0px 20px;
+  }
+  .text-total-fine {
+    font-size: 19px;
+  }
+  .text-total {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=newuser.css.map */

@@ -1,0 +1,137 @@
+footer {
+	margin-top: 34px;
+	padding: 65px 30px 60px;
+	border-top: 1px solid #323232;
+
+	@media screen and (max-width: 1120px) {
+		padding-bottom: 34px;
+		padding-top: 35px;
+		margin-top: 0;
+	}
+
+	& .container {
+		max-width: 1470px;
+		margin: 0 auto;
+
+		& .top-side {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+
+			& a{
+				width: 100%;
+			}
+			& nav{
+				width: 100%;
+				& ul{
+					justify-content: center;
+				}
+			}
+
+			& ul {
+				@media (max-width: 1120px) {
+					display: flex !important;
+				}
+			}
+
+			@media (max-width: 1120px) {
+				flex-direction: column;
+			}
+			& .logo {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				max-height: 50px;
+
+				@media screen and (max-width: 1120px) {
+					max-height: 44px;
+					justify-content: center;
+				}
+
+				span {
+					position: relative;
+					max-width: 164px;
+					width: 100%;
+					text-transform: lowercase;
+					font-size: 16px;
+					line-height: 22px;
+					letter-spacing: 0%;
+					vertical-align: middle;
+					text-transform: lowercase;
+					color: #232530;
+					padding-left: 30px;
+					margin-left: 30px;
+
+					&::after {
+						content: " ";
+						position: absolute;
+						background-color: #2325301a;
+						height: 50px;
+						left: 0;
+						top: 0;
+						width: 1px;
+						@media screen and (max-width: 1120px) {
+							height: 44px;
+						}
+					}
+
+					@media screen and (max-width: 1120px) {
+						padding-left: 38px;
+						margin-left: 38px;
+						font-size: 15px;
+					}
+				}
+			}
+
+			& ul {
+				display: flex;
+				align-items: center;
+				gap: 16px;
+
+				@media screen and (max-width: 1120px) {
+					display: none;
+				}
+
+				& li {
+					& a {
+						font-size: 17px;
+						color: #4c4c4c;
+					}
+				}
+			}
+
+			& .right-side {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				justify-content: flex-end;
+				gap: 20px;
+
+				@media screen and (max-width: 1120px) {
+					justify-content: center;
+				}
+
+				& a:not(.button-filled) {
+					color: #4c4c4c;
+					font-size: 16px;
+				}
+
+				& .button-filled {
+					font-size: 17px;
+					@media screen and (max-width: 1120px) {
+						font-size: 14px;
+						padding: 20px;
+						min-width: 150px;
+					}
+				}
+			}
+		}
+
+		& .bottom-side {
+			padding-top: 40px;
+			text-align: center;
+			font-size: 14px;
+			color: #697282;
+		}
+	}
+}
