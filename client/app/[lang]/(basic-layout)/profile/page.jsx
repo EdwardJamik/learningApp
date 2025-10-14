@@ -28,14 +28,12 @@ export default function Account() {
 	const [passwordMessage, setPasswordMessage] = useState('');
 	const [isLoading, setIsLoading] = useState(false);
 	
-	// Перевірка авторизації
 	useEffect(() => {
 		if (!loading && !user) {
 			router.push('/');
 		}
 	}, [user, loading, router]);
 	
-	// Завантаження профілю
 	useEffect(() => {
 		const fetchProfile = async () => {
 			try {
@@ -45,7 +43,7 @@ export default function Account() {
 				
 				if (res.ok) {
 					const data = await res.json();
-					console.log(data)
+					
 					setProfile({
 						first_name: data.user.first_name || '',
 						last_name: data.user.last_name || '',
@@ -232,76 +230,76 @@ export default function Account() {
 					
 					<form onSubmit={handleProfileSubmit}>
 						<div className="acaunt-flex-div">
-							<div className="one-block-acaunt">
-								<input
-									type="file"
-									id="avatarInput"
-									accept="image/*"
-									onChange={handleAvatarChange}
-									style={{ display: 'none' }}
-								/>
-								
-								<label htmlFor="avatarInput" style={{ cursor: 'pointer' }}>
-									{displayAvatar ? (
-										<img
-											src={displayAvatar}
-											alt="Avatar"
-											style={{
-												width: '150px',
-												height: '150px',
-												borderRadius: '50%',
-												objectFit: 'cover'
-											}}
-										/>
-									) : (
-										<div style={{
-											width: '150px',
-											height: '150px',
-											borderRadius: '50%',
-											background: '#e0e0e0',
-											display: 'flex',
-											alignItems: 'center',
-											justifyContent: 'center',
-											fontSize: '14px',
-											textAlign: 'center',
-											padding: '10px'
-										}}>
-											Завантажити фото
-										</div>
-									)}
-								</label>
-								
-								<button
-									type="button"
-									className="upd-btn"
-									onClick={handleAvatarUpload}
-									disabled={!avatarFile || isLoading}
-								>
-									Зберегти
-								</button>
-								<button
-									type="button"
-									className="del-btn"
-									onClick={handleAvatarDelete}
-									disabled={!profile.avatar_url || isLoading}
-								>
-									Видалити
-								</button>
-								{/*{message && (*/}
-								<div style={{
-									width: '100%',
-									padding: '10px',
-									textAlign: 'center',
-									opacity: message ? 1 : 0,
-									background: message.includes('успішно') ? '#d4edda' : '#f8d7da',
-									color: message.includes('успішно') ? '#155724' : '#721c24',
-									borderRadius: '4px'
-								}}
-								>
-									{message}
-								</div>
-								{/*)}*/}
-							</div>
+							{/*<div className="one-block-acaunt">*/}
+							{/*	<input*/}
+							{/*		type="file"*/}
+							{/*		id="avatarInput"*/}
+							{/*		accept="image/*"*/}
+							{/*		onChange={handleAvatarChange}*/}
+							{/*		style={{ display: 'none' }}*/}
+							{/*	/>*/}
+							{/*	*/}
+							{/*	<label htmlFor="avatarInput" style={{ cursor: 'pointer' }}>*/}
+							{/*		{displayAvatar ? (*/}
+							{/*			<img*/}
+							{/*				src={displayAvatar}*/}
+							{/*				alt="Avatar"*/}
+							{/*				style={{*/}
+							{/*					width: '150px',*/}
+							{/*					height: '150px',*/}
+							{/*					borderRadius: '50%',*/}
+							{/*					objectFit: 'cover'*/}
+							{/*				}}*/}
+							{/*			/>*/}
+							{/*		) : (*/}
+							{/*			<div style={{*/}
+							{/*				width: '150px',*/}
+							{/*				height: '150px',*/}
+							{/*				borderRadius: '50%',*/}
+							{/*				background: '#e0e0e0',*/}
+							{/*				display: 'flex',*/}
+							{/*				alignItems: 'center',*/}
+							{/*				justifyContent: 'center',*/}
+							{/*				fontSize: '14px',*/}
+							{/*				textAlign: 'center',*/}
+							{/*				padding: '10px'*/}
+							{/*			}}>*/}
+							{/*				Завантажити фото*/}
+							{/*			</div>*/}
+							{/*		)}*/}
+							{/*	</label>*/}
+							{/*	*/}
+							{/*	<button*/}
+							{/*		type="button"*/}
+							{/*		className="upd-btn"*/}
+							{/*		onClick={handleAvatarUpload}*/}
+							{/*		disabled={!avatarFile || isLoading}*/}
+							{/*	>*/}
+							{/*		Зберегти*/}
+							{/*	</button>*/}
+							{/*	<button*/}
+							{/*		type="button"*/}
+							{/*		className="del-btn"*/}
+							{/*		onClick={handleAvatarDelete}*/}
+							{/*		disabled={!profile.avatar_url || isLoading}*/}
+							{/*	>*/}
+							{/*		Видалити*/}
+							{/*	</button>*/}
+							{/*	/!*{message && (*!/*/}
+							{/*	<div style={{*/}
+							{/*		width: '100%',*/}
+							{/*		padding: '10px',*/}
+							{/*		textAlign: 'center',*/}
+							{/*		opacity: message ? 1 : 0,*/}
+							{/*		background: message.includes('успішно') ? '#d4edda' : '#f8d7da',*/}
+							{/*		color: message.includes('успішно') ? '#155724' : '#721c24',*/}
+							{/*		borderRadius: '4px'*/}
+							{/*	}}*/}
+							{/*	>*/}
+							{/*		{message}*/}
+							{/*	</div>*/}
+							{/*	/!*)}*!/*/}
+							{/*</div>*/}
 							
 							<div className="flex-block">
 							

@@ -4,7 +4,9 @@ import {
 	updateProfile,
 	uploadAvatar,
 	deleteAvatar,
-	changePassword
+	changePassword,
+	submitTestLevel,
+	getTestLevel
 } from "../controllers/profileController.js";
 import upload from "../middleware/upload.js";
 
@@ -15,5 +17,9 @@ router.put("/", updateProfile);
 router.post("/avatar", upload.single("avatar"), uploadAvatar);
 router.delete("/avatar", deleteAvatar);
 router.put("/password", changePassword);
+
+// Нові маршрути для тесту рівня
+router.post("/test-level", submitTestLevel);
+router.get("/test-level", getTestLevel);
 
 export default router;

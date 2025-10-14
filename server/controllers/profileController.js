@@ -200,3 +200,65 @@ export const changePassword = async (req, res) => {
 		res.status(500).json({ message: "Server error" });
 	}
 };
+
+export const submitTestLevel = async (req, res) => {
+	try {
+		const token = req.cookies.authToken;
+		
+		if (!token) {
+			return res.status(401).json({ message: "Not authenticated" });
+		}
+		
+		const decoded = jwt.verify(token, process.env.JWT_SECRET);
+		const { level, score } = req.body;
+		
+		// Валідація рівня
+		const validLevels = ['A0', 'A1', 'A2', 'B1', 'B2', 'C1'];
+		if (!validLevels.includes(level.toUpperCase())) {
+			return res.status(400).json({ message: "Invalid level" });
+		}
+		
+		const result = await pool.query(
+			`UPDATE users
+       SET english_level = $1, test_completed = true, test_score = $2, test_date = NOW()
+       WHERE id = $3
+       RETURNING id, name, first_name, last_name, email, english_level, test_completed`,
+			[level.toUpperCase(), score || null, decoded.id]
+		);
+		
+		const user = result.rows[0];
+		
+		res.json({
+			message: "Test completed successfully",
+			user
+		});
+	} catch (err) {
+		console.error("Submit test level error:", err);
+		res.status(500).json({ message: "Server error" });
+	}
+};
+
+// Отримати результат тесту рівня
+export const getTestLevel = async (req, res) => {
+	try {
+		const token = req.cookies.authToken;
+		
+		if (!token) {
+			return res.status(401).json({ message: "Not authenticated" });
+		}
+		
+		const decoded = jwt.verify(token, process.env.JWT_SECRET);
+		
+		const result = await pool.query(
+			"SELECT english_level, test_completed, test_score, test_date FROM users WHERE id = $1",
+			[decoded.id]
+		);
+		
+		const testData = result.rows[0];
+		
+		res.json({ testData });
+	} catch (err) {
+		console.error("Get test level error:", err);
+		res.status(500).json({ message: "Server error" });
+	}
+};

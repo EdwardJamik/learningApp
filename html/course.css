@@ -1,0 +1,161 @@
+.lessons .title {
+  margin-bottom: 40px;
+}
+.lessons > .container {
+  width: 100%;
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .lessons > .container {
+    padding: 0 30px 50px;
+  }
+}
+.lessons > .container .lesson-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.lessons > .container .lesson-list .lesson-item {
+  position: relative;
+  padding: 0px 0px 0px 40px;
+  max-width: 705px;
+  width: 100%;
+  border: 1px solid #838efc;
+  border-radius: 40px;
+  height: 260px;
+  display: flex;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .lessons > .container .lesson-list .lesson-item {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 40px 0;
+  }
+}
+.lessons > .container .lesson-list .lesson-item:nth-child(1), .lessons > .container .lesson-list .lesson-item:nth-child(4), .lessons > .container .lesson-list .lesson-item:nth-child(5) {
+  background-color: #e7e8fe;
+}
+.lessons > .container .lesson-list .lesson-item:nth-child(1)::after {
+  background-image: url(./assets/image/lesson-a0.png);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lessons > .container .lesson-list .lesson-item:nth-child(2)::after {
+  background-image: url(./assets/image/lesson-a1.png);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lessons > .container .lesson-list .lesson-item:nth-child(3)::after {
+  background-image: url(./assets/image/lesson-a2.png);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lessons > .container .lesson-list .lesson-item:nth-child(4)::after {
+  background-image: url(./assets/image/lesson-b1.png);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lessons > .container .lesson-list .lesson-item:nth-child(5)::after {
+  background-image: url(./assets/image/lesson-b2.png);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lessons > .container .lesson-list .lesson-item:nth-child(6)::after {
+  background-image: url(./assets/image/lesson-c1.png);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lessons > .container .lesson-list .lesson-item::after {
+  content: " ";
+  position: relative;
+  display: flex;
+  width: 395px;
+  height: 250px;
+  margin-top: auto;
+  z-index: 6;
+}
+@media screen and (max-width: 768px) {
+  .lessons > .container .lesson-list .lesson-item::after {
+    margin: 0 auto;
+    width: 100%;
+    background-position: center bottom !important;
+    max-height: 180px;
+  }
+}
+.lessons > .container .lesson-list .lesson-item .lesson-detail {
+  max-width: 296px;
+  padding: 40px 0 40px 0;
+}
+@media screen and (max-width: 768px) {
+  .lessons > .container .lesson-list .lesson-item .lesson-detail {
+    padding: 0;
+  }
+}
+.lessons > .container .lesson-list .lesson-item .lesson-detail .lesson-title {
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .lessons > .container .lesson-list .lesson-item .lesson-detail .lesson-title {
+    font-size: 26px;
+  }
+}
+.lessons > .container .lesson-list .lesson-item .lesson-detail .lesson-title .current-lesson {
+  margin-left: 12px;
+  cursor: pointer;
+}
+.lessons > .container .lesson-list .lesson-item .lesson-detail .lesson-title .current-lesson:hover ~ .current-lesson-info {
+  opacity: 1;
+}
+.lessons > .container .lesson-list .lesson-item .lesson-detail .lesson-title .current-lesson-info {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  max-width: 248px;
+  height: 84px;
+  padding: 20px 40px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  border-radius: 40px;
+  border: 1px solid #fe502d;
+  top: 82px;
+  left: 94px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.lessons > .container .lesson-list .lesson-item .lesson-detail .lesson-pre-title {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 768px) {
+  .lessons > .container .lesson-list .lesson-item .lesson-detail .lesson-pre-title {
+    font-size: 19px;
+  }
+}
+.lessons > .container .lesson-list .lesson-item .lesson-detail .lesson-description {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+}
+@media screen and (max-width: 768px) {
+  .lessons > .container .lesson-list .lesson-item .lesson-detail .lesson-description {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=course.css.map */

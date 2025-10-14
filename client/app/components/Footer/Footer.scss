@@ -19,7 +19,11 @@ footer {
 			gap: 20px;
 
 			& a{
-				width: 100%;
+					width: 100%;
+
+				&.button-filled{
+					max-width: 190px;
+				}
 			}
 			& nav{
 				width: 100%;

@@ -35,7 +35,6 @@ export const AuthProvider = ({ children }) => {
 	
 	// Вхід користувача
 	const login = useCallback((userData) => {
-		console.log("AuthContext: Setting user:", userData);
 		setUser(userData);
 		setLoading(false); // Завершуємо loading після логіну
 	}, []);
@@ -55,15 +54,12 @@ export const AuthProvider = ({ children }) => {
 		}
 	}, []);
 	
-	// Перевірка при завантаженні
 	useEffect(() => {
 		checkAuth();
 	}, [checkAuth]);
 	
-	console.log("AuthContext state:", { user, loading });
-	
 	return (
-		<AuthContext.Provider value={{ user, login, logout, loading }}>
+		<AuthContext.Provider value={{ user, login, logout, loading, checkAuth }}>
 			{children}
 		</AuthContext.Provider>
 	);

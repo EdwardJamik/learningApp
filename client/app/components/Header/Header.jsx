@@ -67,7 +67,9 @@ const Header = () => {
 					
 					<nav>
 						<ul>
-							<li><Link href={`/${locale !== 'ru' ? '' : 'ru/'}`}>Головна</Link></li>
+							<li><Link
+								href={`/${locale !== 'ru' ? user ? 'dashboard' : '' : user ? 'ru/dashboard' : 'ru'}`}>Головна</Link>
+							</li>
 							<li><Link href={`/${locale !== 'ru' ? 'lesson' : 'ru/lesson'}`}>Уроки</Link></li>
 							<li><Link href={`/${locale !== 'ru' ? 'special' : 'ru/special'}`}>Спецкурси</Link></li>
 						</ul>
@@ -101,7 +103,7 @@ const Header = () => {
 							>Мій кабінет
 							</Link></>
 							:
-							<><Link href={`/${locale !== 'ru' ? 'login' : 'ru/login'}`} className="button-filled">Вхід до
+							<><Link href={`/${locale !== 'ru' ? 'login' : 'ru/login'}`} className="button-filled full-width">Вхід до
 								кабінету</Link></>
 						}
 						
@@ -149,8 +151,8 @@ const Header = () => {
 								</Link>
 								
 								<nav>
-									<ul className="main">
-										<li><Link href={`/${locale !== 'ru' ? '' : 'ru'}`}>Головна</Link></li>
+									<ul className="main">'ru'
+										<li><Link href={`/${locale !== 'ru' ? user ? 'dashboard' : '' : user ? 'ru/dashboard' : 'ru' }`}>Головна</Link></li>
 										<li><Link href={`/${locale !== 'ru' ? 'lesson' : 'ru/lesson'}`}>Уроки</Link></li>
 										<li><Link href={`/${locale !== 'ru' ? 'special' : 'ru/special'}`}>Спецкурси</Link></li>
 									</ul>

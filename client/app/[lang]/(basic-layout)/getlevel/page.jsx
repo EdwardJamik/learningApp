@@ -1,11 +1,53 @@
+"use client"
+
 import '../../../components/Header/header.scss';
 import './test.scss';
 import Link from 'next/link'
 import Image from 'next/image'
 import getLevelImage from "../../../assets/GetLevel/testlevel.png";
+import {useState} from 'react'
+import TestResultModal from '@/app/components/Modal/TestResultModal'
+import {useAuth} from '@/context/AuthContext'
 
 
 export default function Account() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [userLevel, setUserLevel] = useState('');
+	const { checkAuth } = useAuth();
+	
+	const handleStartTest = async () => {
+		
+		try {
+
+			const testLevel = 'A1';
+			const testScore = 85;
+			
+			const response = await fetch('http://localhost:5000/api/profile/test-level', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				credentials: 'include',
+				body: JSON.stringify({
+					level: testLevel,
+					score: testScore
+				}),
+			});
+			checkAuth()
+			if (!response.ok) {
+				throw new Error('Failed to submit test result');
+			}
+			
+			const data = await response.json();
+			
+			setUserLevel(testLevel);
+			setIsModalOpen(true);
+			
+		} catch (error) {
+			console.error('Error submitting test:', error);
+			alert('Помилка при збереженні результату тесту. Спробуйте ще раз.');
+		}
+	};
 	return (
 		<>
 			
@@ -48,7 +90,11 @@ export default function Account() {
 							</div>
 							<div className="btns-level-test">
 								<Link href={'/dashboard'} className="test-lev-btn">Назад</Link>
-								<Link href={'/test'} className="test-levt-btn">Розпочати тест</Link>
+								<button
+									onClick={handleStartTest}
+									// disabled={isLoading}
+								 className="test-levt-btn">Розпочати тест
+								</button>
 							</div>
 						</div>
 						<div className="level-two-div">
@@ -59,6 +105,11 @@ export default function Account() {
 					</div>
 				</div>
 			</section>
+			<TestResultModal
+				isOpen={isModalOpen}
+				onClose={() => setIsModalOpen(false)}
+				level={userLevel}
+			/>
 		</>
 	);
 }

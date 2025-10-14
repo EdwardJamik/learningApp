@@ -1,0 +1,279 @@
+
+
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 50px 20px 48px;
+}
+
+.course-card {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid #838efc;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+  max-width: 460px;
+  width: 100%;
+}
+
+.course-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 40px;
+  position: relative;
+
+  & img {
+    max-width: 140px;
+    max-height: 140px;
+    width: 100%;
+    height: 100%;
+  }
+
+  & > .right-side {
+    width: 100%;
+    padding: 67px 0 0;
+  }
+}
+
+.instructor-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 150px;
+  background: #ff5437;
+  color: white;
+  padding: 9px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 130%;
+  text-align: right;
+
+  white-space: nowrap;
+}
+
+.course-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 130%;
+  margin-bottom: 8px;
+}
+
+.course-level {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+
+  & b {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 130%;
+  }
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 130%;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.course-description {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #333;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.btn {
+  width: 100%;
+  padding: 19px 24px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.btn-outline {
+  background: white;
+  color: #ff5437;
+  border: 2px solid #ff5437;
+}
+
+.btn-outline:hover {
+  background: #fff5f3;
+}
+
+.btn-completed-red {
+  background: #ff5437;
+  color: white;
+  border: 2px solid #ff5437;
+}
+
+.btn-completed-red:hover {
+  background: #e64a30;
+}
+
+.btn-completed-green {
+  background: #00d563;
+  color: white;
+  border: 2px solid #00d563;
+}
+
+.btn-completed-green:hover {
+  background: #00bf58;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 60px;
+}
+
+.pagination-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 130%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d0d1ff;
+  color: #232530;
+}
+
+.pagination-btn:hover {
+  background: #f5f5f5;
+}
+
+.pagination-btn.active {
+  background: #e7e8fe;
+}
+
+.pagination-arrow {
+  background: white;
+  border: 1px solid #e0e0e0;
+}
+
+.pagination-arrow:hover {
+  background: #f5f5f5;
+}
+
+.pagination-dots {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 130%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d0d1ff;
+  color: #232530;
+}
+
+@media (max-width: 1400px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+    & .course-card {
+      margin: 0 auto;
+    }
+  }
+
+  .lessons {
+    & .container {
+      max-width: 980px;
+    }
+  }
+}
+
+@media (max-width: 932px) {
+  .course-grid {
+    grid-template-columns: 1fr;
+
+    & .course-card {
+      padding: 30px;
+      & .card-header {
+        margin-bottom: 20px;
+        & img {
+          display: none;
+        }
+
+        & .right-side {
+          padding: 0;
+          & .badge {
+            position: relative;
+            top: auto;
+            left: auto;
+            padding: 10px;
+            font-size: 15px;
+            margin-bottom: 12px;
+            display: block;
+            max-width: 186px;
+          }
+
+          & .course-title {
+            font-size: 26px;
+          }
+
+          & .course-level {
+            font-size: 15px;
+          }
+        }
+      }
+
+      & .section-title {
+        margin-bottom: 16px;
+        font-size: 19px;
+      }
+
+      & .course-description {
+        font-size: 15px;
+        margin-bottom: 16px;
+      }
+
+      & .btn.btn-outline {
+        font-size: 17px;
+      }
+    }
+  }
+}

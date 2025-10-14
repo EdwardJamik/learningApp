@@ -1,5 +1,4 @@
 'use client'
-import '../../../components/Header/header.scss';
 import './dashboard.scss';
 import Link from 'next/link'
 import {useAuth} from '@/context/AuthContext'
@@ -7,6 +6,7 @@ import {useRouter} from 'next/navigation'
 import {useEffect} from 'react'
 import Image from 'next/image'
 import levelImage from '../../../assets/Dashboard/photostartlevel.png'
+import levelImage2 from '../../../assets/Dashboard/Frame 603.jpg'
 
 export default function Account() {
 	const { user, loading, logout } = useAuth();
@@ -23,7 +23,6 @@ export default function Account() {
 		{/*Завантаження...*/}
 	</div>;
 	if (!user) return null;
-	
 	return (
 		<>
 			<section className="golov-blor-new">
@@ -32,7 +31,11 @@ export default function Account() {
 					<div className="one-section">
 						<div className="flex-section-golov">
 							<div className="baner-level">
-								<Image src={levelImage} alt='Level'/>
+								{user?.level ?
+									<Image src={levelImage2} alt='Level'/>
+								:
+									<Image src={levelImage} alt='Level'/>
+								}
 							</div>
 							<div className="level-info-div">
 								<div className="info-level">
@@ -42,14 +45,34 @@ export default function Account() {
 												d="M15.21 23L10.66 15.14C10.4638 14.8009 10.3715 14.4116 10.3946 14.0205C10.4177 13.6294 10.5552 13.2537 10.79 12.94L12.4 10.8C12.5863 10.5516 12.8278 10.35 13.1055 10.2111C13.3832 10.0723 13.6895 10 14 10H26C26.3104 10 26.6167 10.0723 26.8944 10.2111C27.1721 10.35 27.4137 10.5516 27.6 10.8L29.2 12.94C29.4363 13.2527 29.5755 13.6278 29.6004 14.019C29.6253 14.4101 29.5347 14.7999 29.34 15.14L24.79 23M19 20L13.12 10.2M21 20L26.88 10.2M16 15H24M20 26V24H19.5M25 25C25 27.7614 22.7614 30 20 30C17.2385 30 15 27.7614 15 25C15 22.2386 17.2385 20 20 20C22.7614 20 25 22.2386 25 25Z"
 												stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										</svg>
-										<h3 className="medal-h3">Визначи свій рівень</h3>
+										{user.level ?
+											<h3 className="medal-h3">Твій рівень</h3>
+											:
+											<h3 className="medal-h3">Визначи свій рівень</h3>
+										}
+									
 									</div>
 									<div className="level-pokaz-div">
 										
 										<div className="text-level-div">
-											<h2 className="zagolovok-lev-h2">Дізнайся свій рівень!</h2>
-											<h2 className="podzagolovok-level"></h2>
-											Ти не впевнений, наскільки добре знаєш мову? Визнач свій рівень!
+											{user.level ?
+												<>
+													<h2 className="zagolovok-lev-h2">{user.level}</h2>
+													<h2 className="zagolovok-lev-h22">Elementary</h2>
+												</>
+												:
+												<h2 className="zagolovok-lev-h2">Визначи свій рівень</h2>
+											}
+											{user.level ?
+												<>
+													<h2 className="podzagolovok-level">Ви можете використовувати прості слова та повсякденні фрази, щоб розповісти про себе та оточення.</h2>
+												</>
+												:
+												<h2 className="podzagolovok-level">Ти не впевнений, наскільки добре знаєш мову? Визнач свій
+													рівень!</h2>
+											}
+										
+										
 										</div>
 										<div className="progress-wrapper">
 											<svg viewBox="0 0 36 36" className="circular-chart orange" width="100" height="100">
@@ -83,7 +106,11 @@ export default function Account() {
 									
 									</div>
 									<div className="level-btn-div">
-										<Link href={'/getlevel'} className="level-btn">Дізнатись свій рівень</Link>
+										{user.level ?
+										<Link href={'/level'} className="level-btn">Вдосконалити даний рівень</Link>
+											:
+											<Link href={'/getlevel'} className="level-btn">Дізнатись свій рівень</Link>
+										}
 									</div>
 								</div>
 							</div>
@@ -131,7 +158,7 @@ export default function Account() {
 									Ти ще не вивчив жодного слова — але це лише початок!
 								</div>
 								<div className="level-btn-div">
-									<Link href={'/level'} className="button-filled level-btn active-not-learning">Почати навчання</Link>
+									<Link href={'/level'} className={`button-filled level-btn ${!user?.level && 'active-not-learning'}`}>Почати навчання</Link>
 								</div>
 							</div>
 							<div className="div-plaz">
@@ -178,7 +205,7 @@ export default function Account() {
 									Перший крок ще попереду — починай зараз і впевнено!
 								</div>
 								<div className="level-btn-div">
-									<Link href={'/level'} className="button-filled level-btn active-not-learning">Почати навчання</Link>
+									<Link href={'/level'} className={`button-filled level-btn ${!user?.level && 'active-not-learning'}`}>Почати навчання</Link>
 								</div>
 							</div>
 							<div className="div-plaz">
@@ -209,7 +236,7 @@ export default function Account() {
 									Ти ще не почав серію — сьогодні гарний день стартувати!
 								</div>
 								<div className="level-btn-div">
-									<Link href={'/level'} className="button-filled level-btn active-not-learning">Почати навчання</Link>
+									<Link href={'/level'} className={`button-filled level-btn ${!user?.level && 'active-not-learning'}`}>Почати навчання</Link>
 								</div>
 							</div>
 						</div>

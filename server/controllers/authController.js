@@ -115,7 +115,8 @@ export const getMe = async (req, res) => {
 		const userData = {
 			id: user.id,
 			name: user.name,
-			email: user.email
+			email: user.email,
+			level: user.english_level
 		};
 		
 		console.log("GetMe - Returning user data:", userData);
