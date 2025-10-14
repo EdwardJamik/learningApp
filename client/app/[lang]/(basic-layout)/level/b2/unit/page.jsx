@@ -1,5 +1,3 @@
-import '../../../components/Header/header.scss';
-import '../../../../styles/riven.css';
 import './unit.scss'
 import Link from 'next/link'
 
@@ -10,7 +8,7 @@ export default function CurrentUnit() {
 			<section className="current-unit">
 				<h1 className="title">
 					<div className="container">
-						A1 / Elementary
+						B2 / Upper-Intermediate
 					</div>
 				</h1>
 				<div className="container">

@@ -22,7 +22,7 @@
 			justify-content: center;
 			gap: 30px;
 
-			& .lesson-item {
+			& a  {
 				position: relative;
 				padding: 0px 0px 0px 40px;
 				max-width: 705px;
@@ -159,6 +159,7 @@
 							left: 94px;
 							opacity: 0;
 							transition: opacity 0.4s;
+							z-index: 999;
 						}
 					}
 

@@ -19,7 +19,7 @@ export default function Lesson() {
 				<div className="container">
 					
 					<div className="lesson-list">
-						<Link href={`/${locale !== 'ru' ? 'level' : 'ru/level'}`}>
+						<Link href={`/${locale !== 'ru' ? 'level/a0' : 'ru/level/a0'}`}>
 						<div className="lesson-item">
 							
 							
@@ -38,7 +38,7 @@ export default function Lesson() {
 							</div>
 						</div>
 						</Link>
-						<Link href={`/${locale !== 'ru' ? 'level' : 'ru/level'}`}>
+						<Link href={`/${locale !== 'ru' ? 'level/a1' : 'ru/level/a1'}`}>
 						<div className="lesson-item">
 							<div className="lesson-detail">
 								<div className="lesson-title">
@@ -65,7 +65,7 @@ export default function Lesson() {
 							</div>
 						</div>
 						</Link>
-						<Link href={`/${locale !== 'ru' ? 'level' : 'ru/level'}`}>
+						<Link href={`/${locale !== 'ru' ? 'level/a2' : 'ru/level/a2'}`}>
 							<div className="lesson-item">
 								<div className="lesson-detail">
 									<div className="lesson-title">
@@ -80,7 +80,7 @@ export default function Lesson() {
 								</div>
 							</div>
 						</Link>
-						<Link href={`/${locale !== 'ru' ? 'level' : 'ru/level'}`}>
+						<Link href={`/${locale !== 'ru' ? 'level/b1' : 'ru/level/b1'}`}>
 							<div className="lesson-item">
 								<div className="lesson-detail">
 									<p className="lesson-title">
@@ -95,7 +95,7 @@ export default function Lesson() {
 								</div>
 							</div>
 						</Link>
-						<Link href={`/${locale !== 'ru' ? 'level' : 'ru/level'}`}>
+						<Link href={`/${locale !== 'ru' ? 'level/b2' : 'ru/level/b2'}`}>
 							<div className="lesson-item">
 								<div className="lesson-detail">
 									<p className="lesson-title">
@@ -111,7 +111,7 @@ export default function Lesson() {
 							
 							</div>
 						</Link>
-						<Link href={`/${locale !== 'ru' ? 'level' : 'ru/level'}`}>
+						<Link href={`/${locale !== 'ru' ? 'level/c1' : 'ru/level/c1'}`}>
 							<div className="lesson-item">
 								<div className="lesson-detail">
 									<p className="lesson-title">

@@ -101,13 +101,13 @@ export default function Account() {
 											</svg>
 											
 											
-											<div className="percentage">?</div>
+											<div className="percentage">{user.level ? '0%' : '?' }</div>
 										</div>
 									
 									</div>
 									<div className="level-btn-div">
 										{user.level ?
-										<Link href={'/level'} className="level-btn">Вдосконалити даний рівень</Link>
+										<Link href={'/level/a1'} className="level-btn">Вдосконалити даний рівень</Link>
 											:
 											<Link href={'/getlevel'} className="level-btn">Дізнатись свій рівень</Link>
 										}
@@ -158,7 +158,7 @@ export default function Account() {
 									Ти ще не вивчив жодного слова — але це лише початок!
 								</div>
 								<div className="level-btn-div">
-									<Link href={'/level'} className={`button-filled level-btn ${!user?.level && 'active-not-learning'}`}>Почати навчання</Link>
+									<Link href={'/lesson'} className={`button-filled level-btn ${!user?.level && 'active-not-learning'}`}>Почати навчання</Link>
 								</div>
 							</div>
 							<div className="div-plaz">
@@ -205,7 +205,7 @@ export default function Account() {
 									Перший крок ще попереду — починай зараз і впевнено!
 								</div>
 								<div className="level-btn-div">
-									<Link href={'/level'} className={`button-filled level-btn ${!user?.level && 'active-not-learning'}`}>Почати навчання</Link>
+									<Link href={'/lesson'} className={`button-filled level-btn ${!user?.level && 'active-not-learning'}`}>Почати навчання</Link>
 								</div>
 							</div>
 							<div className="div-plaz">
@@ -236,7 +236,7 @@ export default function Account() {
 									Ти ще не почав серію — сьогодні гарний день стартувати!
 								</div>
 								<div className="level-btn-div">
-									<Link href={'/level'} className={`button-filled level-btn ${!user?.level && 'active-not-learning'}`}>Почати навчання</Link>
+									<Link href={'/lesson'} className={`button-filled level-btn ${!user?.level && 'active-not-learning'}`}>Почати навчання</Link>
 								</div>
 							</div>
 						</div>

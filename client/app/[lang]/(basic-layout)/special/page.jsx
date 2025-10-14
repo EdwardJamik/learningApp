@@ -7,7 +7,7 @@ export default function SpecialLesson() {
 			<section className="lessons">
 				<h1 className="title">
 					<div className="container">
-						Всі рівні
+						Спецкурси
 					</div>
 				</h1>
 				

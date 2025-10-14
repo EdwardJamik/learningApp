@@ -1,10 +1,19 @@
-import '../../../components/Header/header.scss';
-import '../../../../styles/riven.css';
+"use client";
 import './unit.scss'
 import Link from 'next/link'
+import TestResultModal from '@/app/components/Modal/TestResultModal'
+import OptionTrainerModal from '@/app/components/Modal/OptionTrainerModal'
+import {useState} from 'react'
 
 
 export default function CurrentUnit() {
+	const [isModalOpen,setIsModalOpen] = useState(false)
+	
+	const changeModalView = (status) =>{
+		setIsModalOpen(status)
+	}
+	
+	
 	return (
 		<>
 			<section className="current-unit">
@@ -32,7 +41,7 @@ export default function CurrentUnit() {
 						</div>
 						
 						<div className="header-actions">
-							<button className="btn btn-secondary">
+							<button className="btn btn-secondary" onClick={()=>changeModalView(!isModalOpen)}>
 								<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
 									<path
 										d="M23 24.9996L25.536 17.6716C25.6053 17.4711 25.7354 17.2972 25.9082 17.1741C26.081 17.051 26.2879 16.9849 26.5 16.9849C26.7121 16.9849 26.919 17.051 27.0918 17.1741C27.2646 17.2972 27.3947 17.4711 27.464 17.6716L30 24.9996M23.697 22.9996H29.303M10 24.9996L14.039 15.3096C14.077 15.2185 14.1411 15.1406 14.2232 15.0859C14.3053 15.0312 14.4018 15.002 14.5005 15.002C14.5992 15.002 14.6957 15.0312 14.7778 15.0859C14.8599 15.1406 14.924 15.2185 14.962 15.3096L19 24.9996M11.304 21.9996H17.696"
@@ -73,7 +82,7 @@ export default function CurrentUnit() {
 									</svg>
 									Купити розділ
 								</button>
-								<button className="btn btn-secondary">
+								<button className="btn btn-secondary" onClick={()=>changeModalView(!isModalOpen)}>
 									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
 										<path
 											d="M23 24.9996L25.536 17.6716C25.6053 17.4711 25.7354 17.2972 25.9082 17.1741C26.081 17.051 26.2879 16.9849 26.5 16.9849C26.7121 16.9849 26.919 17.051 27.0918 17.1741C27.2646 17.2972 27.3947 17.4711 27.464 17.6716L30 24.9996M23.697 22.9996H29.303M10 24.9996L14.039 15.3096C14.077 15.2185 14.1411 15.1406 14.2232 15.0859C14.3053 15.0312 14.4018 15.002 14.5005 15.002C14.5992 15.002 14.6957 15.0312 14.7778 15.0859C14.8599 15.1406 14.924 15.2185 14.962 15.3096L19 24.9996M11.304 21.9996H17.696"
@@ -102,7 +111,7 @@ export default function CurrentUnit() {
 							<p className="lesson-status">Завершено: 0%</p>
 							<div className="lesson-actions">
 								<button className="btn btn-purchased">Куплено</button>
-								<button className="btn btn-secondary">
+								<button className="btn btn-secondary" onClick={()=>changeModalView(!isModalOpen)}>
 									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
 										<path
 											d="M23 24.9996L25.536 17.6716C25.6053 17.4711 25.7354 17.2972 25.9082 17.1741C26.081 17.051 26.2879 16.9849 26.5 16.9849C26.7121 16.9849 26.919 17.051 27.0918 17.1741C27.2646 17.2972 27.3947 17.4711 27.464 17.6716L30 24.9996M23.697 22.9996H29.303M10 24.9996L14.039 15.3096C14.077 15.2185 14.1411 15.1406 14.2232 15.0859C14.3053 15.0312 14.4018 15.002 14.5005 15.002C14.5992 15.002 14.6957 15.0312 14.7778 15.0859C14.8599 15.1406 14.924 15.2185 14.962 15.3096L19 24.9996M11.304 21.9996H17.696"
@@ -138,7 +147,7 @@ export default function CurrentUnit() {
 									</svg>
 									Купити розділ
 								</button>
-								<button className="btn btn-secondary">
+								<button className="btn btn-secondary" onClick={()=>changeModalView(!isModalOpen)}>
 									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
 										<path
 											d="M23 24.9996L25.536 17.6716C25.6053 17.4711 25.7354 17.2972 25.9082 17.1741C26.081 17.051 26.2879 16.9849 26.5 16.9849C26.7121 16.9849 26.919 17.051 27.0918 17.1741C27.2646 17.2972 27.3947 17.4711 27.464 17.6716L30 24.9996M23.697 22.9996H29.303M10 24.9996L14.039 15.3096C14.077 15.2185 14.1411 15.1406 14.2232 15.0859C14.3053 15.0312 14.4018 15.002 14.5005 15.002C14.5992 15.002 14.6957 15.0312 14.7778 15.0859C14.8599 15.1406 14.924 15.2185 14.962 15.3096L19 24.9996M11.304 21.9996H17.696"
@@ -174,7 +183,7 @@ export default function CurrentUnit() {
 									</svg>
 									Купити розділ
 								</button>
-								<button className="btn btn-secondary">
+								<button className="btn btn-secondary" onClick={()=>changeModalView(!isModalOpen)}>
 									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
 										<path
 											d="M23 24.9996L25.536 17.6716C25.6053 17.4711 25.7354 17.2972 25.9082 17.1741C26.081 17.051 26.2879 16.9849 26.5 16.9849C26.7121 16.9849 26.919 17.051 27.0918 17.1741C27.2646 17.2972 27.3947 17.4711 27.464 17.6716L30 24.9996M23.697 22.9996H29.303M10 24.9996L14.039 15.3096C14.077 15.2185 14.1411 15.1406 14.2232 15.0859C14.3053 15.0312 14.4018 15.002 14.5005 15.002C14.5992 15.002 14.6957 15.0312 14.7778 15.0859C14.8599 15.1406 14.924 15.2185 14.962 15.3096L19 24.9996M11.304 21.9996H17.696"
@@ -184,13 +193,13 @@ export default function CurrentUnit() {
 								</button>
 							</div>
 						</div>
-						
-						
-						
-						
 					</div>
 				</div>
 			</section>
+			<OptionTrainerModal
+				isOpen={isModalOpen}
+				onClose={() => setIsModalOpen(false)}
+			/>
 		</>
 	);
 }

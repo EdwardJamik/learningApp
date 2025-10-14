@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 
-export default function Modal({ isOpen, onClose, children }) {
+export default function Modal({ isOpen, onClose, type, children }) {
 	useEffect(() => {
 		if (isOpen) {
 			document.body.style.overflow = 'hidden';
@@ -28,7 +28,7 @@ export default function Modal({ isOpen, onClose, children }) {
 	if (!isOpen) return null;
 	
 	return (
-		<div className={`modal-overlay ${isOpen && 'open'}` } onClick={onClose}>
+		<div className={`modal-overlay ${isOpen && 'open'} ${type}` } onClick={onClose}>
 			<div className="modal-container" onClick={(e) => e.stopPropagation()}>
 				<button
 					className="close-button"

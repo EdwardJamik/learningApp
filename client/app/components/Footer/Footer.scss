@@ -100,6 +100,12 @@ footer {
 					& a {
 						font-size: 17px;
 						color: #4c4c4c;
+
+						transition: all .4s;
+
+						&:hover{
+							color: #fe502d;
+						}
 					}
 				}
 			}
@@ -108,7 +114,6 @@ footer {
 				display: flex;
 				align-items: center;
 				width: 100%;
-				justify-content: flex-end;
 				gap: 20px;
 
 				@media screen and (max-width: 1120px) {
@@ -118,6 +123,12 @@ footer {
 				& a:not(.button-filled) {
 					color: #4c4c4c;
 					font-size: 16px;
+
+					transition: all .4s;
+
+					&:hover{
+						color: #fe502d;
+					}
 				}
 
 				& .button-filled {

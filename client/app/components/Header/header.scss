@@ -91,6 +91,11 @@ header {
 				& a {
 					font-size: 17px;
 					color: #4c4c4c;
+					transition: color .4s;
+
+					&:hover{
+						color: #fe502d;
+					}
 				}
 			}
 		}

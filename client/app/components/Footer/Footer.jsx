@@ -8,7 +8,9 @@ import Logo from '../../assets/Header/logo.png'
 import {useTranslation} from '@/context/TranslationProvider'
 import Link from 'next/link'
 import {usePathname} from 'next/navigation'
+import {useAuth} from '@/context/AuthContext'
 const Footer = () => {
+	const { user, loading, logout } = useAuth();
 	const pathname = usePathname();
 	const { locale } = useTranslation();
 	
@@ -38,8 +40,21 @@ const Footer = () => {
 					</nav>
 					
 					<div className="right-side">
-						<a href="#">Політика конфіденційності</a>
-						<a href={`/${locale !== 'ru' ? 'login' : 'ru/login'}`} className="button-filled">Вхід до кабінету</a>
+						<div style={{display: 'flex', flexDirection: 'column', gap: '8px', justifyContent: 'space-around'}}>
+							
+							<a href="#" style={{textAlign: 'center'}}>Договір оферти</a>
+							
+							<a href="#">Політика конфіденційності</a></div>
+						
+						{user ?
+							<><Link href={`/${locale !== 'ru' ? 'dashboard' : 'ru/dashboard'}`}
+							        className={`button-filled full-width`} style={{width:'100%', maxWidth:'150px'}}
+							>Мій кабінет
+							</Link></>
+							:
+							<><Link href={`/${locale !== 'ru' ? 'login' : 'ru/login'}`} className="button-filled full-width">Вхід до
+								кабінету</Link></>
+						}
 					</div>
 				</div>
 				<div className="bottom-side">
