@@ -22,7 +22,7 @@ export default function Account() {
 			const testLevel = 'A1';
 			const testScore = 85;
 			
-			const response = await fetch('http://localhost:5000/api/profile/test-level', {
+			const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/profile/test-level`, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
