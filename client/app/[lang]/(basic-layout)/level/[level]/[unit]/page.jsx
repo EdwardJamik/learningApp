@@ -5,6 +5,8 @@ import TestResultModal from '@/app/components/Modal/TestResultModal';
 import OptionTrainerModal from '@/app/components/Modal/OptionTrainerModal';
 import { useState, useEffect } from 'react';
 import { useParams, usePathname } from 'next/navigation';
+import CalendarTimePicker from '@/app/components/CalendarTimePicker/CalendarTimePicker'
+import ModalSuccesCall from '@/app/components/Modal/ModalSuccesCall'
 
 export default function CurrentUnit() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,6 +14,7 @@ export default function CurrentUnit() {
 	const [levelData, setLevelData] = useState(null);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
+	const [openCalendarId, setOpenCalendarId] = useState(null);
 	
 	const pathname = usePathname();
 	const params = useParams();
@@ -111,19 +114,19 @@ export default function CurrentUnit() {
 							</div>
 						</div>
 						
-						<div className="header-actions">
-							<button className="btn btn-secondary" onClick={() => changeModalView(!isModalOpen)}>
-								<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-									<path
-										d="M23 24.9996L25.536 17.6716C25.6053 17.4711 25.7354 17.2972 25.9082 17.1741C26.081 17.051 26.2879 16.9849 26.5 16.9849C26.7121 16.9849 26.919 17.051 27.0918 17.1741C27.2646 17.2972 27.3947 17.4711 27.464 17.6716L30 24.9996M23.697 22.9996H29.303M10 24.9996L14.039 15.3096C14.077 15.2185 14.1411 15.1406 14.2232 15.0859C14.3053 15.0312 14.4018 15.002 14.5005 15.002C14.5992 15.002 14.6957 15.0312 14.7778 15.0859C14.8599 15.1406 14.924 15.2185 14.962 15.3096L19 24.9996M11.304 21.9996H17.696"
-										stroke="#FE502D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-								</svg>
-								Вивчити слова
-							</button>
-							<button className="btn btn-primary btn-large">
-								Пробне заняття з викладачем
-							</button>
-						</div>
+						{/*<div className="header-actions">*/}
+						{/*	<button className="btn btn-secondary" onClick={() => changeModalView(!isModalOpen)}>*/}
+						{/*		<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">*/}
+						{/*			<path*/}
+						{/*				d="M23 24.9996L25.536 17.6716C25.6053 17.4711 25.7354 17.2972 25.9082 17.1741C26.081 17.051 26.2879 16.9849 26.5 16.9849C26.7121 16.9849 26.919 17.051 27.0918 17.1741C27.2646 17.2972 27.3947 17.4711 27.464 17.6716L30 24.9996M23.697 22.9996H29.303M10 24.9996L14.039 15.3096C14.077 15.2185 14.1411 15.1406 14.2232 15.0859C14.3053 15.0312 14.4018 15.002 14.5005 15.002C14.5992 15.002 14.6957 15.0312 14.7778 15.0859C14.8599 15.1406 14.924 15.2185 14.962 15.3096L19 24.9996M11.304 21.9996H17.696"*/}
+						{/*				stroke="#FE502D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>*/}
+						{/*		</svg>*/}
+						{/*		Вивчити слова*/}
+						{/*	</button>*/}
+						{/*	<button className="btn btn-primary btn-large">*/}
+						{/*		Пробне заняття з викладачем*/}
+						{/*	</button>*/}
+						{/*</div>*/}
 					</header>
 					
 					<div className="lessons-list">
@@ -169,6 +172,33 @@ export default function CurrentUnit() {
 										</svg>
 										Вивчити слова
 									</button>
+									{index === 0 &&
+										<div style={{position: 'relative', marginLeft: 'auto'}}>
+											<button
+												className="btn btn-buy calendar"
+												onClick={() =>
+													setOpenCalendarId(openCalendarId === lesson.id ? null : lesson.id)
+												}
+											>
+												Пробне заняття з викладачем
+											</button>
+											
+											{openCalendarId === lesson.id && (
+												<div>
+													<CalendarTimePicker
+														onConfirm={(booking) => {
+															console.log("Бронювання підтверджено:", booking);
+															alert(
+																`Бронювання підтверджено на ${booking.date.toLocaleDateString("uk-UA")} о ${booking.time}`
+															);
+															setOpenCalendarId(null);
+														}}
+													/>
+												</div>
+											)}
+										</div>
+									}
+								
 								</div>
 							</div>
 						))}
@@ -179,6 +209,7 @@ export default function CurrentUnit() {
 				isOpen={isModalOpen}
 				onClose={() => setIsModalOpen(false)}
 			/>
+
 		</>
 	);
 }

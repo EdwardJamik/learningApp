@@ -1,0 +1,246 @@
+.calendar {
+	position: absolute;
+	width: 412px;
+	max-width: 412px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 24px;
+	border: 2px solid #8b7fff;
+	padding: 24px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	top: 68px;
+	z-index: 9;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+@media (max-width: 480px) {
+	.calendar {
+		padding: 16px;
+		border-radius: 20px;
+	}
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+.navButton {
+	padding: 8px;
+	border: none;
+	background: transparent;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.navButton:hover {
+	background-color: #f3f4f6;
+}
+
+.navButton svg {
+	width: 24px;
+	height: 24px;
+}
+
+.monthTitle {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 0;
+}
+
+@media (max-width: 480px) {
+	.monthTitle {
+		font-size: 18px;
+	}
+}
+
+.weekDays {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.weekDay {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	color: #9ca3af;
+	padding: 8px 0;
+}
+
+.daysGrid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 8px;
+	margin-bottom: 32px;
+}
+
+.dayButton {
+	aspect-ratio: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background: transparent;
+	border-radius: 50%;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.dayButton.empty {
+	visibility: hidden;
+}
+
+.dayButton.past {
+	color: #d1d5db;
+	cursor: not-allowed;
+}
+
+.dayButton.today {
+	background-color: #f3f4f6;
+}
+
+.dayButton.selected {
+	background-color: #ff5733;
+	color: white !important;
+	transform: scale(1.1);
+}
+
+.dayButton:not(.past):not(.selected):not(.empty):hover {
+	background-color: #f3f4f6;
+}
+
+.dayButton:not(.past):not(.empty) {
+	color: black;
+}
+
+@media (max-width: 480px) {
+	.dayButton {
+		font-size: 16px;
+	}
+}
+
+.divider {
+	border-top: 1px solid #e5e7eb;
+	margin-bottom: 24px;
+}
+
+.timeSection {
+	margin-bottom: 24px;
+}
+
+.timeHeader {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 16px;
+}
+
+.timeHeader svg {
+	width: 20px;
+	height: 20px;
+}
+
+.timeHeader h3 {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.timeGrid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 8px;
+}
+
+@media (max-width: 480px) {
+	.timeGrid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.timeButton {
+	padding: 8px 12px;
+	border: 1px solid #e5e7eb;
+	background: white;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.timeButton.disabled {
+	color: #d1d5db;
+	background-color: #f9fafb;
+	cursor: not-allowed;
+	border-color: transparent;
+}
+
+.timeButton.selected {
+	background-color: #ff5733;
+	color: white;
+	border-color: #ff5733;
+	transform: scale(1.05);
+}
+
+.timeButton:not(.disabled):not(.selected):hover {
+	background-color: #f9fafb;
+}
+
+@media (max-width: 480px) {
+	.timeButton {
+		font-size: 13px;
+		padding: 6px 10px;
+	}
+}
+
+.summary {
+	text-align: center;
+	margin-bottom: 16px;
+	color: #374151;
+	font-size: 16px;
+}
+
+.confirmButton {
+	width: 100%;
+	padding: 16px;
+	border: none;
+	border-radius: 24px;
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.confirmButton.active {
+	background-color: #ff5733;
+}
+
+.confirmButton.active:hover {
+	background-color: #e64a2e;
+}
+
+.confirmButton.active:active {
+	transform: scale(0.98);
+}
+
+.confirmButton.disabled {
+	background-color: #d1d5db;
+	cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+	.confirmButton {
+		font-size: 16px;
+		padding: 14px;
+	}
+}

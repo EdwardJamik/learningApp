@@ -1,42 +1,105 @@
 'use client'
 import './dashboard.scss';
 import Link from 'next/link'
-import {useAuth} from '@/context/AuthContext'
-import {useRouter} from 'next/navigation'
-import {useEffect} from 'react'
+import { useAuth } from '@/context/AuthContext'
+import { useRouter } from 'next/navigation'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
+
+// Імпорти зображень
 import levelImage from '../../../assets/Dashboard/photostartlevel.png'
-import levelImage2 from '../../../assets/Dashboard/Frame 603.jpg'
+import levelImage2 from '../../../assets/Dashboard/a1.jpg'
+import levelImage3 from '../../../assets/Dashboard/a2.jpg'
+import levelImage4 from '../../../assets/Dashboard/a2+.jpg'
+import levelImage5 from '../../../assets/Dashboard/b1.jpg'
+import levelImage6 from '../../../assets/Dashboard/b1+.jpg'
+import levelImage7 from '../../../assets/Dashboard/b2.jpg'
+import levelImage8 from '../../../assets/Dashboard/b2+.jpg'
+import levelImage9 from '../../../assets/Dashboard/c1.jpg'
 
 export default function Account() {
-	const { user, loading, logout } = useAuth();
+	const { user, loading } = useAuth();
 	const router = useRouter();
+	const [isLevel, setLevel] = useState('');
+	
+	// Масив рівнів у правильному порядку
+	const levels = ['a1', 'a2', 'a2+', 'b1', 'b1+', 'b2', 'b2+', 'c1'];
+	
+	// Відповідність рівня та картинки
+	const levelImages = {
+		'a1': levelImage2,
+		'a2': levelImage3,
+		'a2+': levelImage4,
+		'b1': levelImage5,
+		'b1+': levelImage6,
+		'b2': levelImage7,
+		'b2+': levelImage8,
+		'c1': levelImage9,
+	};
 	
 	useEffect(() => {
-		console.log("Dashboard - User:", user, "Loading:", loading);
 		if (!loading && !user) {
-			router.push("/");
+			router.push('/');
 		}
 	}, [user, loading, router]);
 	
-	if (loading) return <div>
-		{/*Завантаження...*/}
-	</div>;
+	useEffect(() => {
+		if (user?.level)
+			setLevel(user.level.toLowerCase());
+		else
+			setLevel('');
+	}, [user?.level]);
+	
+	// Перехід на попередній рівень
+	const prevLevel = () => {
+		if (!isLevel) return; // якщо рівень ще не вибрано
+		const currentIndex = levels.indexOf(isLevel.toLowerCase());
+		if (currentIndex > 0) {
+			setLevel(levels[currentIndex - 1]);
+		}
+	};
+	
+	// Перехід на наступний рівень
+	const nextLevel = () => {
+		if (!isLevel) return; // якщо рівень ще не вибрано
+		const currentIndex = levels.indexOf(isLevel.toLowerCase());
+		if (currentIndex < levels.length - 1) {
+			setLevel(levels[currentIndex + 1]);
+		}
+	};
+	
+	if (loading) return <div>Завантаження...</div>;
 	if (!user) return null;
+	
 	return (
-		<>
-			<section className="golov-blor-new">
-				
-				<div className="box-blok-new">
-					<div className="one-section">
-						<div className="flex-section-golov">
-							<div className="baner-level">
-								{user?.level ?
-									<Image src={levelImage2} alt='Level'/>
-								:
-									<Image src={levelImage} alt='Level'/>
-								}
-							</div>
+		<section className="golov-blor-new">
+			<div className="box-blok-new">
+				<div className="one-section">
+					<div className="flex-section-golov">
+						
+						{/* Кнопка "назад" */}
+						<button className="back-button" onClick={prevLevel}>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path d="M8 15L1 8M1 8L8 1M1 8H15" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+							</svg>
+						</button>
+						
+						{/* Кнопка "вперед" */}
+						<button className="next-button" onClick={nextLevel}>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path d="M8 1L15 8M15 8L8 15M15 8L1 8" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+							</svg>
+						</button>
+						
+						{/* Банер рівня */}
+						<div className="baner-level">
+							{isLevel ? (
+								<Image src={levelImages[isLevel]} alt={isLevel} />
+							) : (
+								<Image src={levelImage} alt="Level" />
+							)}
+						</div>
+						
 							<div className="level-info-div">
 								<div className="info-level">
 									<div className="zagolovok-level">
@@ -55,59 +118,131 @@ export default function Account() {
 									<div className="level-pokaz-div">
 										
 										<div className="text-level-div">
-											{user.level ?
+											{user?.level ? (
 												<>
-													<h2 className="zagolovok-lev-h2">{user.level}</h2>
-													<h2 className="zagolovok-lev-h22">Elementary</h2>
+													{isLevel?.toLowerCase() === 'a1' &&
+														<>
+															<h2 className="zagolovok-lev-h2">{isLevel?.toUpperCase()}</h2>
+															<h2 className="zagolovok-lev-h22">Beginner / Starter</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'a2' &&
+														<>
+															<h2 className="zagolovok-lev-h2">{isLevel?.toUpperCase()}</h2>
+															<h2 className="zagolovok-lev-h22">Elementary</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'a2+' &&
+														<>
+															<h2 className="zagolovok-lev-h2">{isLevel?.toUpperCase()}</h2>
+															<h2 className="zagolovok-lev-h22">Pre-Intermediate</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'b1' &&
+														<>
+															<h2 className="zagolovok-lev-h2">{isLevel?.toUpperCase()}</h2>
+															<h2 className="zagolovok-lev-h22">Strong Intermediate</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'b1+' &&
+														<>
+															<h2 className="zagolovok-lev-h2">{isLevel?.toUpperCase()}</h2>
+															<h2 className="zagolovok-lev-h22">Upper-Intermediate</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'b2' &&
+														<>
+															<h2 className="zagolovok-lev-h2">{isLevel?.toUpperCase()}</h2>
+															<h2 className="zagolovok-lev-h22">Upper Intermediate</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'b2+' &&
+														<>
+															<h2 className="zagolovok-lev-h2">{isLevel?.toUpperCase()}</h2>
+															<h2 className="zagolovok-lev-h22">Pre-Advanced</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'c1' &&
+														<>
+															<h2 className="zagolovok-lev-h2">{isLevel?.toUpperCase()}</h2>
+															<h2 className="zagolovok-lev-h22">Advanced</h2>
+														</>
+													}
 												</>
-												:
+											) : (
 												<h2 className="zagolovok-lev-h2">Визначи свій рівень</h2>
-											}
-											{user.level ?
+											)}
+											
+											{user?.level ? (
 												<>
-													<h2 className="podzagolovok-level">Ви можете використовувати прості слова та повсякденні фрази, щоб розповісти про себе та оточення.</h2>
+													{isLevel?.toLowerCase() === 'a1' &&
+														<>
+															<h2 className="podzagolovok-level">Я знаю кілька слів. Говорю повільно. Але мене вже чують.</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'a2' &&
+														<>
+															<h2 className="podzagolovok-level">Я можу розповісти про себе. Помиляюся — і йду далі.</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'a2+' &&
+														<>
+															<h2 className="podzagolovok-level">Навіть без слів я поясню.
+																Головне — щоб ти зрозумів.</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'b1' &&
+														<>
+															<h2 className="podzagolovok-level">Я можу пояснити, чому думаю так. І зробити це впевнено.</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'b1+' &&
+														<>
+															<h2 className="podzagolovok-level">Ви можете вільно спілкуватися з носіями мови та розуміти складні тексти на різні теми.</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'b2' &&
+														<>
+															<h2 className="podzagolovok-level">Я не боюся пауз. Я можу бути собою англійською.</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'b2+' &&
+														<>
+															<h2 className="podzagolovok-level">Я змінюю стиль і настрій. Мова — мій інструмент.</h2>
+														</>
+													}
+													{isLevel?.toLowerCase() === 'c1' &&
+														<>
+															<h2 className="podzagolovok-level">Я думаю, жартую й відчуваю англійською. Це вже дім.</h2>
+														</>
+													}
 												</>
-												:
+											) : (
 												<h2 className="podzagolovok-level">Ти не впевнений, наскільки добре знаєш мову? Визнач свій
 													рівень!</h2>
-											}
-										
+											)}
 										
 										</div>
 										<div className="progress-wrapper">
 											<svg viewBox="0 0 36 36" className="circular-chart orange" width="100" height="100">
-										
+												
 												<path
 													className="circle-bg"
 													d="M18 2.0845
-       a 15.9155 15.9155 0 0 1 0 31.831
-       a 15.9155 15.9155 0 0 1 0 -31.831"
+										       a 15.9155 15.9155 0 0 1 0 31.831
+										       a 15.9155 15.9155 0 0 1 0 -31.831"
 													stroke="#eee"
 													strokeWidth="2"
 													fill="none"
 												/>
-												
-				{/*								<path*/}
-				{/*									className="circle"*/}
-				{/*									d="M18 2.0845*/}
-       {/*a 15.9155 15.9155 0 0 1 0 31.831*/}
-       {/*a 15.9155 15.9155 0 0 1 0 -31.831"*/}
-				{/*									stroke="#ff6600"*/}
-				{/*									strokeWidth="2"*/}
-				{/*									fill="none"*/}
-				{/*									strokeDasharray="100, 100"*/}
-				{/*									strokeDashoffset="100"  // 100% приховано → пустий*/}
-				{/*								/>*/}
 											</svg>
-											
-											
-											<div className="percentage">{user.level ? '0%' : '?' }</div>
+											<div className="percentage">{user.level ? '0%' : '?'}</div>
 										</div>
 									
 									</div>
 									<div className="level-btn-div">
 										{user.level ?
-										<Link href={'/level/a1'} className="level-btn">Вдосконалити даний рівень</Link>
+											<Link href={`/level/${isLevel?.toLowerCase()}`} className="level-btn">Вдосконалити даний рівень</Link>
 											:
 											<Link href={'/getlevel'} className="level-btn">Дізнатись свій рівень</Link>
 										}
@@ -117,8 +252,8 @@ export default function Account() {
 						</div>
 					</div>
 					<div className="two-section">
-						
-						<div className="flex-two-section">
+					
+					<div className="flex-two-section">
 							<div className="div-plaz">
 								<div className="info-total-progres">
 									<div className="icon-total-fine">
@@ -245,6 +380,5 @@ export default function Account() {
 				</div>
 			
 			</section>
-		</>
 	);
 }
