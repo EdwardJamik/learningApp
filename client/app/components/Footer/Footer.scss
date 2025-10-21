@@ -18,16 +18,19 @@ footer {
 			align-items: center;
 			gap: 20px;
 
-			& a{
-					width: 100%;
+			& a {
+				width: 100%;
+				max-width: 322px;
 
-				&.button-filled{
+				&.button-filled {
 					max-width: 190px;
 				}
 			}
-			& nav{
+
+			& nav {
 				width: 100%;
-				& ul{
+
+				& ul {
 					justify-content: center;
 				}
 			}
@@ -41,6 +44,7 @@ footer {
 			@media (max-width: 1120px) {
 				flex-direction: column;
 			}
+
 			& .logo {
 				display: flex;
 				align-items: center;
@@ -103,7 +107,7 @@ footer {
 
 						transition: all .4s;
 
-						&:hover{
+						&:hover {
 							color: #fe502d;
 						}
 					}
@@ -113,11 +117,16 @@ footer {
 			& .right-side {
 				display: flex;
 				align-items: center;
-				width: 100%;
 				gap: 20px;
+
 
 				@media screen and (max-width: 1120px) {
 					justify-content: center;
+				}
+
+				& a{
+					margin-left: auto;
+					white-space: nowrap;
 				}
 
 				& a:not(.button-filled) {
@@ -126,7 +135,7 @@ footer {
 
 					transition: all .4s;
 
-					&:hover{
+					&:hover {
 						color: #fe502d;
 					}
 				}
@@ -144,9 +153,30 @@ footer {
 
 		& .bottom-side {
 			padding-top: 40px;
-			text-align: center;
-			font-size: 14px;
-			color: #697282;
+
+			display: flex;
+			align-items: center;
+
+			& p {
+				display: flex;
+				align-items: center;
+				gap: 16px;
+				text-align: center;
+				font-size: 16px;
+				color: #4c4c4c;
+				margin: 0 auto;
+				padding-left: 290px;
+
+				& a {
+					color: #4c4c4c;
+					transition: all .4s;
+
+					&:hover {
+						color: #fe502d;
+					}
+				}
+			}
+
 		}
 	}
 }

@@ -40,11 +40,7 @@ const Footer = () => {
 					</nav>
 					
 					<div className="right-side">
-						<div style={{display: 'flex', flexDirection: 'column', gap: '8px', justifyContent: 'space-around'}}>
-							
-							<a href="#" style={{textAlign: 'center'}}>Договір оферти</a>
-							
-							<a href="#">Політика конфіденційності</a></div>
+						
 						
 						{user ?
 							<><Link href={`/${locale !== 'ru' ? 'dashboard' : 'ru/dashboard'}`}
@@ -58,7 +54,10 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="bottom-side">
-					<p>© 2025 Онлайн-школа англійської мови. Всі права захищено.</p>
+					<p>© 2025 Онлайн-школа англійської мови. Всі права захищено.
+						<Link target='_blank' href={`${locale !== 'ru' ? 'https://docs.google.com/document/d/1QvcJgZTmH--Rp8Z6W0sqvdvEb-IVSCJ8jTbvtuKHJMY/edit?tab=t.0' : 'https://docs.google.com/document/d/1r8bnmKO_46bWgbBr1Qjn1fGZLvfHhN0RfDgGxDKlhN4/edit?tab=t.0'}`}>Політика конфіденційності</Link>
+						<Link target='_blank' href={`${locale !== 'ru' ? 'https://docs.google.com/document/d/1-AjEH3rB7HuHsLwsy6FP5lMy68IRXktxyEeWf0REuI4/edit?tab=t.0' : 'https://docs.google.com/document/d/1UcwTSlWTwH7pshR_7g0IC25Zct1sDm8NPtLWo868I9I/edit?tab=t.0'}`}>Договір оферти</Link>
+					</p>
 				</div>
 			</div>
 		</footer>

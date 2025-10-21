@@ -1,0 +1,184 @@
+"use client";
+import './unit.scss';
+import Link from 'next/link';
+import TestResultModal from '@/app/components/Modal/TestResultModal';
+import OptionTrainerModal from '@/app/components/Modal/OptionTrainerModal';
+import { useState, useEffect } from 'react';
+import { useParams, usePathname } from 'next/navigation';
+
+export default function CurrentUnit() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [moduleData, setModuleData] = useState(null);
+	const [levelData, setLevelData] = useState(null);
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState(null);
+	
+	const pathname = usePathname();
+	const params = useParams();
+	
+	useEffect(() => {
+		async function fetchModuleData() {
+			try {
+				const pathParts = pathname.split('/').filter(Boolean);
+				const levelId = pathParts[pathParts.indexOf('level') + 1];
+				const moduleId = pathParts[pathParts.indexOf('level') + 2];
+				
+				if (!levelId || !moduleId) {
+					throw new Error('Невірний URL');
+				}
+				
+				const response = await fetch('/api/levels');
+				if (!response.ok) {
+					throw new Error('Помилка завантаження даних');
+				}
+				const data = await response.json();
+				
+				// Знаходимо рівень
+				const currentLevel = data.levels.find(level => level.id === levelId);
+				if (!currentLevel) {
+					throw new Error('Рівень не знайдено');
+				}
+				
+				// Знаходимо модуль
+				const currentModule = currentLevel.modules.find(module => module.id === moduleId);
+				if (!currentModule) {
+					throw new Error('Модуль не знайдено');
+				}
+				
+				setLevelData(currentLevel);
+				setModuleData(currentModule);
+			} catch (err) {
+				setError(err.message);
+			} finally {
+				setLoading(false);
+			}
+		}
+		
+		fetchModuleData();
+	}, [pathname]);
+	
+	const changeModalView = (status) => {
+		setIsModalOpen(status);
+	};
+	
+	if (loading) {
+		return (
+			<section className="current-unit">
+				<h1 className="title">
+					<div className="container">Завантаження...</div>
+				</h1>
+			</section>
+		);
+	}
+	
+	if (error || !moduleData || !levelData) {
+		return (
+			<section className="current-unit">
+				<h1 className="title">
+					<div className="container">Помилка: {error || 'Дані не знайдено'}</div>
+				</h1>
+			</section>
+		);
+	}
+	
+	// Підрахунок прогресу (можна додати логіку з бекенду)
+	const completedLessons = 0; // Тут буде логіка з бекенду
+	const totalLessons = moduleData.lessons.length;
+	const progressPercent = totalLessons > 0 ? Math.round((completedLessons / totalLessons) * 100) : 0;
+	
+	return (
+		<>
+			<section className="current-unit">
+				<h1 className="title">
+					<div className="container">
+						{levelData.level.toUpperCase()} / {levelData.title}
+					</div>
+				</h1>
+				<div className="container">
+					<header className="lesson-header">
+						<h1 className="lesson-title">{moduleData.title}</h1>
+						
+						<ol className="lesson-list">
+							{moduleData.lessons.map((lesson, index) => (
+								<li key={lesson.id} dangerouslySetInnerHTML={{ __html: lesson.title }} />
+							))}
+						</ol>
+						
+						<div className="progress-section">
+							<p className="progress-text">Завершено: {progressPercent}%</p>
+							<div className="progress-bar">
+								<div className="progress-fill" style={{ width: `${progressPercent}%` }}></div>
+							</div>
+						</div>
+						
+						<div className="header-actions">
+							<button className="btn btn-secondary" onClick={() => changeModalView(!isModalOpen)}>
+								<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+									<path
+										d="M23 24.9996L25.536 17.6716C25.6053 17.4711 25.7354 17.2972 25.9082 17.1741C26.081 17.051 26.2879 16.9849 26.5 16.9849C26.7121 16.9849 26.919 17.051 27.0918 17.1741C27.2646 17.2972 27.3947 17.4711 27.464 17.6716L30 24.9996M23.697 22.9996H29.303M10 24.9996L14.039 15.3096C14.077 15.2185 14.1411 15.1406 14.2232 15.0859C14.3053 15.0312 14.4018 15.002 14.5005 15.002C14.5992 15.002 14.6957 15.0312 14.7778 15.0859C14.8599 15.1406 14.924 15.2185 14.962 15.3096L19 24.9996M11.304 21.9996H17.696"
+										stroke="#FE502D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+								</svg>
+								Вивчити слова
+							</button>
+							<button className="btn btn-primary btn-large">
+								Пробне заняття з викладачем
+							</button>
+						</div>
+					</header>
+					
+					<div className="lessons-list">
+						{moduleData.lessons.map((lesson, index) => (
+							<div key={lesson.id} className="lesson-card">
+								<div className="lesson-header">
+									<h3
+										className="lesson-title"
+										dangerouslySetInnerHTML={{ __html: `${index + 1}. ${lesson.title}` }}
+									/>
+									<div className="lesson-progress">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"
+										     viewBox="0 0 80 80" fill="none">
+											<path
+												d="M80 40C80 62.0914 62.0914 80 40 80C17.9086 80 0 62.0914 0 40C0 17.9086 17.9086 0 40 0C62.0914 0 80 17.9086 80 40ZM8 40C8 57.6731 22.3269 72 40 72C57.6731 72 72 57.6731 72 40C72 22.3269 57.6731 8 40 8C22.3269 8 8 22.3269 8 40Z"
+												fill="#EAEAEA"/>
+											<path
+												d="M31.6 46.187C30.6367 46.187 29.8207 45.9433 29.152 45.456C28.4947 44.9687 27.9903 44.266 27.639 43.348C27.299 42.43 27.129 41.3023 27.129 39.965C27.129 38.639 27.299 37.5227 27.639 36.616C27.979 35.698 28.4833 35.0067 29.152 34.542C29.8207 34.066 30.6367 33.828 31.6 33.828C32.5747 33.828 33.3907 34.066 34.048 34.542C34.7167 35.0067 35.221 35.6923 35.561 36.599C35.901 37.5057 36.071 38.6277 36.071 39.965C36.071 41.291 35.8953 42.4187 35.544 43.348C35.204 44.266 34.7053 44.9687 34.048 45.456C33.3907 45.9433 32.5747 46.187 31.6 46.187ZM31.6 44.045C32.2573 44.045 32.7447 43.722 33.062 43.076C33.3793 42.4187 33.538 41.3817 33.538 39.965C33.538 38.5483 33.3793 37.5283 33.062 36.905C32.756 36.2817 32.2687 35.97 31.6 35.97C30.9427 35.97 30.4553 36.2817 30.138 36.905C29.8207 37.5283 29.662 38.5483 29.662 39.965C29.662 41.3817 29.8207 42.4187 30.138 43.076C30.4553 43.722 30.9427 44.045 31.6 44.045ZM42.1504 46.51L40.5014 45.541L47.4714 33.505L49.1034 34.474L42.1504 46.51ZM40.4334 41.155C39.776 41.155 39.215 41.0077 38.7504 40.713C38.2857 40.407 37.9287 39.982 37.6794 39.438C37.4414 38.8827 37.3224 38.231 37.3224 37.483C37.3224 36.361 37.5944 35.4713 38.1384 34.814C38.6937 34.1567 39.4587 33.828 40.4334 33.828C41.0794 33.828 41.6347 33.981 42.0994 34.287C42.5754 34.5817 42.9324 35.001 43.1704 35.545C43.4197 36.089 43.5444 36.735 43.5444 37.483C43.5444 38.231 43.4197 38.8827 43.1704 39.438C42.9324 39.982 42.581 40.407 42.1164 40.713C41.6517 41.0077 41.0907 41.155 40.4334 41.155ZM40.4334 39.523C40.7734 39.523 41.034 39.3643 41.2154 39.047C41.3967 38.7183 41.4874 38.197 41.4874 37.483C41.4874 36.769 41.391 36.259 41.1984 35.953C41.017 35.6357 40.762 35.477 40.4334 35.477C40.0934 35.477 39.8327 35.63 39.6514 35.936C39.47 36.242 39.3794 36.7577 39.3794 37.483C39.3794 38.2083 39.47 38.7297 39.6514 39.047C39.8327 39.3643 40.0934 39.523 40.4334 39.523ZM49.1884 46.187C48.531 46.187 47.97 46.0397 47.5054 45.745C47.0407 45.439 46.6837 45.0083 46.4344 44.453C46.1964 43.8977 46.0774 43.246 46.0774 42.498C46.0774 41.376 46.3494 40.492 46.8934 39.846C47.4487 39.1887 48.2137 38.86 49.1884 38.86C49.8457 38.86 50.4067 39.0073 50.8714 39.302C51.336 39.5967 51.6874 40.016 51.9254 40.56C52.1747 41.104 52.2994 41.75 52.2994 42.498C52.2994 43.246 52.1747 43.8977 51.9254 44.453C51.6874 45.0083 51.336 45.439 50.8714 45.745C50.4067 46.0397 49.8457 46.187 49.1884 46.187ZM49.1884 44.538C49.5284 44.538 49.789 44.3793 49.9704 44.062C50.1517 43.7333 50.2424 43.212 50.2424 42.498C50.2424 41.784 50.146 41.274 49.9534 40.968C49.772 40.6507 49.517 40.492 49.1884 40.492C48.8484 40.492 48.5877 40.645 48.4064 40.951C48.225 41.257 48.1344 41.7727 48.1344 42.498C48.1344 43.2347 48.225 43.7617 48.4064 44.079C48.5877 44.385 48.8484 44.538 49.1884 44.538Z"
+												fill="black"/>
+										</svg>
+									</div>
+								</div>
+								<p className="lesson-status">Завершено: 0%</p>
+								<div className="lesson-actions">
+									{/* Умовне відображення кнопки - можна додати логіку */}
+									{index === 1 ? (
+										<button className="btn btn-purchased">Куплено</button>
+									) : (
+										<button className="btn btn-buy">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<path
+													d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11M5 11H19C20.1046 11 21 11.8954 21 13V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V13C3 11.8954 3.89543 11 5 11Z"
+													stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+											</svg>
+											Купити розділ
+										</button>
+									)}
+									<button className="btn btn-secondary" onClick={() => changeModalView(!isModalOpen)}>
+										<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<path
+												d="M23 24.9996L25.536 17.6716C25.6053 17.4711 25.7354 17.2972 25.9082 17.1741C26.081 17.051 26.2879 16.9849 26.5 16.9849C26.7121 16.9849 26.919 17.051 27.0918 17.1741C27.2646 17.2972 27.3947 17.4711 27.464 17.6716L30 24.9996M23.697 22.9996H29.303M10 24.9996L14.039 15.3096C14.077 15.2185 14.1411 15.1406 14.2232 15.0859C14.3053 15.0312 14.4018 15.002 14.5005 15.002C14.5992 15.002 14.6957 15.0312 14.7778 15.0859C14.8599 15.1406 14.924 15.2185 14.962 15.3096L19 24.9996M11.304 21.9996H17.696"
+												stroke="#FE502D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+										</svg>
+										Вивчити слова
+									</button>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+			<OptionTrainerModal
+				isOpen={isModalOpen}
+				onClose={() => setIsModalOpen(false)}
+			/>
+		</>
+	);
+}

@@ -1,0 +1,71 @@
+{
+  "levels": [
+    {
+      "id": "a1",
+      "title": "Beginner / Starter",
+      "description":"Я знаю кілька слів. Говорю повільно. Але мене вже чують.",
+      "price": 12345,
+      "modules": [
+        {
+          "id": "a1-1",
+          "title": "Welcome! Where are you from?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a1-1-1",
+              "title": "Hello! <span className='orange'>Present simple be: I, you</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-1-2",
+              "title": "Two jobs. <span className='orange'>Present simple be: he, she it</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-1-3",
+              "title": "Checking in. <span className='orange'>How to ... ask and answer simple questions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-1-4",
+              "title": "What’s your name? <span className='orange'>Singular and plural nouns; a, an; have, has</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a1-2",
+          "title": "People. Where are you now?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a1-2-1",
+              "title": "Numbers 1–100",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}   

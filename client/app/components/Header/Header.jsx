@@ -9,6 +9,7 @@ import Logo from '../../assets/Header/logo.png'
 import LanguageSwitch from '@/app/components/LanguageSwitch/LanguageSwitch'
 import {useTranslation} from '@/context/TranslationProvider'
 import {useAuth} from '@/context/AuthContext'
+import {usePathname} from 'next/navigation'
 
 const Header = () => {
 	const { user, loading, logout } = useAuth();
@@ -20,7 +21,6 @@ const Header = () => {
 		const overlay = document.querySelector('.overlay');
 		const closeButton = document.querySelector('.button-close');
 		const body = document.body;
-		
 		
 		if (!menuToggle || !overlay || !closeButton) return;
 		
@@ -52,6 +52,11 @@ const Header = () => {
 			closeButton.removeEventListener('click', handleCloseClick);
 		};
 	}, []);
+	
+	const pathname = usePathname();
+	
+	if (pathname.includes('/admin')) return null;
+
 	
 	return (
 		<>
@@ -114,7 +119,7 @@ const Header = () => {
 								onMouseLeave={() => setMenuOpen(false)}
 							>
 								<div className="container">
-									<div className="name">Liudmyla Kohut</div>
+									<div className="name">{user?.name}</div>
 									<div className="level">Intermediate</div>
 									<Link href={`/${locale !== 'ru' ? 'profile' : 'ru/profile'}`} className="profile-link">Профіль</Link>
 									<Link href="#" onClick={()=>logout()} className="button-filled button-exit">Вихід</Link>

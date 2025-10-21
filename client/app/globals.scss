@@ -298,7 +298,7 @@ header {
 .btn-secondary {
   background: transparent;
   color: #fe502d;
-  border: 2px solid #fe502d;
+  border: 2px solid #fe502d !important;
   flex: 1;
 
   .btn-icon {
@@ -460,7 +460,6 @@ header {
             width: 100%;
             max-height: 60px;
             padding: 19px 10px;
-            font-size: 20px;
             max-width: 100%;
             font-size: 17px;
           }

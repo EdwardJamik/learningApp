@@ -46,14 +46,14 @@ export const updateProfile = async (req, res) => {
 		}
 		
 		const decoded = jwt.verify(token, process.env.JWT_SECRET);
-		const { first_name, last_name, phone, telegram, gender } = req.body;
-		console.log(first_name)
+		const { name, last_name, phone, telegram, gender } = req.body;
+		
 		const result = await pool.query(
 			`UPDATE users
-       SET first_name = $1, last_name = $2, phone = $3, telegram = $4, gender = $5
+       SET name = $1, last_name = $2, phone = $3, telegram = $4, gender = $5
        WHERE id = $6
        RETURNING id, name, first_name, last_name, email, phone, telegram, gender, avatar_url`,
-			[first_name, last_name, phone, telegram, gender, decoded.id]
+			[name, last_name, phone, telegram, gender, decoded.id]
 		);
 		
 		const user = result.rows[0];

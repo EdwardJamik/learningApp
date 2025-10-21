@@ -12,7 +12,7 @@
 		background-size: cover;
 		background-position: right bottom;
 		border-radius: 40px;
-		padding: 0 6dvw;
+		max-width: 100%;
 
 		@media screen and (max-width: 1210px) {
 			padding: 0 14px;
@@ -68,12 +68,13 @@
 				width: 100%;
 			}
 
-			& .title {
+			& > .title {
 				position: relative;
 				display: flex;
 				align-items: flex-end;
 				width: 612px;
 				z-index: 2;
+				background-image: none;
 				@media screen and (max-width: 1120px) {
 					align-items: center;
 					gap: 20px;

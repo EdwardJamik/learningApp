@@ -8,7 +8,7 @@ export default function Account() {
 	const router = useRouter();
 	
 	const [profile, setProfile] = useState({
-		first_name: '',
+		name: '',
 		last_name: '',
 		phone: '',
 		telegram: '',
@@ -45,7 +45,7 @@ export default function Account() {
 					const data = await res.json();
 					
 					setProfile({
-						first_name: data.user.first_name || '',
+						name: data.user.name || '',
 						last_name: data.user.last_name || '',
 						phone: data.user.phone || '',
 						telegram: data.user.telegram || '',
@@ -310,10 +310,10 @@ export default function Account() {
 											<span className="span-div">Ваше ім'я</span>
 											<input
 												className="ac-input"
-												name="first_name"
+												name="name"
 												type="text"
 												placeholder="Ваше ім'я"
-												value={profile.first_name}
+												value={profile.name}
 												onChange={handleInputChange}
 											/>
 										</div>

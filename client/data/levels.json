@@ -1,0 +1,2828 @@
+{
+  "levels": [
+    {
+      "id": "a1",
+      "level": "a1",
+      "title": "Beginner / Starter",
+      "description":"Я знаю кілька слів. Говорю повільно. Але мене вже чують.",
+      "price": 12345,
+      "modules": [
+        {
+          "id": "a1-1",
+          "title": "Welcome! Where are you from?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a1-1-1",
+              "title": "Hello! <span class='orange'>Present simple be: I, you</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-1-2",
+              "title": "Two jobs <span class='orange'>Present simple be: he, she it</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-1-3",
+              "title": "Checking in <span class='orange'>How to ... ask and answer simple questions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-1-4",
+              "title": "What’s your name? <span class='orange'>Singular and plural nouns; a, an; have, has</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a1-2",
+          "title": "People. Where are you now?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a1-2-1",
+              "title": "Where are they? <span class='orange'>Present simple be: we, you, they</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-2-2",
+              "title": "Family and friends <span class='orange'>Possessive adjectives</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-2-3",
+              "title": "Small talk <span class='orange'>How to ... have sport coversations</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-2-4",
+              "title": "Best home cook <span class='orange'>wh- questions + be</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a1-3",
+          "title": "Things. What's your favourite thing?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a1-3-1",
+              "title": "Favourites <span class='orange'>Possessive's</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-3-2",
+              "title": "What's on your desk? <span class='orange'>Present simple have + yes/no questions (l,you,we,they)</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-3-3",
+              "title": "How much is it? <span class='orange'>How to ... shop for clothes</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-3-4",
+              "title": "Shopping <span class='orange'>Likes, dislikes and opinions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a1-4",
+          "title": "Every day. What's your favourite music?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a1-4-1",
+              "title": "Time for lunch! <span class='orange'>Adverbs of frequency</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-4-2",
+              "title": "A day in the life <span class='orange'>Present simple: reqular verbs(he,she,it)</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-4-3",
+              "title": "Can i have? <span class='orange'>How to ... order in a cafè</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-4-4",
+              "title": "Earth from space <span class='orange'>Present simple: yes/no questions (he,she,it)</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a1-5",
+          "title": "Action. Tell me about your job.",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a1-5-1",
+              "title": "Good colleagues <span class='orange'>Object pronouns</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-5-2",
+              "title": "Yes, I can! <span class='orange'>Can for ability</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-5-3",
+              "title": "Can you help me? <span class='orange'>How to ... make requests and offers</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-5-4",
+              "title": "Birthday! <span class='orange'>Ordinal numbers; dates</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a1-6",
+          "title": "Where? Where are you and what can you see?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a1-6-1",
+              "title": "Lost <span class='orange'>Prepositions of place</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-6-2",
+              "title": "A great place to live <span class='orange'>There is, there are</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-6-3",
+              "title": "Where are you? <span class='orange'>How to ... ask where a place is</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-6-4",
+              "title": "The travel show <span class='orange'>the</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a1-7",
+          "title": "Healthy lives. Do you eat healthy food?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a1-7-1",
+              "title": "The little things <span class='orange'>Present simple: wh- questions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-7-2",
+              "title": "Heroes <span class='orange'>Was, were</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-7-3",
+              "title": "What's wrong? <span class='orange'>How to ... say you're not well</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-7-4",
+              "title": "Focus on fitness <span class='orange'>Imperatives</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a1-8",
+          "title": "Time out. How was your last holiday?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a1-8-1",
+              "title": "Weekend break <span class='orange'>Past simple: reqular verbs</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-8-2",
+              "title": "Going out, staying in <span class='orange'>Past simple: irregular verbs</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-8-3",
+              "title": "A ticket to ... ? <span class='orange'>How to ... buy a travel ticket</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a1-8-4",
+              "title": "Kodo drummers <span class='orange'>want, would like</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2",
+      "level": "a2",
+      "title": "Elementary",
+      "description":"Я можу розповісти про себе. Помиляюся — і йду далі.",
+      "price": 12345,
+      "modules": [
+        {
+          "id": "a2-1",
+          "title": "Me and you. Who are you?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-1-1",
+              "title": "Hello! <span class='orange'>Present simple: I, you, we, they</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-1-2",
+              "title": "Same but different <span class='orange'>Present simple: he, she it</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-1-3",
+              "title": "Lets's meet <span class='orange'>How to ... make suggestions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-1-4",
+              "title": "Family and friends <span class='orange'>Possessive 's, s'</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-2",
+          "title": "Lifestyle. What food do you like and dislike?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-2-1",
+              "title": "Can't live without it <span class='orange'>Countable and uncountable nouns: a,an, same, any</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-2-2",
+              "title": "Your lifestyle and you <span class='orange'>Adverbs and phrases of frequency</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-2-3",
+              "title": "Eating out <span class='orange'>How to ... order a meal in a restaurant</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-2-4",
+              "title": "The Indian relay <span class='orange'>like, hate, love + -ing</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-3",
+          "title": "Home. Do you ever have visitors staying in your home?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-3-1",
+              "title": "Come in <span class='orange'>This, that, these, those; here, there</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-3-2",
+              "title": "Too much stuff <span class='orange'>Have got</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-3-3",
+              "title": "What can I bring? <span class='orange'>How to ... make invitations and offers</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-3-4",
+              "title": "Your neighbourhood <span class='orange'>There is, there are</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-4",
+          "title": "This world. Do you enjoy quizzes?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-4-1",
+              "title": "What a decade! <span class='orange'>Past simple of be: was,were</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-4-2",
+              "title": "Life in numbers <span class='orange'>How much, how many; how + adjective</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-4-3",
+              "title": "Where can I get? <span class='orange'>How to ... get help in shops</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-4-4",
+              "title": "Sakura time <span class='orange'>Should, shouldn't; imperatives</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-5",
+          "title": "The past. When you were a child, what was your favourite thing?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-5-1",
+              "title": "Then and now <span class='orange'>Past simple: regular verbs</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-5-2",
+              "title": "What went wrong? <span class='orange'>Past simple: irregular verbs; wh- questions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-5-3",
+              "title": "Sorry, I am late <span class='orange'>How to ... apologise and make excuses</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-5-4",
+              "title": "My weekend was ... <span class='orange'>Adjectives and modifiers</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-6",
+          "title": "Out and about. Where do you spend time when you are in town?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-6-1",
+              "title": "Meet me in town <span class='orange'>Present continuous</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-6-2",
+              "title": "My way <span class='orange'>Comparative adjectives</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-6-3",
+              "title": "Getting around <span class='orange'>How to ... give directions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-6-4",
+              "title": "Cities: nature's new wild <span class='orange'>Prepositions and adverbs of movement</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-7",
+          "title": "Work. What job would you most like to do",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-7-1",
+              "title": "Odd jobs <span class='orange'>Articles: a, an, the, zero</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-7-2",
+              "title": "An extra day <span class='orange'>Present simple and present continuous</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-7-3",
+              "title": "I am calling to check ... <span class='orange'>How to ... phone for information</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-7-4",
+              "title": "Would you like to ... ? <span class='orange'>Verbs and to infinitive</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-8",
+          "title": "Travellers. What place in the world would you most like to visit?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-8-1",
+              "title": "Trip advice <span class='orange'>Superlative adjectives</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-8-2",
+              "title": "Surprise travel <span class='orange'>Be going to</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-8-3",
+              "title": "At a hotel <span class='orange'>How to ... make requests and offers in a hotel</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-8-4",
+              "title": "Artic academy <span class='orange'>Adverbs of manner</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2-plus",
+      "level": "a2+",
+      "title": "Pre-Intermediate",
+      "description":"Навіть без слів я поясню. Головне — щоб ти зрозумів.",
+      "price": 12345,
+      "modules": [
+        {
+          "id": "a2-plus-1",
+          "title": "My life. Where were you born and where do you live now?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-plus-1-1",
+              "title": "Something in common <span class='orange'>Questions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-1-2",
+              "title": "Nice job <span class='orange'>Present simple and continuous</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-1-3",
+              "title": "You can do it! <span class='orange'>How to ... encourage people</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-1-4",
+              "title": "I love cooking! <span class='orange'>Verb + -ing form</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-plus-2",
+          "title": "Help. What's your favourite animal?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-plus-2-1",
+              "title": "To the rescue! <span class='orange'>Past simple and continuous</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-2-2",
+              "title": "Oops! <span class='orange'>Definite article: the</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-2-3",
+              "title": "How can I help? <span class='orange'>How to ... make and accept offers</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-2-4",
+              "title": "Difficult situations <span class='orange'>all, same, both, none of them</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-plus-3",
+          "title": "Learn. What do you like reading?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-plus-3-1",
+              "title": "A helping hand <span class='orange'>Have to, don't have to, can't</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-3-2",
+              "title": "I saw it on TV <span class='orange'>Subject and object questions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-3-3",
+              "title": "Life hacks <span class='orange'>How to ... give instructions and check understanding</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-3-4",
+              "title": "School rules <span class='orange'>Had to, didn't have to, couldn't</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-plus-4",
+          "title": "Try this. When was the last time you tried something new?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-plus-4-1",
+              "title": "I've never... <span class='orange'>Present perfect simple(1)</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-4-2",
+              "title": "World record <span class='orange'>Comparatives and superlatives</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-4-3",
+              "title": "The perfect gift <span class='orange'>How to ... make suggestions and recommendations</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-4-4",
+              "title": "A taste of the Bayous <span class='orange'>Verbs of sensation + adjective or like</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-plus-5",
+          "title": "Things. Do you collect anything?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-plus-5-1",
+              "title": "Lucky find <span class='orange'>Possessive pronouns, whose, this/that, there/then</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-5-2",
+              "title": "The world of 'slow' <span class='orange'>Quantifiers</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-5-3",
+              "title": "It's the best! <span class='orange'>How to ... talk about a product</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-5-4",
+              "title": "Can you lend me your ... ? <span class='orange'>Verbs with two objects</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-plus-6",
+          "title": "Fit and well. Which do your prefer - playing sport or watching ... ?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-plus-6-1",
+              "title": "Sport for all <span class='orange'>Adverbs of frequency and manner</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-6-2",
+              "title": "Stressed! <span class='orange'>Present perfect simple(2)</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-6-3",
+              "title": "How do you feel? <span class='orange'>How to ... talk about health problems</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-6-4",
+              "title": "Driven: The Billy Monger Story <span class='orange'>Be + adjective + to infinitive</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-plus-7",
+          "title": "Downtime. What did you do last weekend?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-plus-7-1",
+              "title": "Where shall we go? <span class='orange'>Present simple continuous with future reference; other future forms</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-7-2",
+              "title": "Takeaway <span class='orange'>Indefinite pronouns: someone, nothing, anywhere, etc...</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-7-3",
+              "title": "At the exhibition <span class='orange'>How to ... ask for and give permission</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-7-4",
+              "title": "Nice picture! <span class='orange'>Adverbial and prepositional phrases</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2-plus-8",
+          "title": "Tomorrow. What kind of things do you use your phone for?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "a2-plus-8-1",
+              "title": "Blu-sky thinking <span class='orange'>Will for predictions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-8-2",
+              "title": "Hopes and dreams <span class='orange'>First conditional</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-8-3",
+              "title": "Go green <span class='orange'>How to ... check information</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "a2-plus-8-4",
+              "title": "Tomorrow's food <span class='orange'>Word building: nouns to adjectives</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1",
+      "level": "b1",
+      "title": "Intermediate",
+      "description":"Я говорю про життя й плани. Іноді перемагаю граматику.",
+      "price": 12345,
+      "modules": [
+        {
+          "id": "b1-1",
+          "title": "People. How would your friends describe you?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-1-1",
+              "title": "Who are you? <span class='orange'>Present simple and present continuous; state verbs; adverbs of frequency</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-1-2",
+              "title": "Good people <span class='orange'>Ver patterns</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-1-3",
+              "title": "Let's talk <span class='orange'>How to ... start and end a coversation; keep a conversation going</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-1-4",
+              "title": "Lifestyle <span class='orange'>Modifiers</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-2",
+          "title": "Tale tellers. Tell me about a happy memory",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-2-1",
+              "title": "What happened? <span class='orange'>Narrative tenses</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-2-2",
+              "title": "Storytelling <span class='orange'>Past simple and present perfect</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-2-3",
+              "title": "A likely story <span class='orange'>How to ... apologise and give reasons</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-2-4",
+              "title": "The story of a place <span class='orange'>prepositions of time</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-3",
+          "title": "Questions. What things are you curious about and why?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-3-1",
+              "title": "Facts and figures <span class='orange'>Knowledge; verbs and nouns</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-3-2",
+              "title": "Decisions <span class='orange'>Future plans and intentions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-3-3",
+              "title": "Can I ask you ... ? <span class='orange'>How to ... make polite inquiries</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-3-4",
+              "title": "What matterns most? <span class='orange'>Phrasal verbs</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-4",
+          "title": "Winners. Have you ever won anything?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-4-1",
+              "title": "Success <span class='orange'>Modals for rules and advice</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-4-2",
+              "title": "First! <span class='orange'>Articles</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-4-3",
+              "title": "Taking part <span class='orange'>How to ... explain rules and procedures</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-4-4",
+              "title": "Top Gear: Nepal <span class='orange'>Present perfect + superlative</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-5",
+          "title": "News. How do you get your news?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-5-1",
+              "title": "Fake news <span class='orange'>Relative clauses</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-5-2",
+              "title": "Newsmakers <span class='orange'>Reported speech</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-5-3",
+              "title": "Good news <span class='orange'>How to ... give and respond to personal news</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-5-4",
+              "title": "The future of news <span class='orange'>Will, might and be going to for predictions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-6",
+          "title": "Creators. What creative things do you do or are you interested in?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-6-1",
+              "title": "The two Pablos <span class='orange'>Used to</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-6-2",
+              "title": "Be creative <span class='orange'>Comparatives and superlatives</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-6-3",
+              "title": "Why do you think that? <span class='orange'>How to ... ask for and give opinions and reasons</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-6-4",
+              "title": "An artist at work <span class='orange'>Present perfect + for, since and yet</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-7",
+          "title": "Travel. Where do you feel happiest?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-7-1",
+              "title": "Good tourists <span class='orange'>First and second conditionals</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-7-2",
+              "title": "Globetrotters <span class='orange'>Quantifiers</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-7-3",
+              "title": "You must see ... ! <span class='orange'>How to ... make and respond to recommendations</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-7-4",
+              "title": "Go solo? <span class='orange'>Reflexive pronouns</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-8",
+          "title": "Know-how. Are you good or bad at fixing things?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-8-1",
+              "title": "Doers and dreamers <span class='orange'>Can, could, be able to</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-8-2",
+              "title": "Video everywhere <span class='orange'>Active and passive</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-8-3",
+              "title": "Help! <span class='orange'>How to ... describe a problem and make recommendations</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-8-4",
+              "title": "A gifted learner <span class='orange'>-ing form</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1-plus",
+      "level": "b1+",
+      "title": "Strong Intermediate",
+      "description":"Я можу пояснити, чому думаю так. І зробити це впевнено.",
+      "price": 12345,
+      "modules": [
+        {
+          "id": "b1-plus-1",
+          "title": "Me & Mine. What's the best present you've ever received?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-plus-1-1",
+              "title": "The story of me <span class='orange'>Narrative tenses</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-1-2",
+              "title": "Less is more? <span class='orange'>Verb patterns</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-1-3",
+              "title": "Don't forget to ... <span class='orange'>How to ... leave phone messages</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-1-4",
+              "title": "Your gadgets <span class='orange'>Except for, apart from, (not) even</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-plus-2",
+          "title": "Behaviour. What good habits do you have?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-plus-2-1",
+              "title": "Change of habit <span class='orange'>Present perfect continuous</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-2-2",
+              "title": "People pleaser <span class='orange'>Relative clauses</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-2-3",
+              "title": "That's annoying! <span class='orange'>How to ... talk about things that annoy you</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-2-4",
+              "title": "Planet Earth II <span class='orange'>Jungles</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-plus-3",
+          "title": "Working life. Where do you prefer to work or study?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-plus-3-1",
+              "title": "Working from home <span class='orange'>Conditional structures: unless, even if, in case(of)</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-3-2",
+              "title": "Gig work <span class='orange'>Necessity, obligation and permission</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-3-3",
+              "title": "Good question <span class='orange'>How to ... take part in an interview</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-3-4",
+              "title": "This or that? <span class='orange'>Expressing preferences</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-plus-4",
+          "title": "Fact or fiction?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-plus-4-1",
+              "title": "Hoax! <span class='orange'>Past plans and intentions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-4-2",
+              "title": "Documentary <span class='orange'>Indirect and negative questions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-4-3",
+              "title": "News <span class='orange'>How to ... talk about the news</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-4-4",
+              "title": "Fake friends <span class='orange'>Conversations about fake friends</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-plus-5",
+          "title": "Consumer. When was the last time you had a problem with a product or service?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-plus-5-1",
+              "title": "The customer is always right? <span class='orange'>Clauses of purpose: to, so as to, in order to/that, so that </span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-5-2",
+              "title": "Too good to be true <span class='orange'>Comparative and superlative structures</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-5-3",
+              "title": "Which should I buy? <span class='orange'>How to ... summarise information from different sources</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-5-4",
+              "title": "I do it myself <span class='orange'>Causative have and get; reflexive pronouns</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-plus-6",
+          "title": "Places. What's your favourite city?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-plus-6-1",
+              "title": "In the city <span class='orange'>So and such</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-6-2",
+              "title": "Great journeys <span class='orange'>Be/get used to</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-6-3",
+              "title": "City transport <span class='orange'>How to ... ask for and confirm information</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-6-4",
+              "title": "A city of tommorow <span class='orange'>What will you do tomorrow?</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-plus-7",
+          "title": "Connect. What's your favourite word?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-plus-7-1",
+              "title": "Mix-up <span class='orange'>Reported speech</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-7-2",
+              "title": "Oversharing <span class='orange'>Passives</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-7-3",
+              "title": "Conversation savers <span class='orange'>How to ... keep a conversation going</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-7-4",
+              "title": "A good communicator <span class='orange'>Avoiding repetition: so, to, not, be</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1-plus-8",
+          "title": "Wisdom. What's the best piece of advice you've ever been given?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b1-plus-8-1",
+              "title": "Wise words <span class='orange'>Third conditional ans should have</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-8-2",
+              "title": "Life lessons <span class='orange'>Would</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-plus-8-3",
+              "title": "One thing i know ... <span class='orange'>How to ... give a presentation</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b1-8-4",
+              "title": "Good story <span class='orange'>Dragons' Den</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "level": "b2",
+      "title": "Upper Intermediate",
+      "description":"Я не боюся пауз. Я можу бути собою англійською.",
+      "price": 12345,
+      "modules": [
+        {
+          "id": "b2-1",
+          "title": "Identity. Who do you take after in your family?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-1-1",
+              "title": "My ID <span class='orange'>Present perfect simple and continuous</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-1-2",
+              "title": "Memory <span class='orange'>Infinitive and -ing forms</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-1-3",
+              "title": "I'd much rather <span class='orange'>How to ... express personal preferences</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-1-4",
+              "title": "Personality <span class='orange'>While, whereas and whilst</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-2",
+          "title": "Different worlds. What impact does social media have on your life?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-2-1",
+              "title": "Real or virtual? <span class='orange'>Future probability</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-2-2",
+              "title": "Closer to nature <span class='orange'>Quantifiers</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-2-3",
+              "title": "Amazing lives <span class='orange'>How to ... speculate</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-2-4",
+              "title": "The time traveller <span class='orange'>It's time to travel!</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-3",
+          "title": "Showtime. What live events or performances do you enjoy and why?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-3-1",
+              "title": "Festival <span class='orange'>Relative clauses</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-3-2",
+              "title": "Performers <span class='orange'>Cleft sentences</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-3-3",
+              "title": "Binge-watch <span class='orange'>How to ... use vague language</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-3-4",
+              "title": "Music lover? <span class='orange'>Do and did for emphasis</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-4",
+          "title": "Lifestyle. Name one change you could make to your life to improve your health",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-4-1",
+              "title": "Making changes <span class='orange'>Future continuous and future perfect</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-4-2",
+              "title": "Sleep <span class='orange'>Passives</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-4-3",
+              "title": "Keep moving <span class='orange'>How to ... express agreement and disagreement</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-4-4",
+              "title": "Ancient traditions <span class='orange'>Conversations about traditions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-5",
+          "title": "Work. Which professions do you admire and why?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-5-1",
+              "title": "First day! <span class='orange'>Past perfect simple and continuous</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-5-2",
+              "title": "Change of plan <span class='orange'>Past plans and intentions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-5-3",
+              "title": "You're on mute! <span class='orange'>How to ... describe problems and suggest solutions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-5-4",
+              "title": "Are you a team player? <span class='orange'>Non-defining relative clauses for comments</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-6",
+          "title": "Psychology. What things do you never find the time to get done?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-6-1",
+              "title": "Pay attention! <span class='orange'>Necessity, prohibition and permission</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-6-2",
+              "title": "Quiet <span class='orange'>Reported orders, requests and advice</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-6-3",
+              "title": "Here's my advice <span class='orange'>How to ... ask for advice and give advice tactfully</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-6-4",
+              "title": "Would I lie to you? <span class='orange'>Better a bitter truth than a sweet lie</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-7",
+          "title": "Talent. Do you have any hidden talents?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-7-1",
+              "title": "An unexpected passion <span class='orange'>Past modals of deduction</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-7-2",
+              "title": "I wish <span class='orange'>Wish, if only, should have</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-7-3",
+              "title": "Let me explain <span class='orange'>How to ... describe a process</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-7-4",
+              "title": "Hard work or talent? <span class='orange'>Adverbials of concession</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-8",
+          "title": "Community. What does 'community' mean to you?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-8-1",
+              "title": "A new way of living <span class='orange'>Participle clauses</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-8-2",
+              "title": "If the world ... <span class='orange'>Conditionals with conjunctions</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-8-3",
+              "title": "Online communities <span class='orange'>How to ... develop an argument</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-8-4",
+              "title": "Second shot <span class='orange'>Can you shoot?</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2-plus",
+      "level": "b2+",
+      "title": "Pre-Advanced",
+      "description":"Я змінюю стиль і настрій. Мова - мій інструмент.",
+      "price": 12345,
+      "modules": [
+        {
+          "id": "b2-plus-1",
+          "title": "Connections. Which people, places or things are important to you and why?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-plus-1-1",
+              "title": "New friends <span class='orange'>Describing past and present habits</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-1-2",
+              "title": "Places <span class='orange'>Reduced relative clauses</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-1-3",
+              "title": "Things we love <span class='orange'>How to ... talk about hypothetical preferences</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-1-4",
+              "title": "Comfort food <span class='orange'>What is your favorite food?</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-plus-2",
+          "title": "Competition. In what ways you competitive?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-plus-2-1",
+              "title": "Getting away with it <span class='orange'>Cleft sentences</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-2-2",
+              "title": "Friend or foe? <span class='orange'>Ellipsis and substitution</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-2-3",
+              "title": "In the workplace <span class='orange'>How to ... compare and evaluate ideas</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-2-4",
+              "title": "Challenge <span class='orange'>It's your time!</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-plus-3",
+          "title": "Inspiration. How do you express creativity in your life?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-plus-3-1",
+              "title": "Fanfiction <span class='orange'>As iflas though</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-3-2",
+              "title": "Street chatter <span class='orange'>No matter</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-3-3",
+              "title": "Carrot or stick? <span class='orange'>How to ... engage with other people's views</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-3-4",
+              "title": "Role models <span class='orange'>Do you have any role models?</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-plus-4",
+          "title": "Image. How important is image to you?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-plus-4-1",
+              "title": "'Selfie-expression' <span class='orange'>Uses of should</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-4-2",
+              "title": "Creating a brand <span class='orange'>The continious aspect</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-4-3",
+              "title": "Presenting yourself <span class='orange'>How to ... steer a conversation towards a topic</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-4-4",
+              "title": "Branding and behaviour <span class='orange'>What type of person are you?</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-plus-5",
+          "title": "Change. What changes have there been in your life recently?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-plus-5-1",
+              "title": "Life-changing decisions <span class='orange'>Mixed conditionals</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-5-2",
+              "title": "Conservational change <span class='orange'>The perfect aspect</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-5-3",
+              "title": "Effecting change <span class='orange'>How to ... summarise</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-5-4",
+              "title": "Habits <span class='orange'>What bad habits do you have?</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-plus-6",
+          "title": "Oops! Tell me about a recent mistake you made and how you felt about it",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-plus-6-1",
+              "title": "Algorithm <span class='orange'>Inversion</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-6-2",
+              "title": "Online blunders <span class='orange'>Passive structures</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-6-3",
+              "title": "In dispute <span class='orange'>How to ... negotiate in a dispute</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-6-4",
+              "title": "Tech fail <span class='orange'></span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-plus-7",
+          "title": "Trends. Tell me about a recent trend in your country",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-plus-7-1",
+              "title": "The word on the street <span class='orange'>Adverbials</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-7-2",
+              "title": "Food fads <span class='orange'>Fronting: reasons, causes and explanations</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-7-3",
+              "title": "Pre-loved <span class='orange'>How to ... exaggerate</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-7-4",
+              "title": "Past and present <span class='orange'></span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2-plus-8",
+          "title": "The future. Do you generally feel optimistic or pessimistic about the future?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "b2-plus-8-1",
+              "title": "Dystopias and utopias <span class='orange'>Concession</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-8-2",
+              "title": "The science we need <span class='orange'>Future forms</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-8-3",
+              "title": "Spend or save? <span class='orange'>How to ... maintain and end a discussion</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "b2-plus-8-4",
+              "title": "Science fiction <span class='orange'></span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c1",
+      "level": "с1",
+      "title": "Advanced",
+      "description":"Я думаю, жартую й відчуваю англійською. Це вже дім.",
+      "price": 12345,
+      "modules": [
+        {
+          "id": "c1-1",
+          "title": "Learning. What's one thing you think everyone should learn to do?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "c1-1-1",
+              "title": "Is that a fact? <span class='orange'>Conditional forms</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-1-2",
+              "title": "Tomorrow's learning <span class='orange'>Nominal relative clauses</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-1-3",
+              "title": "Creativity <span class='orange'>How to ... manage interaction during a discussion</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-1-4",
+              "title": "Learning experiences <span class='orange'></span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1-2",
+          "title": "Culture. If you could live anywhere in the world, where would you choose and why?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "c1-2-1",
+              "title": "Cities <span class='orange'>Advanced ways of comparing</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-2-2",
+              "title": "Lost in translation <span class='orange'>Reporting</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-2-3",
+              "title": "The way we do it <span class='orange'>How to ... maintain and develop interaction</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-2-4",
+              "title": "Flavours <span class='orange'></span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1-3",
+          "title": "Working life. What's the best or worst job you have ever had?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "c1-3-1",
+              "title": "Get that job! <span class='orange'>Modal verbs and phrases</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-3-2",
+              "title": "Going remote <span class='orange'>Passives</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-3-3",
+              "title": "Tackling the real issues <span class='orange'>How to ... check understanding by paraphrasing and summarising</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-3-4",
+              "title": "Company culture <span class='orange'></span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1-4",
+          "title": "Humanity. What human characteristics are the most important?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "c1-4-1",
+              "title": "Pioneers <span class='orange'>Verb patterns</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-4-2",
+              "title": "Community <span class='orange'>Continuous and perfect aspects</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-4-3",
+              "title": "Economies <span class='orange'>How to ... present survey results</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-4-4",
+              "title": "Extinction <span class='orange'></span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1+-5",
+          "title": "Influence. Who's the most famous person you've ever met?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "c1-5-1",
+              "title": "First impressions <span class='orange'>Giving emphasis: inversion, clefting, tailing, fronting</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-5-2",
+              "title": "The truth about rumour <span class='orange'>Participle clauses</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-5-3",
+              "title": "Try it out <span class='orange'>How to ... use persuasive techniques in presentations</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-5-4",
+              "title": "Role models <span class='orange'></span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1-6",
+          "title": "Classics. Are new things always better than old things?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "c1-6-1",
+              "title": "Hidden gems <span class='orange'>Narrative tenses review</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-6-2",
+              "title": "Words and music <span class='orange'>Adverbials</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-6-3",
+              "title": "Classic journeys <span class='orange'>How to ... tell an anecdote</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-6-4",
+              "title": "Design classics <span class='orange'></span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1-7",
+          "title": "Choice. What important decisions will you need to make over the next decade?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "c1-7-1",
+              "title": "Decisions, decisions <span class='orange'>Omitting words</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-7-2",
+              "title": "Online or offline? <span class='orange'>Prepositional phrases</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-7-3",
+              "title": "Urban animals <span class='orange'>How to ... hedge an opinion and express reservations</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-7-4",
+              "title": "Too much choice? <span class='orange'></span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1-8",
+          "title": "Body and mind. Which quality do you like most about yourself?",
+          "price": 5,
+          "lessons": [
+            {
+              "id": "c1-8-1",
+              "title": "No limits? <span class='orange'>Noun phrases</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-8-2",
+              "title": "Bridging the senses <span class='orange'>Uses of will and would</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-8-3",
+              "title": "Feeling good <span class='orange'>How to ... explain the purpose and benefit of something</span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            },
+            {
+              "id": "c1-8-4",
+              "title": "Effects and illusions <span class='orange'></span>",
+              "price": 2,
+              "words": [
+                { "en": "Hello", "uk": "Привіт" },
+                { "en": "Goodbye", "uk": "До побачення" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -207,7 +207,7 @@ header {
 
 			&.open {
 				max-height: 238px;
-				overflow: visible;
+				//overflow: visible;
 
 				& .container {
 					max-height: 238px;
@@ -223,7 +223,7 @@ header {
 					flex-direction: column;
 					justify-content: flex-start;
 					align-items: flex-start;
-					padding: 0px 40px;
+					padding: 40px 40px;
 					gap: 0;
 					border: 1px solid #D0D1FF;
 					border-radius: 40px;

@@ -22,7 +22,7 @@
 			justify-content: center;
 			gap: 30px;
 
-			& a  {
+			& a {
 				position: relative;
 				padding: 0px 0px 0px 40px;
 				max-width: 705px;
@@ -41,20 +41,12 @@
 
 				&:nth-child(1),
 				&:nth-child(4),
-				&:nth-child(5) {
+				&:nth-child(5),
+				&:nth-child(8) {
 					background-color: #e7e8fe;
 				}
 
 				&:nth-child(1) {
-					&::after {
-						background-image: url(../../../assets/Lesson/lesson-a0.png);
-						background-position: right bottom;
-						background-size: contain;
-						background-repeat: no-repeat;
-					}
-				}
-
-				&:nth-child(2) {
 					&::after {
 						background-image: url(../../../assets/Lesson/lesson-a1.png);
 						background-position: right bottom;
@@ -63,9 +55,18 @@
 					}
 				}
 
-				&:nth-child(3) {
+				&:nth-child(2) {
 					&::after {
 						background-image: url(../../../assets/Lesson/lesson-a2.png);
+						background-position: right bottom;
+						background-size: contain;
+						background-repeat: no-repeat;
+					}
+				}
+
+				&:nth-child(3) {
+					&::after {
+						background-image: url(../../../assets/Lesson/lesson-a2+.png);
 						background-position: right bottom;
 						background-size: contain;
 						background-repeat: no-repeat;
@@ -83,7 +84,7 @@
 
 				&:nth-child(5) {
 					&::after {
-						background-image: url(../../../assets/Lesson/lesson-b2.png);
+						background-image: url(../../../assets/Lesson/lesson-b1+.png);
 						background-position: right bottom;
 						background-size: contain;
 						background-repeat: no-repeat;
@@ -91,6 +92,24 @@
 				}
 
 				&:nth-child(6) {
+					&::after {
+						background-image: url(../../../assets/Lesson/lesson-b2.png);
+						background-position: right bottom;
+						background-size: contain;
+						background-repeat: no-repeat;
+					}
+				}
+
+				&:nth-child(7) {
+					&::after {
+						background-image: url(../../../assets/Lesson/lesson-b2+.png);
+						background-position: right bottom;
+						background-size: contain;
+						background-repeat: no-repeat;
+					}
+				}
+
+				&:nth-child(8) {
 					&::after {
 						background-image: url(../../../assets/Lesson/lesson-c1.png);
 						background-position: right bottom;
@@ -115,71 +134,88 @@
 					}
 				}
 
-				& .lesson-detail {
-					max-width: 296px;
-					padding: 40px 0 40px 0;
-
-					@media screen and (max-width: 768px) {
-						padding: 0;
-					}
-					& .lesson-title {
-						font-weight: 800;
-						font-size: 40px;
-						margin-bottom: 16px;
-
-						display: flex;
-						align-items: center;
+				& .lesson-item {
+max-width: 298px;
+					width: 100%;
+					& .lesson-detail {
+						max-width: 296px;
+						padding: 40px 0 40px 0;
 
 						@media screen and (max-width: 768px) {
+							padding: 0;
+						}
+
+						& .lesson-title {
+							font-weight: 800;
+							font-size: 40px;
+							margin-bottom: 16px;
+
+							display: flex;
+							align-items: center;
+
+							text-transform: uppercase;
+
+							@media screen and (max-width: 768px) {
+								font-size: 26px;
+							}
+
+							& .current-lesson {
+								margin-left: 12px;
+								cursor: pointer;
+								animation: blik-anim 4s ease-out infinite;
+								opacity: 0;
+
+								@keyframes blik-anim {
+									0% { opacity: 0 }
+									25%   { opacity: 1; }
+									50%   { opacity: 0; }
+									75%   { opacity: 1; }
+									100%   { opacity: 0; }
+								}
+							}
+
+							& .current-lesson:hover ~ .current-lesson-info {
+								opacity: 1;
+							}
+
+							& .current-lesson-info {
+								position: absolute;
+								background-color: #fff;
+								width: 100%;
+								max-width: 248px;
+								height: 84px;
+								padding: 20px 40px;
+								font-weight: 500;
+								font-size: 17px;
+								line-height: 130%;
+								border-radius: 40px;
+								border: 1px solid #fe502d;
+								top: 82px;
+								left: 94px;
+								opacity: 0;
+								transition: opacity 0.4s;
+								z-index: 999;
+							}
+						}
+
+						& .lesson-pre-title {
+							font-weight: 700;
 							font-size: 26px;
+							margin-bottom: 12px;
+
+							@media screen and (max-width: 768px) {
+								font-size: 19px;
+							}
 						}
 
-						& .current-lesson {
-							margin-left: 12px;
-							cursor: pointer;
-						}
-
-						& .current-lesson:hover ~ .current-lesson-info {
-							opacity: 1;
-						}
-
-						& .current-lesson-info {
-							position: absolute;
-							background-color: #fff;
-							width: 100%;
-							max-width: 248px;
-							height: 84px;
-							padding: 20px 40px;
+						& .lesson-description {
 							font-weight: 500;
 							font-size: 17px;
 							line-height: 130%;
-							border-radius: 40px;
-							border: 1px solid #fe502d;
-							top: 82px;
-							left: 94px;
-							opacity: 0;
-							transition: opacity 0.4s;
-							z-index: 999;
-						}
-					}
 
-					& .lesson-pre-title {
-						font-weight: 700;
-						font-size: 26px;
-						margin-bottom: 12px;
-
-						@media screen and (max-width: 768px) {
-							font-size: 19px;
-						}
-					}
-
-					& .lesson-description {
-						font-weight: 500;
-						font-size: 17px;
-						line-height: 130%;
-
-						@media screen and (max-width: 768px) {
-							font-size: 15px;
+							@media screen and (max-width: 768px) {
+								font-size: 15px;
+							}
 						}
 					}
 				}

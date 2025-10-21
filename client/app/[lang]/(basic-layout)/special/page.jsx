@@ -14,11 +14,11 @@ export default function SpecialLesson() {
 				<div className="container">
 					
 					<div className="course-grid">
-						<div className="course-card">
+						<div className="course-card"><span className="badge">Безкоштовно для тебе</span>
 							<div className="card-header">
-								<Image src={courseAuthor} alt="Instructor" className="instructor-image"/>
+								
 								<div className="right-side">
-									<span className="badge">Безкоштовно для тебе</span>
+								
 									<h2 className="course-title">Perfect Tenses</h2>
 									<p className="course-level"><b>Рівень:</b> Upper-Intermediate</p>
 								</div>
@@ -35,11 +35,11 @@ export default function SpecialLesson() {
 							<button className="btn btn-outline">Пройти курс</button>
 						</div>
 						
-						<div className="course-card">
+						<div className="course-card"><span className="badge">Безкоштовно для тебе</span>
 							<div className="card-header">
-								<Image src={courseAuthor} alt="Instructor" className="instructor-image"/>
+								
 								<div className="right-side">
-									<span className="badge">Безкоштовно для тебе</span>
+								
 									<h2 className="course-title">Perfect Tenses</h2>
 									<p className="course-level"><b>Рівень:</b> Upper-Intermediate</p>
 								</div>
@@ -56,11 +56,11 @@ export default function SpecialLesson() {
 							<button className="btn btn-completed-red">Пройти курс</button>
 						</div>
 						
-						<div className="course-card">
+						<div className="course-card"><span className="badge">Безкоштовно для тебе</span>
 							<div className="card-header">
-								<Image src={courseAuthor} alt="Instructor" className="instructor-image"/>
+								
 								<div className="right-side">
-									<span className="badge">Безкоштовно для тебе</span>
+								
 									<h2 className="course-title">Perfect Tenses</h2>
 									<p className="course-level"><b>Рівень:</b> Upper-Intermediate</p>
 								</div>
@@ -77,11 +77,11 @@ export default function SpecialLesson() {
 							<button className="btn btn-completed-green">Пройдено</button>
 						</div>
 						
-						<div className="course-card">
+						<div className="course-card"><span className="badge">Безкоштовно для тебе</span>
 							<div className="card-header">
-								<Image src={courseAuthor} alt="Instructor" className="instructor-image"/>
+								
 								<div className="right-side">
-									<span className="badge">Безкоштовно для тебе</span>
+								
 									<h2 className="course-title">Perfect Tenses</h2>
 									<p className="course-level"><b>Рівень:</b> Upper-Intermediate</p>
 								</div>
@@ -98,11 +98,11 @@ export default function SpecialLesson() {
 							<button className="btn btn-outline">Пройти курс</button>
 						</div>
 						
-						<div className="course-card">
+						<div className="course-card"><span className="badge">Безкоштовно для тебе</span>
 							<div className="card-header">
-								<Image src={courseAuthor} alt="Instructor" className="instructor-image"/>
+								
 								<div className="right-side">
-									<span className="badge">Безкоштовно для тебе</span>
+								
 									<h2 className="course-title">Perfect Tenses</h2>
 									<p className="course-level"><b>Рівень:</b> Upper-Intermediate</p>
 								</div>
@@ -119,11 +119,11 @@ export default function SpecialLesson() {
 							<button className="btn btn-completed-red">Пройти курс</button>
 						</div>
 						
-						<div className="course-card">
+						<div className="course-card"><span className="badge">Безкоштовно для тебе</span>
 							<div className="card-header">
-								<Image src={courseAuthor} alt="Instructor" className="instructor-image"/>
+								
 								<div className="right-side">
-									<span className="badge">Безкоштовно для тебе</span>
+								
 									<h2 className="course-title">Perfect Tenses</h2>
 									<p className="course-level"><b>Рівень:</b> Upper-Intermediate</p>
 								</div>
@@ -138,11 +138,11 @@ export default function SpecialLesson() {
 							<button className="btn btn-completed-green">Пройдено</button>
 						</div>
 						
-						<div className="course-card">
+						<div className="course-card"><span className="badge">Безкоштовно для тебе</span>
 							<div className="card-header">
-								<Image src={courseAuthor} alt="Instructor" className="instructor-image"/>
+								
 								<div className="right-side">
-									<span className="badge">Безкоштовно для тебе</span>
+								
 									<h2 className="course-title">Perfect Tenses</h2>
 									<p className="course-level"><b>Рівень:</b> Upper-Intermediate</p>
 								</div>
@@ -159,11 +159,11 @@ export default function SpecialLesson() {
 							<button className="btn btn-outline">Пройти курс</button>
 						</div>
 						
-						<div className="course-card">
+						<div className="course-card"><span className="badge">Безкоштовно для тебе</span>
 							<div className="card-header">
-								<Image src={courseAuthor} alt="Instructor" className="instructor-image"/>
+								
 								<div className="right-side">
-									<span className="badge">Безкоштовно для тебе</span>
+								
 									<h2 className="course-title">Perfect Tenses</h2>
 									<p className="course-level"><b>Рівень:</b> Upper-Intermediate</p>
 								</div>
@@ -180,11 +180,11 @@ export default function SpecialLesson() {
 							<button className="btn btn-completed-red">Пройти курс</button>
 						</div>
 						
-						<div className="course-card">
+						<div className="course-card"><span className="badge">Безкоштовно для тебе</span>
 							<div className="card-header">
-								<Image src={courseAuthor} alt="Instructor" className="instructor-image"/>
+								
 								<div className="right-side">
-									<span className="badge">Безкоштовно для тебе</span>
+								
 									<h2 className="course-title">Perfect Tenses</h2>
 									<p className="course-level"><b>Рівень:</b> Upper-Intermediate</p>
 								</div>
