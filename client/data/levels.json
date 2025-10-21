@@ -23,7 +23,7 @@
             },
             {
               "id": "a1-1-2",
-              "title": "Two jobs <span class='orange'>Present simple be: he, she it</span>",
+              "title": "Two jobs. <span class='orange'>Present simple be: he, she it</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -32,7 +32,7 @@
             },
             {
               "id": "a1-1-3",
-              "title": "Checking in <span class='orange'>How to ... ask and answer simple questions</span>",
+              "title": "Checking in. <span class='orange'>How to ... ask and answer simple questions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -66,7 +66,7 @@
             },
             {
               "id": "a1-2-2",
-              "title": "Family and friends <span class='orange'>Possessive adjectives</span>",
+              "title": "Family and friends. <span class='orange'>Possessive adjectives</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -75,7 +75,7 @@
             },
             {
               "id": "a1-2-3",
-              "title": "Small talk <span class='orange'>How to ... have sport coversations</span>",
+              "title": "Small talk. <span class='orange'>How to ... have sport coversations</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -84,7 +84,7 @@
             },
             {
               "id": "a1-2-4",
-              "title": "Best home cook <span class='orange'>wh- questions + be</span>",
+              "title": "Best home cook. <span class='orange'>wh- questions + be</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -100,7 +100,7 @@
           "lessons": [
             {
               "id": "a1-3-1",
-              "title": "Favourites <span class='orange'>Possessive's</span>",
+              "title": "Favourites. <span class='orange'>Possessive's</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -127,7 +127,7 @@
             },
             {
               "id": "a1-3-4",
-              "title": "Shopping <span class='orange'>Likes, dislikes and opinions</span>",
+              "title": "Shopping. <span class='orange'>Likes, dislikes and opinions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -152,7 +152,7 @@
             },
             {
               "id": "a1-4-2",
-              "title": "A day in the life <span class='orange'>Present simple: reqular verbs(he,she,it)</span>",
+              "title": "A day in the life. <span class='orange'>Present simple: reqular verbs(he,she,it)</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -170,7 +170,7 @@
             },
             {
               "id": "a1-4-4",
-              "title": "Earth from space <span class='orange'>Present simple: yes/no questions (he,she,it)</span>",
+              "title": "Earth from space. <span class='orange'>Present simple: yes/no questions (he,she,it)</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -186,7 +186,7 @@
           "lessons": [
             {
               "id": "a1-5-1",
-              "title": "Good colleagues <span class='orange'>Object pronouns</span>",
+              "title": "Good colleagues. <span class='orange'>Object pronouns</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -238,7 +238,7 @@
             },
             {
               "id": "a1-6-2",
-              "title": "A great place to live <span class='orange'>There is, there are</span>",
+              "title": "A great place to live. <span class='orange'>There is, there are</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -256,7 +256,7 @@
             },
             {
               "id": "a1-6-4",
-              "title": "The travel show <span class='orange'>the</span>",
+              "title": "The travel show. <span class='orange'>the</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -272,7 +272,7 @@
           "lessons": [
             {
               "id": "a1-7-1",
-              "title": "The little things <span class='orange'>Present simple: wh- questions</span>",
+              "title": "The little things. <span class='orange'>Present simple: wh- questions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -281,7 +281,7 @@
             },
             {
               "id": "a1-7-2",
-              "title": "Heroes <span class='orange'>Was, were</span>",
+              "title": "Heroes. <span class='orange'>Was, were</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -299,7 +299,7 @@
             },
             {
               "id": "a1-7-4",
-              "title": "Focus on fitness <span class='orange'>Imperatives</span>",
+              "title": "Focus on fitness. <span class='orange'>Imperatives</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -315,7 +315,7 @@
           "lessons": [
             {
               "id": "a1-8-1",
-              "title": "Weekend break <span class='orange'>Past simple: reqular verbs</span>",
+              "title": "Weekend break. <span class='orange'>Past simple: reqular verbs</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -324,7 +324,7 @@
             },
             {
               "id": "a1-8-2",
-              "title": "Going out, staying in <span class='orange'>Past simple: irregular verbs</span>",
+              "title": "Going out, staying in. <span class='orange'>Past simple: irregular verbs</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -342,7 +342,7 @@
             },
             {
               "id": "a1-8-4",
-              "title": "Kodo drummers <span class='orange'>want, would like</span>",
+              "title": "Kodo drummers. <span class='orange'>want, would like</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -376,7 +376,7 @@
             },
             {
               "id": "a2-1-2",
-              "title": "Same but different <span class='orange'>Present simple: he, she it</span>",
+              "title": "Same but different. <span class='orange'>Present simple: he, she it</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -385,7 +385,7 @@
             },
             {
               "id": "a2-1-3",
-              "title": "Lets's meet <span class='orange'>How to ... make suggestions</span>",
+              "title": "Lets's meet. <span class='orange'>How to ... make suggestions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -394,7 +394,7 @@
             },
             {
               "id": "a2-1-4",
-              "title": "Family and friends <span class='orange'>Possessive 's, s'</span>",
+              "title": "Family and friends. <span class='orange'>Possessive 's, s'</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -410,7 +410,7 @@
           "lessons": [
             {
               "id": "a2-2-1",
-              "title": "Can't live without it <span class='orange'>Countable and uncountable nouns: a,an, same, any</span>",
+              "title": "Can't live without it. <span class='orange'>Countable and uncountable nouns: a,an, same, any</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -419,7 +419,7 @@
             },
             {
               "id": "a2-2-2",
-              "title": "Your lifestyle and you <span class='orange'>Adverbs and phrases of frequency</span>",
+              "title": "Your lifestyle and you. <span class='orange'>Adverbs and phrases of frequency</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -428,7 +428,7 @@
             },
             {
               "id": "a2-2-3",
-              "title": "Eating out <span class='orange'>How to ... order a meal in a restaurant</span>",
+              "title": "Eating out. <span class='orange'>How to ... order a meal in a restaurant</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -437,7 +437,7 @@
             },
             {
               "id": "a2-2-4",
-              "title": "The Indian relay <span class='orange'>like, hate, love + -ing</span>",
+              "title": "The Indian relay. <span class='orange'>like, hate, love + -ing</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -453,7 +453,7 @@
           "lessons": [
             {
               "id": "a2-3-1",
-              "title": "Come in <span class='orange'>This, that, these, those; here, there</span>",
+              "title": "Come in. <span class='orange'>This, that, these, those; here, there</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -462,7 +462,7 @@
             },
             {
               "id": "a2-3-2",
-              "title": "Too much stuff <span class='orange'>Have got</span>",
+              "title": "Too much stuff. <span class='orange'>Have got</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -480,7 +480,7 @@
             },
             {
               "id": "a2-3-4",
-              "title": "Your neighbourhood <span class='orange'>There is, there are</span>",
+              "title": "Your neighbourhood. <span class='orange'>There is, there are</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -505,7 +505,7 @@
             },
             {
               "id": "a2-4-2",
-              "title": "Life in numbers <span class='orange'>How much, how many; how + adjective</span>",
+              "title": "Life in numbers. <span class='orange'>How much, how many; how + adjective</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -523,7 +523,7 @@
             },
             {
               "id": "a2-4-4",
-              "title": "Sakura time <span class='orange'>Should, shouldn't; imperatives</span>",
+              "title": "Sakura time. <span class='orange'>Should, shouldn't; imperatives</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -539,7 +539,7 @@
           "lessons": [
             {
               "id": "a2-5-1",
-              "title": "Then and now <span class='orange'>Past simple: regular verbs</span>",
+              "title": "Then and now. <span class='orange'>Past simple: regular verbs</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -582,7 +582,7 @@
           "lessons": [
             {
               "id": "a2-6-1",
-              "title": "Meet me in town <span class='orange'>Present continuous</span>",
+              "title": "Meet me in town. <span class='orange'>Present continuous</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -591,7 +591,7 @@
             },
             {
               "id": "a2-6-2",
-              "title": "My way <span class='orange'>Comparative adjectives</span>",
+              "title": "My way. <span class='orange'>Comparative adjectives</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -600,7 +600,7 @@
             },
             {
               "id": "a2-6-3",
-              "title": "Getting around <span class='orange'>How to ... give directions</span>",
+              "title": "Getting around. <span class='orange'>How to ... give directions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -609,7 +609,7 @@
             },
             {
               "id": "a2-6-4",
-              "title": "Cities: nature's new wild <span class='orange'>Prepositions and adverbs of movement</span>",
+              "title": "Cities: nature's new wild. <span class='orange'>Prepositions and adverbs of movement</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -625,7 +625,7 @@
           "lessons": [
             {
               "id": "a2-7-1",
-              "title": "Odd jobs <span class='orange'>Articles: a, an, the, zero</span>",
+              "title": "Odd jobs. <span class='orange'>Articles: a, an, the, zero</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -634,7 +634,7 @@
             },
             {
               "id": "a2-7-2",
-              "title": "An extra day <span class='orange'>Present simple and present continuous</span>",
+              "title": "An extra day. <span class='orange'>Present simple and present continuous</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -668,7 +668,7 @@
           "lessons": [
             {
               "id": "a2-8-1",
-              "title": "Trip advice <span class='orange'>Superlative adjectives</span>",
+              "title": "Trip advice. <span class='orange'>Superlative adjectives</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -677,7 +677,7 @@
             },
             {
               "id": "a2-8-2",
-              "title": "Surprise travel <span class='orange'>Be going to</span>",
+              "title": "Surprise travel. <span class='orange'>Be going to</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -686,7 +686,7 @@
             },
             {
               "id": "a2-8-3",
-              "title": "At a hotel <span class='orange'>How to ... make requests and offers in a hotel</span>",
+              "title": "At a hotel. <span class='orange'>How to ... make requests and offers in a hotel</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -695,7 +695,7 @@
             },
             {
               "id": "a2-8-4",
-              "title": "Artic academy <span class='orange'>Adverbs of manner</span>",
+              "title": "Artic academy. <span class='orange'>Adverbs of manner</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -720,7 +720,7 @@
           "lessons": [
             {
               "id": "a2-plus-1-1",
-              "title": "Something in common <span class='orange'>Questions</span>",
+              "title": "Something in common. <span class='orange'>Questions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -729,7 +729,7 @@
             },
             {
               "id": "a2-plus-1-2",
-              "title": "Nice job <span class='orange'>Present simple and continuous</span>",
+              "title": "Nice job. <span class='orange'>Present simple and continuous</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -790,7 +790,7 @@
             },
             {
               "id": "a2-plus-2-4",
-              "title": "Difficult situations <span class='orange'>all, same, both, none of them</span>",
+              "title": "Difficult situations. <span class='orange'>all, same, both, none of them</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -806,7 +806,7 @@
           "lessons": [
             {
               "id": "a2-plus-3-1",
-              "title": "A helping hand <span class='orange'>Have to, don't have to, can't</span>",
+              "title": "A helping hand. <span class='orange'>Have to, don't have to, can't</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -815,7 +815,7 @@
             },
             {
               "id": "a2-plus-3-2",
-              "title": "I saw it on TV <span class='orange'>Subject and object questions</span>",
+              "title": "I saw it on TV. <span class='orange'>Subject and object questions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -824,7 +824,7 @@
             },
             {
               "id": "a2-plus-3-3",
-              "title": "Life hacks <span class='orange'>How to ... give instructions and check understanding</span>",
+              "title": "Life hacks. <span class='orange'>How to ... give instructions and check understanding</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -833,7 +833,7 @@
             },
             {
               "id": "a2-plus-3-4",
-              "title": "School rules <span class='orange'>Had to, didn't have to, couldn't</span>",
+              "title": "School rules. <span class='orange'>Had to, didn't have to, couldn't</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -858,7 +858,7 @@
             },
             {
               "id": "a2-plus-4-2",
-              "title": "World record <span class='orange'>Comparatives and superlatives</span>",
+              "title": "World record. <span class='orange'>Comparatives and superlatives</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -867,7 +867,7 @@
             },
             {
               "id": "a2-plus-4-3",
-              "title": "The perfect gift <span class='orange'>How to ... make suggestions and recommendations</span>",
+              "title": "The perfect gift. <span class='orange'>How to ... make suggestions and recommendations</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -876,7 +876,7 @@
             },
             {
               "id": "a2-plus-4-4",
-              "title": "A taste of the Bayous <span class='orange'>Verbs of sensation + adjective or like</span>",
+              "title": "A taste of the Bayous. <span class='orange'>Verbs of sensation + adjective or like</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -892,7 +892,7 @@
           "lessons": [
             {
               "id": "a2-plus-5-1",
-              "title": "Lucky find <span class='orange'>Possessive pronouns, whose, this/that, there/then</span>",
+              "title": "Lucky find. <span class='orange'>Possessive pronouns, whose, this/that, there/then</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -901,7 +901,7 @@
             },
             {
               "id": "a2-plus-5-2",
-              "title": "The world of 'slow' <span class='orange'>Quantifiers</span>",
+              "title": "The world of 'slow'. <span class='orange'>Quantifiers</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -935,7 +935,7 @@
           "lessons": [
             {
               "id": "a2-plus-6-1",
-              "title": "Sport for all <span class='orange'>Adverbs of frequency and manner</span>",
+              "title": "Sport for all. <span class='orange'>Adverbs of frequency and manner</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -962,7 +962,7 @@
             },
             {
               "id": "a2-plus-6-4",
-              "title": "Driven: The Billy Monger Story <span class='orange'>Be + adjective + to infinitive</span>",
+              "title": "Driven: The Billy Monger Story. <span class='orange'>Be + adjective + to infinitive</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -987,7 +987,7 @@
             },
             {
               "id": "a2-plus-7-2",
-              "title": "Takeaway <span class='orange'>Indefinite pronouns: someone, nothing, anywhere, etc...</span>",
+              "title": "Takeaway. <span class='orange'>Indefinite pronouns: someone, nothing, anywhere, etc...</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -996,7 +996,7 @@
             },
             {
               "id": "a2-plus-7-3",
-              "title": "At the exhibition <span class='orange'>How to ... ask for and give permission</span>",
+              "title": "At the exhibition. <span class='orange'>How to ... ask for and give permission</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1021,7 +1021,7 @@
           "lessons": [
             {
               "id": "a2-plus-8-1",
-              "title": "Blu-sky thinking <span class='orange'>Will for predictions</span>",
+              "title": "Blu-sky thinking. <span class='orange'>Will for predictions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1030,7 +1030,7 @@
             },
             {
               "id": "a2-plus-8-2",
-              "title": "Hopes and dreams <span class='orange'>First conditional</span>",
+              "title": "Hopes and dreams. <span class='orange'>First conditional</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1039,7 +1039,7 @@
             },
             {
               "id": "a2-plus-8-3",
-              "title": "Go green <span class='orange'>How to ... check information</span>",
+              "title": "Go green. <span class='orange'>How to ... check information</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1048,7 +1048,7 @@
             },
             {
               "id": "a2-plus-8-4",
-              "title": "Tomorrow's food <span class='orange'>Word building: nouns to adjectives</span>",
+              "title": "Tomorrow's food. <span class='orange'>Word building: nouns to adjectives</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1082,7 +1082,7 @@
             },
             {
               "id": "b1-1-2",
-              "title": "Good people <span class='orange'>Ver patterns</span>",
+              "title": "Good people. <span class='orange'>Ver patterns</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1091,7 +1091,7 @@
             },
             {
               "id": "b1-1-3",
-              "title": "Let's talk <span class='orange'>How to ... start and end a coversation; keep a conversation going</span>",
+              "title": "Let's talk. <span class='orange'>How to ... start and end a coversation; keep a conversation going</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1100,7 +1100,7 @@
             },
             {
               "id": "b1-1-4",
-              "title": "Lifestyle <span class='orange'>Modifiers</span>",
+              "title": "Lifestyle. <span class='orange'>Modifiers</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1125,7 +1125,7 @@
             },
             {
               "id": "b1-2-2",
-              "title": "Storytelling <span class='orange'>Past simple and present perfect</span>",
+              "title": "Storytelling. <span class='orange'>Past simple and present perfect</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1134,7 +1134,7 @@
             },
             {
               "id": "b1-2-3",
-              "title": "A likely story <span class='orange'>How to ... apologise and give reasons</span>",
+              "title": "A likely story. <span class='orange'>How to ... apologise and give reasons</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1143,7 +1143,7 @@
             },
             {
               "id": "b1-2-4",
-              "title": "The story of a place <span class='orange'>prepositions of time</span>",
+              "title": "The story of a place. <span class='orange'>prepositions of time</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1159,7 +1159,7 @@
           "lessons": [
             {
               "id": "b1-3-1",
-              "title": "Facts and figures <span class='orange'>Knowledge; verbs and nouns</span>",
+              "title": "Facts and figures. <span class='orange'>Knowledge; verbs and nouns</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1168,7 +1168,7 @@
             },
             {
               "id": "b1-3-2",
-              "title": "Decisions <span class='orange'>Future plans and intentions</span>",
+              "title": "Decisions. <span class='orange'>Future plans and intentions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1202,7 +1202,7 @@
           "lessons": [
             {
               "id": "b1-4-1",
-              "title": "Success <span class='orange'>Modals for rules and advice</span>",
+              "title": "Success. <span class='orange'>Modals for rules and advice</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1220,7 +1220,7 @@
             },
             {
               "id": "b1-4-3",
-              "title": "Taking part <span class='orange'>How to ... explain rules and procedures</span>",
+              "title": "Taking part. <span class='orange'>How to ... explain rules and procedures</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1229,7 +1229,7 @@
             },
             {
               "id": "b1-4-4",
-              "title": "Top Gear: Nepal <span class='orange'>Present perfect + superlative</span>",
+              "title": "Top Gear: Nepal. <span class='orange'>Present perfect + superlative</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1245,7 +1245,7 @@
           "lessons": [
             {
               "id": "b1-5-1",
-              "title": "Fake news <span class='orange'>Relative clauses</span>",
+              "title": "Fake news. <span class='orange'>Relative clauses</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1254,7 +1254,7 @@
             },
             {
               "id": "b1-5-2",
-              "title": "Newsmakers <span class='orange'>Reported speech</span>",
+              "title": "Newsmakers. <span class='orange'>Reported speech</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1263,7 +1263,7 @@
             },
             {
               "id": "b1-5-3",
-              "title": "Good news <span class='orange'>How to ... give and respond to personal news</span>",
+              "title": "Good news. <span class='orange'>How to ... give and respond to personal news</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1272,7 +1272,7 @@
             },
             {
               "id": "b1-5-4",
-              "title": "The future of news <span class='orange'>Will, might and be going to for predictions</span>",
+              "title": "The future of news. <span class='orange'>Will, might and be going to for predictions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1288,7 +1288,7 @@
           "lessons": [
             {
               "id": "b1-6-1",
-              "title": "The two Pablos <span class='orange'>Used to</span>",
+              "title": "The two Pablos. <span class='orange'>Used to</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1297,7 +1297,7 @@
             },
             {
               "id": "b1-6-2",
-              "title": "Be creative <span class='orange'>Comparatives and superlatives</span>",
+              "title": "Be creative. <span class='orange'>Comparatives and superlatives</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1315,7 +1315,7 @@
             },
             {
               "id": "b1-6-4",
-              "title": "An artist at work <span class='orange'>Present perfect + for, since and yet</span>",
+              "title": "An artist at work. <span class='orange'>Present perfect + for, since and yet</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1331,7 +1331,7 @@
           "lessons": [
             {
               "id": "b1-7-1",
-              "title": "Good tourists <span class='orange'>First and second conditionals</span>",
+              "title": "Good tourists. <span class='orange'>First and second conditionals</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1340,7 +1340,7 @@
             },
             {
               "id": "b1-7-2",
-              "title": "Globetrotters <span class='orange'>Quantifiers</span>",
+              "title": "Globetrotters. <span class='orange'>Quantifiers</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1374,7 +1374,7 @@
           "lessons": [
             {
               "id": "b1-8-1",
-              "title": "Doers and dreamers <span class='orange'>Can, could, be able to</span>",
+              "title": "Doers and dreamers. <span class='orange'>Can, could, be able to</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1383,7 +1383,7 @@
             },
             {
               "id": "b1-8-2",
-              "title": "Video everywhere <span class='orange'>Active and passive</span>",
+              "title": "Video everywhere. <span class='orange'>Active and passive</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1401,7 +1401,7 @@
             },
             {
               "id": "b1-8-4",
-              "title": "A gifted learner <span class='orange'>-ing form</span>",
+              "title": "A gifted learner. <span class='orange'>-ing form</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1426,7 +1426,7 @@
           "lessons": [
             {
               "id": "b1-plus-1-1",
-              "title": "The story of me <span class='orange'>Narrative tenses</span>",
+              "title": "The story of me. <span class='orange'>Narrative tenses</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1453,7 +1453,7 @@
             },
             {
               "id": "b1-plus-1-4",
-              "title": "Your gadgets <span class='orange'>Except for, apart from, (not) even</span>",
+              "title": "Your gadgets. <span class='orange'>Except for, apart from, (not) even</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1469,7 +1469,7 @@
           "lessons": [
             {
               "id": "b1-plus-2-1",
-              "title": "Change of habit <span class='orange'>Present perfect continuous</span>",
+              "title": "Change of habit. <span class='orange'>Present perfect continuous</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1478,7 +1478,7 @@
             },
             {
               "id": "b1-plus-2-2",
-              "title": "People pleaser <span class='orange'>Relative clauses</span>",
+              "title": "People pleaser. <span class='orange'>Relative clauses</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1496,7 +1496,7 @@
             },
             {
               "id": "b1-plus-2-4",
-              "title": "Planet Earth II <span class='orange'>Jungles</span>",
+              "title": "Planet Earth II. <span class='orange'>Jungles</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1512,7 +1512,7 @@
           "lessons": [
             {
               "id": "b1-plus-3-1",
-              "title": "Working from home <span class='orange'>Conditional structures: unless, even if, in case(of)</span>",
+              "title": "Working from home. <span class='orange'>Conditional structures: unless, even if, in case(of)</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1521,7 +1521,7 @@
             },
             {
               "id": "b1-plus-3-2",
-              "title": "Gig work <span class='orange'>Necessity, obligation and permission</span>",
+              "title": "Gig work. <span class='orange'>Necessity, obligation and permission</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1530,7 +1530,7 @@
             },
             {
               "id": "b1-plus-3-3",
-              "title": "Good question <span class='orange'>How to ... take part in an interview</span>",
+              "title": "Good question. <span class='orange'>How to ... take part in an interview</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1564,7 +1564,7 @@
             },
             {
               "id": "b1-plus-4-2",
-              "title": "Documentary <span class='orange'>Indirect and negative questions</span>",
+              "title": "Documentary. <span class='orange'>Indirect and negative questions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1573,7 +1573,7 @@
             },
             {
               "id": "b1-plus-4-3",
-              "title": "News <span class='orange'>How to ... talk about the news</span>",
+              "title": "News. <span class='orange'>How to ... talk about the news</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1582,7 +1582,7 @@
             },
             {
               "id": "b1-plus-4-4",
-              "title": "Fake friends <span class='orange'>Conversations about fake friends</span>",
+              "title": "Fake friends. <span class='orange'>Conversations about fake friends</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1607,7 +1607,7 @@
             },
             {
               "id": "b1-plus-5-2",
-              "title": "Too good to be true <span class='orange'>Comparative and superlative structures</span>",
+              "title": "Too good to be true. <span class='orange'>Comparative and superlative structures</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1625,7 +1625,7 @@
             },
             {
               "id": "b1-plus-5-4",
-              "title": "I do it myself <span class='orange'>Causative have and get; reflexive pronouns</span>",
+              "title": "I do it myself. <span class='orange'>Causative have and get; reflexive pronouns</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1641,7 +1641,7 @@
           "lessons": [
             {
               "id": "b1-plus-6-1",
-              "title": "In the city <span class='orange'>So and such</span>",
+              "title": "In the city. <span class='orange'>So and such</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1650,7 +1650,7 @@
             },
             {
               "id": "b1-plus-6-2",
-              "title": "Great journeys <span class='orange'>Be/get used to</span>",
+              "title": "Great journeys. <span class='orange'>Be/get used to</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1659,7 +1659,7 @@
             },
             {
               "id": "b1-plus-6-3",
-              "title": "City transport <span class='orange'>How to ... ask for and confirm information</span>",
+              "title": "City transport. <span class='orange'>How to ... ask for and confirm information</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1668,7 +1668,7 @@
             },
             {
               "id": "b1-plus-6-4",
-              "title": "A city of tommorow <span class='orange'>What will you do tomorrow?</span>",
+              "title": "A city of tommorow. <span class='orange'>What will you do tomorrow?</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1684,7 +1684,7 @@
           "lessons": [
             {
               "id": "b1-plus-7-1",
-              "title": "Mix-up <span class='orange'>Reported speech</span>",
+              "title": "Mix-up. <span class='orange'>Reported speech</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1693,7 +1693,7 @@
             },
             {
               "id": "b1-plus-7-2",
-              "title": "Oversharing <span class='orange'>Passives</span>",
+              "title": "Oversharing. <span class='orange'>Passives</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1702,7 +1702,7 @@
             },
             {
               "id": "b1-plus-7-3",
-              "title": "Conversation savers <span class='orange'>How to ... keep a conversation going</span>",
+              "title": "Conversation savers. <span class='orange'>How to ... keep a conversation going</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1711,7 +1711,7 @@
             },
             {
               "id": "b1-plus-7-4",
-              "title": "A good communicator <span class='orange'>Avoiding repetition: so, to, not, be</span>",
+              "title": "A good communicator. <span class='orange'>Avoiding repetition: so, to, not, be</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1727,7 +1727,7 @@
           "lessons": [
             {
               "id": "b1-plus-8-1",
-              "title": "Wise words <span class='orange'>Third conditional ans should have</span>",
+              "title": "Wise words. <span class='orange'>Third conditional ans should have</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1736,7 +1736,7 @@
             },
             {
               "id": "b1-plus-8-2",
-              "title": "Life lessons <span class='orange'>Would</span>",
+              "title": "Life lessons. <span class='orange'>Would</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1754,7 +1754,7 @@
             },
             {
               "id": "b1-8-4",
-              "title": "Good story <span class='orange'>Dragons' Den</span>",
+              "title": "Good story. <span class='orange'>Dragons' Den</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1779,7 +1779,7 @@
           "lessons": [
             {
               "id": "b2-1-1",
-              "title": "My ID <span class='orange'>Present perfect simple and continuous</span>",
+              "title": "My ID. <span class='orange'>Present perfect simple and continuous</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1788,7 +1788,7 @@
             },
             {
               "id": "b2-1-2",
-              "title": "Memory <span class='orange'>Infinitive and -ing forms</span>",
+              "title": "Memory. <span class='orange'>Infinitive and -ing forms</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1797,7 +1797,7 @@
             },
             {
               "id": "b2-1-3",
-              "title": "I'd much rather <span class='orange'>How to ... express personal preferences</span>",
+              "title": "I'd much rather. <span class='orange'>How to ... express personal preferences</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1806,7 +1806,7 @@
             },
             {
               "id": "b2-1-4",
-              "title": "Personality <span class='orange'>While, whereas and whilst</span>",
+              "title": "Personality. <span class='orange'>While, whereas and whilst</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1831,7 +1831,7 @@
             },
             {
               "id": "b2-2-2",
-              "title": "Closer to nature <span class='orange'>Quantifiers</span>",
+              "title": "Closer to nature. <span class='orange'>Quantifiers</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1840,7 +1840,7 @@
             },
             {
               "id": "b2-2-3",
-              "title": "Amazing lives <span class='orange'>How to ... speculate</span>",
+              "title": "Amazing lives. <span class='orange'>How to ... speculate</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1849,7 +1849,7 @@
             },
             {
               "id": "b2-2-4",
-              "title": "The time traveller <span class='orange'>It's time to travel!</span>",
+              "title": "The time traveller. <span class='orange'>It's time to travel!</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1865,7 +1865,7 @@
           "lessons": [
             {
               "id": "b2-3-1",
-              "title": "Festival <span class='orange'>Relative clauses</span>",
+              "title": "Festival. <span class='orange'>Relative clauses</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1874,7 +1874,7 @@
             },
             {
               "id": "b2-3-2",
-              "title": "Performers <span class='orange'>Cleft sentences</span>",
+              "title": "Performers. <span class='orange'>Cleft sentences</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1883,7 +1883,7 @@
             },
             {
               "id": "b2-3-3",
-              "title": "Binge-watch <span class='orange'>How to ... use vague language</span>",
+              "title": "Binge-watch. <span class='orange'>How to ... use vague language</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1908,7 +1908,7 @@
           "lessons": [
             {
               "id": "b2-4-1",
-              "title": "Making changes <span class='orange'>Future continuous and future perfect</span>",
+              "title": "Making changes. <span class='orange'>Future continuous and future perfect</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1917,7 +1917,7 @@
             },
             {
               "id": "b2-4-2",
-              "title": "Sleep <span class='orange'>Passives</span>",
+              "title": "Sleep. <span class='orange'>Passives</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1926,7 +1926,7 @@
             },
             {
               "id": "b2-4-3",
-              "title": "Keep moving <span class='orange'>How to ... express agreement and disagreement</span>",
+              "title": "Keep moving. <span class='orange'>How to ... express agreement and disagreement</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1935,7 +1935,7 @@
             },
             {
               "id": "b2-4-4",
-              "title": "Ancient traditions <span class='orange'>Conversations about traditions</span>",
+              "title": "Ancient traditions. <span class='orange'>Conversations about traditions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -1960,7 +1960,7 @@
             },
             {
               "id": "b2-5-2",
-              "title": "Change of plan <span class='orange'>Past plans and intentions</span>",
+              "title": "Change of plan. <span class='orange'>Past plans and intentions</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2003,7 +2003,7 @@
             },
             {
               "id": "b2-6-2",
-              "title": "Quiet <span class='orange'>Reported orders, requests and advice</span>",
+              "title": "Quiet. <span class='orange'>Reported orders, requests and advice</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2012,7 +2012,7 @@
             },
             {
               "id": "b2-6-3",
-              "title": "Here's my advice <span class='orange'>How to ... ask for advice and give advice tactfully</span>",
+              "title": "Here's my advice. <span class='orange'>How to ... ask for advice and give advice tactfully</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2037,7 +2037,7 @@
           "lessons": [
             {
               "id": "b2-7-1",
-              "title": "An unexpected passion <span class='orange'>Past modals of deduction</span>",
+              "title": "An unexpected passion. <span class='orange'>Past modals of deduction</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2046,7 +2046,7 @@
             },
             {
               "id": "b2-7-2",
-              "title": "I wish <span class='orange'>Wish, if only, should have</span>",
+              "title": "I wish. <span class='orange'>Wish, if only, should have</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2055,7 +2055,7 @@
             },
             {
               "id": "b2-7-3",
-              "title": "Let me explain <span class='orange'>How to ... describe a process</span>",
+              "title": "Let me explain. <span class='orange'>How to ... describe a process</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2080,7 +2080,7 @@
           "lessons": [
             {
               "id": "b2-8-1",
-              "title": "A new way of living <span class='orange'>Participle clauses</span>",
+              "title": "A new way of living. <span class='orange'>Participle clauses</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2098,7 +2098,7 @@
             },
             {
               "id": "b2-8-3",
-              "title": "Online communities <span class='orange'>How to ... develop an argument</span>",
+              "title": "Online communities. <span class='orange'>How to ... develop an argument</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2107,7 +2107,7 @@
             },
             {
               "id": "b2-8-4",
-              "title": "Second shot <span class='orange'>Can you shoot?</span>",
+              "title": "Second shot. <span class='orange'>Can you shoot?</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2132,7 +2132,7 @@
           "lessons": [
             {
               "id": "b2-plus-1-1",
-              "title": "New friends <span class='orange'>Describing past and present habits</span>",
+              "title": "New friends. <span class='orange'>Describing past and present habits</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2141,7 +2141,7 @@
             },
             {
               "id": "b2-plus-1-2",
-              "title": "Places <span class='orange'>Reduced relative clauses</span>",
+              "title": "Places. <span class='orange'>Reduced relative clauses</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2150,7 +2150,7 @@
             },
             {
               "id": "b2-plus-1-3",
-              "title": "Things we love <span class='orange'>How to ... talk about hypothetical preferences</span>",
+              "title": "Things we love. <span class='orange'>How to ... talk about hypothetical preferences</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2159,7 +2159,7 @@
             },
             {
               "id": "b2-plus-1-4",
-              "title": "Comfort food <span class='orange'>What is your favorite food?</span>",
+              "title": "Comfort food. <span class='orange'>What is your favorite food?</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2175,7 +2175,7 @@
           "lessons": [
             {
               "id": "b2-plus-2-1",
-              "title": "Getting away with it <span class='orange'>Cleft sentences</span>",
+              "title": "Getting away with it. <span class='orange'>Cleft sentences</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2193,7 +2193,7 @@
             },
             {
               "id": "b2-plus-2-3",
-              "title": "In the workplace <span class='orange'>How to ... compare and evaluate ideas</span>",
+              "title": "In the workplace. <span class='orange'>How to ... compare and evaluate ideas</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2202,7 +2202,7 @@
             },
             {
               "id": "b2-plus-2-4",
-              "title": "Challenge <span class='orange'>It's your time!</span>",
+              "title": "Challenge. <span class='orange'>It's your time!</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2218,7 +2218,7 @@
           "lessons": [
             {
               "id": "b2-plus-3-1",
-              "title": "Fanfiction <span class='orange'>As iflas though</span>",
+              "title": "Fanfiction. <span class='orange'>As iflas though</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2227,7 +2227,7 @@
             },
             {
               "id": "b2-plus-3-2",
-              "title": "Street chatter <span class='orange'>No matter</span>",
+              "title": "Street chatter. <span class='orange'>No matter</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2245,7 +2245,7 @@
             },
             {
               "id": "b2-plus-3-4",
-              "title": "Role models <span class='orange'>Do you have any role models?</span>",
+              "title": "Role models. <span class='orange'>Do you have any role models?</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2261,7 +2261,7 @@
           "lessons": [
             {
               "id": "b2-plus-4-1",
-              "title": "'Selfie-expression' <span class='orange'>Uses of should</span>",
+              "title": "'Selfie-expression'. <span class='orange'>Uses of should</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2270,7 +2270,7 @@
             },
             {
               "id": "b2-plus-4-2",
-              "title": "Creating a brand <span class='orange'>The continious aspect</span>",
+              "title": "Creating a brand. <span class='orange'>The continious aspect</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2279,7 +2279,7 @@
             },
             {
               "id": "b2-plus-4-3",
-              "title": "Presenting yourself <span class='orange'>How to ... steer a conversation towards a topic</span>",
+              "title": "Presenting yourself. <span class='orange'>How to ... steer a conversation towards a topic</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2288,7 +2288,7 @@
             },
             {
               "id": "b2-plus-4-4",
-              "title": "Branding and behaviour <span class='orange'>What type of person are you?</span>",
+              "title": "Branding and behaviour. <span class='orange'>What type of person are you?</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2304,7 +2304,7 @@
           "lessons": [
             {
               "id": "b2-plus-5-1",
-              "title": "Life-changing decisions <span class='orange'>Mixed conditionals</span>",
+              "title": "Life-changing decisions. <span class='orange'>Mixed conditionals</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2313,7 +2313,7 @@
             },
             {
               "id": "b2-plus-5-2",
-              "title": "Conservational change <span class='orange'>The perfect aspect</span>",
+              "title": "Conservational change. <span class='orange'>The perfect aspect</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2322,7 +2322,7 @@
             },
             {
               "id": "b2-plus-5-3",
-              "title": "Effecting change <span class='orange'>How to ... summarise</span>",
+              "title": "Effecting change. <span class='orange'>How to ... summarise</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2331,7 +2331,7 @@
             },
             {
               "id": "b2-plus-5-4",
-              "title": "Habits <span class='orange'>What bad habits do you have?</span>",
+              "title": "Habits. <span class='orange'>What bad habits do you have?</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2347,7 +2347,7 @@
           "lessons": [
             {
               "id": "b2-plus-6-1",
-              "title": "Algorithm <span class='orange'>Inversion</span>",
+              "title": "Algorithm. <span class='orange'>Inversion</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2356,7 +2356,7 @@
             },
             {
               "id": "b2-plus-6-2",
-              "title": "Online blunders <span class='orange'>Passive structures</span>",
+              "title": "Online blunders. <span class='orange'>Passive structures</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2365,7 +2365,7 @@
             },
             {
               "id": "b2-plus-6-3",
-              "title": "In dispute <span class='orange'>How to ... negotiate in a dispute</span>",
+              "title": "In dispute. <span class='orange'>How to ... negotiate in a dispute</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2374,7 +2374,7 @@
             },
             {
               "id": "b2-plus-6-4",
-              "title": "Tech fail <span class='orange'></span>",
+              "title": "Tech fail. <span class='orange'></span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2390,7 +2390,7 @@
           "lessons": [
             {
               "id": "b2-plus-7-1",
-              "title": "The word on the street <span class='orange'>Adverbials</span>",
+              "title": "The word on the street. <span class='orange'>Adverbials</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2399,7 +2399,7 @@
             },
             {
               "id": "b2-plus-7-2",
-              "title": "Food fads <span class='orange'>Fronting: reasons, causes and explanations</span>",
+              "title": "Food fads. <span class='orange'>Fronting: reasons, causes and explanations</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2408,7 +2408,7 @@
             },
             {
               "id": "b2-plus-7-3",
-              "title": "Pre-loved <span class='orange'>How to ... exaggerate</span>",
+              "title": "Pre-loved. <span class='orange'>How to ... exaggerate</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2417,7 +2417,7 @@
             },
             {
               "id": "b2-plus-7-4",
-              "title": "Past and present <span class='orange'></span>",
+              "title": "Past and present. <span class='orange'></span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2433,7 +2433,7 @@
           "lessons": [
             {
               "id": "b2-plus-8-1",
-              "title": "Dystopias and utopias <span class='orange'>Concession</span>",
+              "title": "Dystopias and utopias. <span class='orange'>Concession</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2442,7 +2442,7 @@
             },
             {
               "id": "b2-plus-8-2",
-              "title": "The science we need <span class='orange'>Future forms</span>",
+              "title": "The science we need. <span class='orange'>Future forms</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2460,7 +2460,7 @@
             },
             {
               "id": "b2-plus-8-4",
-              "title": "Science fiction <span class='orange'></span>",
+              "title": "Science fiction. <span class='orange'></span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2494,7 +2494,7 @@
             },
             {
               "id": "c1-1-2",
-              "title": "Tomorrow's learning <span class='orange'>Nominal relative clauses</span>",
+              "title": "Tomorrow's learning. <span class='orange'>Nominal relative clauses</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2503,7 +2503,7 @@
             },
             {
               "id": "c1-1-3",
-              "title": "Creativity <span class='orange'>How to ... manage interaction during a discussion</span>",
+              "title": "Creativity. <span class='orange'>How to ... manage interaction during a discussion</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2512,7 +2512,7 @@
             },
             {
               "id": "c1-1-4",
-              "title": "Learning experiences <span class='orange'></span>",
+              "title": "Learning experiences. <span class='orange'></span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2528,7 +2528,7 @@
           "lessons": [
             {
               "id": "c1-2-1",
-              "title": "Cities <span class='orange'>Advanced ways of comparing</span>",
+              "title": "Cities. <span class='orange'>Advanced ways of comparing</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2537,7 +2537,7 @@
             },
             {
               "id": "c1-2-2",
-              "title": "Lost in translation <span class='orange'>Reporting</span>",
+              "title": "Lost in translation. <span class='orange'>Reporting</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2546,7 +2546,7 @@
             },
             {
               "id": "c1-2-3",
-              "title": "The way we do it <span class='orange'>How to ... maintain and develop interaction</span>",
+              "title": "The way we do it. <span class='orange'>How to ... maintain and develop interaction</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2555,7 +2555,7 @@
             },
             {
               "id": "c1-2-4",
-              "title": "Flavours <span class='orange'></span>",
+              "title": "Flavours. <span class='orange'></span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2580,7 +2580,7 @@
             },
             {
               "id": "c1-3-2",
-              "title": "Going remote <span class='orange'>Passives</span>",
+              "title": "Going remote. <span class='orange'>Passives</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2589,7 +2589,7 @@
             },
             {
               "id": "c1-3-3",
-              "title": "Tackling the real issues <span class='orange'>How to ... check understanding by paraphrasing and summarising</span>",
+              "title": "Tackling the real issues. <span class='orange'>How to ... check understanding by paraphrasing and summarising</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2614,7 +2614,7 @@
           "lessons": [
             {
               "id": "c1-4-1",
-              "title": "Pioneers <span class='orange'>Verb patterns</span>",
+              "title": "Pioneers. <span class='orange'>Verb patterns</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2623,7 +2623,7 @@
             },
             {
               "id": "c1-4-2",
-              "title": "Community <span class='orange'>Continuous and perfect aspects</span>",
+              "title": "Community. <span class='orange'>Continuous and perfect aspects</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2632,7 +2632,7 @@
             },
             {
               "id": "c1-4-3",
-              "title": "Economies <span class='orange'>How to ... present survey results</span>",
+              "title": "Economies. <span class='orange'>How to ... present survey results</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2641,7 +2641,7 @@
             },
             {
               "id": "c1-4-4",
-              "title": "Extinction <span class='orange'></span>",
+              "title": "Extinction. <span class='orange'></span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2657,7 +2657,7 @@
           "lessons": [
             {
               "id": "c1-5-1",
-              "title": "First impressions <span class='orange'>Giving emphasis: inversion, clefting, tailing, fronting</span>",
+              "title": "First impressions. <span class='orange'>Giving emphasis: inversion, clefting, tailing, fronting</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2666,7 +2666,7 @@
             },
             {
               "id": "c1-5-2",
-              "title": "The truth about rumour <span class='orange'>Participle clauses</span>",
+              "title": "The truth about rumour. <span class='orange'>Participle clauses</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2675,7 +2675,7 @@
             },
             {
               "id": "c1-5-3",
-              "title": "Try it out <span class='orange'>How to ... use persuasive techniques in presentations</span>",
+              "title": "Try it out. <span class='orange'>How to ... use persuasive techniques in presentations</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2684,7 +2684,7 @@
             },
             {
               "id": "c1-5-4",
-              "title": "Role models <span class='orange'></span>",
+              "title": "Role models. <span class='orange'></span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2700,7 +2700,7 @@
           "lessons": [
             {
               "id": "c1-6-1",
-              "title": "Hidden gems <span class='orange'>Narrative tenses review</span>",
+              "title": "Hidden gems. <span class='orange'>Narrative tenses review</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2709,7 +2709,7 @@
             },
             {
               "id": "c1-6-2",
-              "title": "Words and music <span class='orange'>Adverbials</span>",
+              "title": "Words and music. <span class='orange'>Adverbials</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2718,7 +2718,7 @@
             },
             {
               "id": "c1-6-3",
-              "title": "Classic journeys <span class='orange'>How to ... tell an anecdote</span>",
+              "title": "Classic journeys. <span class='orange'>How to ... tell an anecdote</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2727,7 +2727,7 @@
             },
             {
               "id": "c1-6-4",
-              "title": "Design classics <span class='orange'></span>",
+              "title": "Design classics. <span class='orange'></span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2743,7 +2743,7 @@
           "lessons": [
             {
               "id": "c1-7-1",
-              "title": "Decisions, decisions <span class='orange'>Omitting words</span>",
+              "title": "Decisions, decisions. <span class='orange'>Omitting words</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2761,7 +2761,7 @@
             },
             {
               "id": "c1-7-3",
-              "title": "Urban animals <span class='orange'>How to ... hedge an opinion and express reservations</span>",
+              "title": "Urban animals. <span class='orange'>How to ... hedge an opinion and express reservations</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2795,7 +2795,7 @@
             },
             {
               "id": "c1-8-2",
-              "title": "Bridging the senses <span class='orange'>Uses of will and would</span>",
+              "title": "Bridging the senses. <span class='orange'>Uses of will and would</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2804,7 +2804,7 @@
             },
             {
               "id": "c1-8-3",
-              "title": "Feeling good <span class='orange'>How to ... explain the purpose and benefit of something</span>",
+              "title": "Feeling good. <span class='orange'>How to ... explain the purpose and benefit of something</span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
@@ -2813,7 +2813,7 @@
             },
             {
               "id": "c1-8-4",
-              "title": "Effects and illusions <span class='orange'></span>",
+              "title": "Effects and illusions. <span class='orange'></span>",
               "price": 2,
               "words": [
                 { "en": "Hello", "uk": "Привіт" },
