@@ -292,9 +292,13 @@ export default function Account() {
 								<div className="text-total">
 									Ти ще не вивчив жодного слова — але це лише початок!
 								</div>
+								{!user.level &&
 								<div className="level-btn-div">
+								
 									<Link href={'/lesson'} className={`button-filled level-btn ${!user?.level && 'active-not-learning'}`}>Почати навчання</Link>
+						
 								</div>
+								}
 							</div>
 							<div className="div-plaz">
 								<div className="info-total-progres">
@@ -339,9 +343,11 @@ export default function Account() {
 								<div className="text-total">
 									Перший крок ще попереду — починай зараз і впевнено!
 								</div>
+								{!user.level &&
 								<div className="level-btn-div">
 									<Link href={'/lesson'} className={`button-filled level-btn ${!user?.level && 'active-not-learning'}`}>Почати навчання</Link>
 								</div>
+								}
 							</div>
 							<div className="div-plaz">
 								<div className="info-total-progres">
@@ -370,9 +376,11 @@ export default function Account() {
 								<div className="text-total">
 									Ти ще не почав серію — сьогодні гарний день стартувати!
 								</div>
+								{!user.level &&
 								<div className="level-btn-div">
 									<Link href={'/lesson'} className={`button-filled level-btn ${!user?.level && 'active-not-learning'}`}>Почати навчання</Link>
 								</div>
+								}
 							</div>
 						</div>
 					

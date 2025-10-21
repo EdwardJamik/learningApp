@@ -17,7 +17,6 @@ export default function CurrentUnit() {
 	const [openCalendarId, setOpenCalendarId] = useState(null);
 	
 	const pathname = usePathname();
-	const params = useParams();
 	
 	useEffect(() => {
 		async function fetchModuleData() {
