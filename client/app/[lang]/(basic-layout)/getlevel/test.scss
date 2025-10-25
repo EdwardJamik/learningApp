@@ -29,16 +29,18 @@ h1.zagolovok-test-level {
     display: flex;
     align-items: center;
     gap: 12px;
+
 }
 
-.icon-and-text > img {
-	margin-right: 12px; 
+.icon-and-text > svg {
+	margin-right: 12px;
+
 }
 
 .punct-level {
     font-size: 26px;
     font-weight: 500;
-    
+    width: 100%;
     & strong{
    font-weight: 700;
     }

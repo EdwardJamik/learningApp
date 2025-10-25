@@ -210,7 +210,7 @@ export const submitTestLevel = async (req, res) => {
 		}
 		
 		const decoded = jwt.verify(token, process.env.JWT_SECRET);
-		const { level, score } = req.body;
+		const { level } = req.body;
 		
 		// Валідація рівня
 		const validLevels = ['A0', 'A1', 'A2', 'B1', 'B2', 'C1'];
@@ -223,7 +223,7 @@ export const submitTestLevel = async (req, res) => {
        SET english_level = $1, test_completed = true, test_score = $2, test_date = NOW()
        WHERE id = $3
        RETURNING id, name, first_name, last_name, email, english_level, test_completed`,
-			[level.toUpperCase(), score || null, decoded.id]
+			[level.toUpperCase(), 85 || null, decoded.id]
 		);
 		
 		const user = result.rows[0];

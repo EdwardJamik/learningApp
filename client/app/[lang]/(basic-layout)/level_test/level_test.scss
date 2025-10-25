@@ -1,0 +1,234 @@
+.english_test{
+	& > .container {
+		max-width: 1480px;
+		margin: 0 auto;
+		padding: 46px 16px 0;
+
+
+		& .title {
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 130%;
+			margin-bottom: 40px;
+			color: #000;
+			background-image: none;
+		}
+
+		& .questionsGrid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 32px 24px;
+			margin: 0 auto;
+
+			@media (max-width: 1200px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@media (max-width: 768px) {
+				grid-template-columns: 1fr;
+			}
+
+			& .questionCard {
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
+
+				&.correct, &.incorrect{
+					& .questionHeader {
+						& .questionNumber {
+							display: none;
+						}
+
+						& .questionResult{
+
+						}
+					}
+				}
+
+				& .questionHeader {
+					display: flex;
+					gap: 12px;
+					align-items: flex-start;
+
+					& .questionNumber {
+						font-weight: 700;
+						font-size: 16px;
+						text-align: center;
+						flex-shrink: 0;
+						min-width: 26px;
+						background-color: #E7E8FE;
+						width: 26px;
+						height: 26px;
+						border-radius: 100px;
+
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+
+					& .questionText {
+						font-size: 17px;
+						line-height: normal;
+						color: #000;
+						margin: 0;
+
+
+
+						& .space {
+							display: inline-flex;
+							align-items: center;
+							min-width: 32px;
+							height: auto;
+							padding: 2px 8px;
+							border-bottom: 2px solid #D0D1FF;
+							margin: 0 5px;
+							font-size: 17px;
+							transition: all .6s;
+
+							&.hovered {
+								border-bottom: none;
+								font-weight: 700;
+								font-size: 17px;
+								color: #838EFC;
+								padding: 0 0 2px;
+								min-width: auto;
+								margin: 0;
+							}
+
+							&.selected {
+								border-bottom: none;
+								font-weight: 700;
+								font-size: 17px;
+								color: #838EFC;
+								padding: 0 0 2px;
+								min-width: auto;
+								margin: 0;
+							}
+
+							&.correct {
+								border-bottom: none;
+								font-weight: 700;
+								font-size: 17px;
+								padding: 0 0 2px;
+								min-width: auto;
+								margin: 0;
+								color: #00E156;
+							}
+
+							&.incorrect {
+								border-bottom: none;
+								font-weight: 700;
+								font-size: 17px;
+								color: #FF2B00;
+								text-decoration: line-through;
+								padding: 0 0 2px;
+								min-width: auto;
+								margin: 0 5px 0 0;
+							}
+						}
+
+						& .highlight {
+							color: #7c7aff;
+							font-weight: 500;
+						}
+					}
+				}
+
+				& .optionsContainer {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 8px;
+					padding-left: 28px;
+
+					& .optionButton {
+						padding: 8px 16px;
+						border: 1px solid #D0D1FF;
+						border-radius: 24px;
+						font-weight: 500;
+						font-size: 17px;
+						line-height: 130%;
+						text-align: center;
+						background-color: transparent;
+						cursor: pointer;
+						transition: all 0.2s ease;
+						white-space: nowrap;
+
+						&:hover {
+							border-color: #7c7aff;
+							background-color: #e7e8fe;
+						}
+
+						&.selected {
+							background-color: #e8e7ff;
+							border-color: #b8b6ff;
+							color: #000;
+						}
+
+						&.wrongAnswer {
+							background-color: #ffebeb;
+							border-color: #FF2B00;
+							color: #FF2B00;
+						}
+
+						&.correctAnswer{
+							background-color: #00E156;
+							border-color: #00E156;
+							color: #fff;
+						}
+
+						&.correctAnswerTo{
+							border-color: #00E156;
+							color: #00E156;
+							background-color: transparent;
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+
+.submitButton {
+	position: relative;
+	padding: 16px 48px;
+	background-color: #ff7a59;
+	color: #fff;
+	border: none;
+	border-radius: 32px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	box-shadow: 0 4px 12px rgba(255, 122, 89, 0.3);
+	margin-top: 32px;
+	margin-left: auto;
+	display: block;
+
+	&:hover {
+		background-color: #ff6342;
+		box-shadow: 0 6px 16px rgba(255, 122, 89, 0.4);
+		transform: translateY(-2px);
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+
+	&:disabled {
+		background-color: #ccc;
+		cursor: not-allowed;
+		box-shadow: none;
+
+		&:hover {
+			transform: none;
+		}
+	}
+
+	@media (max-width: 768px) {
+		bottom: 20px;
+		right: 20px;
+		padding: 14px 36px;
+		font-size: 15px;
+	}
+}
