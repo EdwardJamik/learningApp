@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { useParams, usePathname } from 'next/navigation';
 import CalendarTimePicker from '@/app/components/CalendarTimePicker/CalendarTimePicker'
 import ModalSuccesCall from '@/app/components/Modal/ModalSuccesCall'
+import Loader from '@/app/components/Loader/Loader'
 
 export default function CurrentUnit() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -66,9 +67,10 @@ export default function CurrentUnit() {
 	if (loading) {
 		return (
 			<section className="current-unit">
-				<h1 className="title">
-					<div className="container">Завантаження...</div>
-				</h1>
+				{/*<h1 className="title">*/}
+				{/*	<div className="container">Завантаження...</div>*/}
+				{/*</h1>*/}
+				<Loader/>
 			</section>
 		);
 	}

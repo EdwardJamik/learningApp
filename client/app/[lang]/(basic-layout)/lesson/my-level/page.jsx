@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import ModalDeclineLogin from '@/app/components/Modal/ModalDeclineLogin'
 import {useRouter} from 'next/navigation'
+import Loader from '@/app/components/Loader/Loader'
 
 export default function Lesson() {
 	const { locale } = useTranslation();
@@ -67,7 +68,7 @@ export default function Lesson() {
 					<div className="container">Всі рівні</div>
 				</h1>
 				<div className="container">
-					<p>Завантаження...</p>
+					<Loader/>
 				</div>
 			</section>
 		);

@@ -54,22 +54,28 @@ body{
 	max-width: 1385px;
 	width: 100%;
 	gap: 30px;
+	max-height: 420px;
+	height: 420px;
 
 	& .back-button{
 		position: absolute;
 		top: 50%;
 		left: -20px;
 		transform: translate(0%,-50%);
-		box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.2);
+		box-shadow: 0px 8px 24px 0px #959DA533;
 		border: 1px solid #E7E8FE;
-		background: rgba(255, 255, 255, 0.5019607843);
+		background: #fff;
 		width: 40px;
 		height: 40px;
 		border-radius: 100px;
-		display: flex
-	;
+		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		&.not-active{
+			border: 1px solid #E7E8FE;
+			background: rgba(255, 255, 255, 0.5019607843);
+		}
 	}
 
 	& .next-button{
@@ -83,10 +89,14 @@ body{
 		width: 40px;
 		height: 40px;
 		border-radius: 100px;
-		display: flex
-	;
+		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		&.not-active{
+			border: 1px solid #E7E8FE;
+			background: rgba(255, 255, 255, 0.5019607843);
+		}
 	}
 }
 
@@ -118,6 +128,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
+	height: 100%;
 }
 
 .zagolovok-level {
@@ -125,8 +136,18 @@ body{
 	align-items: center;
 	background-color: #E7E8FE;
 	border-radius: 100px;
-	padding: 10px 15px;
-	border: 1px solid #838EFC;
+	max-height: 0;
+	height: 100%;
+	padding: 0 15px;
+	overflow: hidden;
+	border: none;
+transition: all .8s;
+
+	&.current {
+		max-height: 62px;
+		padding: 10px 15px;
+		border: 1px solid #838EFC;
+	}
 }
 
 .level-pokaz-div {

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useTranslation } from '@/context/TranslationProvider';
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
+import Loader from '@/app/components/Loader/Loader'
 
 export default function LevelPage() {
 	const { locale } = useTranslation();
@@ -46,9 +47,7 @@ export default function LevelPage() {
 	if (loading) {
 		return (
 			<section className="current-level">
-				<h1 className="title">
-					<div className="container">Завантаження...</div>
-				</h1>
+				<Loader/>
 			</section>
 		);
 	}

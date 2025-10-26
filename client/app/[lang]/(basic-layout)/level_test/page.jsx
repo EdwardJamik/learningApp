@@ -5,6 +5,7 @@ import "./level_test.scss"
 import TestResultModal from '@/app/components/Modal/TestResultModal'
 import {useAuth} from '@/context/AuthContext'
 import {useRouter} from 'next/navigation'
+import Loader from '@/app/components/Loader/Loader'
 
 export default function EnglishLevelTest() {
 	const [answers, setAnswers] = useState({})
@@ -37,6 +38,7 @@ export default function EnglishLevelTest() {
 				const response = await fetch('/api/level_test')
 				if (!response.ok) throw new Error('Помилка завантаження даних')
 				const data = await response.json()
+				
 				setQuestion(data.questions || [])
 			} catch (err) {
 				setError(err.message)
@@ -52,7 +54,7 @@ export default function EnglishLevelTest() {
 			<section className='english_test'>
 				<div className="container">
 					<h1 className="title">English Level Test</h1>
-					<p>Завантаження...</p>
+					<Loader/>
 				</div>
 			</section>
 		)
@@ -60,33 +62,40 @@ export default function EnglishLevelTest() {
 	
 	const groupQuestionsByType = () => {
 		const pages = []
-		const questionsByType = {
-			0: isQuestion.filter(q => q.type === 0),
-			1: isQuestion.filter(q => q.type === 1),
-			2: isQuestion.filter(q => q.type === 2)
-		}
+		let i = 0
 		
-		// Type 0: по 9 на сторінку
-		for (let i = 0; i < questionsByType[0].length; i += 9) {
+		while (i < isQuestion.length) {
+			const currentQuestion = isQuestion[i]
+			const currentType = currentQuestion.type
+			
+			// Визначаємо кількість питань на сторінку залежно від типу
+			let questionsPerPage
+			if (currentType === 0) {
+				questionsPerPage = 9
+			} else if (currentType === 1) {
+				questionsPerPage = 3
+			} else if (currentType === 2) {
+				questionsPerPage = 1
+			}
+			
+			// Збираємо питання одного типу для поточної сторінки
+			const pageQuestions = []
+			let count = 0
+			
+			while (i < isQuestion.length && count < questionsPerPage) {
+				if (isQuestion[i].type === currentType) {
+					pageQuestions.push(isQuestion[i])
+					count++
+					i++
+				} else {
+					// Якщо зустріли інший тип, виходимо з циклу
+					break
+				}
+			}
+			
 			pages.push({
-				type: 0,
-				questions: questionsByType[0].slice(i, i + 9)
-			})
-		}
-		
-		// Type 1: по 3 на сторінку
-		for (let i = 0; i < questionsByType[1].length; i += 3) {
-			pages.push({
-				type: 1,
-				questions: questionsByType[1].slice(i, i + 3)
-			})
-		}
-		
-		// Type 2: по 5 на сторінку
-		for (let i = 0; i < questionsByType[2].length; i += 5) {
-			pages.push({
-				type: 2,
-				questions: questionsByType[2].slice(i, i + 5)
+				type: currentType,
+				questions: pageQuestions
 			})
 		}
 		
@@ -125,16 +134,6 @@ export default function EnglishLevelTest() {
 		return currentQuestions.every(question => answers[question.id] !== undefined)
 	}
 	
-	const calculatePageScore = () => {
-		let correct = 0
-		currentQuestions.forEach((question) => {
-			if (answers[question.id] === question.correct_answer) {
-				correct++
-			}
-		})
-		return correct
-	}
-	
 	const isAnswerCorrect = (questionId) => {
 		const question = currentQuestions.find(q => q.id === questionId)
 		return answers[question.id] === question.correct_answer
@@ -142,10 +141,7 @@ export default function EnglishLevelTest() {
 	
 	// Отримати поточний рівень на основі кількості відповідей
 	const getCurrentLevelByAnsweredCount = (totalAnswered) => {
-		// Якщо відповіли N разів, значить працюємо з питаннями 0..N-1
-		// Треба знайти рівень, в якому знаходиться останнє відповіджене питання
 		for (let i = 0; i < levelRanges.length; i++) {
-			// Якщо totalAnswered входить в діапазон рівня [rangeStart+1, rangeEnd]
 			if (totalAnswered > levelRanges[i].rangeStart && totalAnswered <= levelRanges[i].rangeEnd) {
 				return levelRanges[i]
 			}
@@ -177,7 +173,6 @@ export default function EnglishLevelTest() {
 		let currentLevelIndex = -1
 		let lastCompletedLevelIndex = -1
 		
-		// Знаходимо останній завершений рівень та поточний незавершений
 		for (let i = 0; i < levelRanges.length; i++) {
 			const level = levelRanges[i]
 			const { correctCount, answeredCount } = getCorrectAnswersInLevel(level)
@@ -185,14 +180,11 @@ export default function EnglishLevelTest() {
 			
 			console.log(`Перевірка рівня ${level.level}: ${answeredCount}/${questionsInLevel} відповідей`)
 			
-			// Якщо є відповіді в рівні
 			if (answeredCount > 0) {
 				if (answeredCount === questionsInLevel) {
-					// Рівень завершено повністю
 					lastCompletedLevelIndex = i
 					console.log(`  → Рівень ${level.level} завершено`)
 				} else {
-					// Рівень не завершено - це поточний рівень
 					currentLevelIndex = i
 					console.log(`  → Рівень ${level.level} в процесі`)
 					break
@@ -200,19 +192,16 @@ export default function EnglishLevelTest() {
 			}
 		}
 		
-		// Якщо є незавершений рівень - аналізуємо його
-		// Якщо всі рівні завершені - аналізуємо останній завершений
 		const levelIndexToCheck = currentLevelIndex >= 0 ? currentLevelIndex : lastCompletedLevelIndex
 		
 		if (levelIndexToCheck < 0) {
-			// Немає жодних відповідей - повертаємо перший рівень
 			levelIndexToCheck = 0
 		}
 		
 		const currentLevel = levelRanges[levelIndexToCheck]
 		const questionsInLevel = currentLevel.rangeEnd - currentLevel.rangeStart
 		const { correctCount, answeredCount } = getCorrectAnswersInLevel(currentLevel)
-		const requiredCorrect = Math.ceil(questionsInLevel * 0.8) // 80% правильних
+		const requiredCorrect = Math.ceil(questionsInLevel * 0.8)
 		const percentage = answeredCount > 0 ? (correctCount / questionsInLevel) * 100 : 0
 		const passed = correctCount >= requiredCorrect
 		
@@ -244,13 +233,11 @@ export default function EnglishLevelTest() {
 	const handleNextPage = async () => {
 		const isLastPage = currentPage >= pages.length - 1
 		
-		// Спочатку перевіряємо всі завершені рівні
 		for (let i = 0; i < levelRanges.length; i++) {
 			const level = levelRanges[i]
 			const { correctCount, answeredCount } = getCorrectAnswersInLevel(level)
 			const questionsInLevel = level.rangeEnd - level.rangeStart
 			
-			// Якщо рівень завершено - перевіряємо чи пройдено
 			if (answeredCount === questionsInLevel) {
 				const requiredCorrect = Math.ceil(questionsInLevel * 0.8)
 				const passed = correctCount >= requiredCorrect
@@ -258,13 +245,11 @@ export default function EnglishLevelTest() {
 				console.log(`Перевірка завершеного рівня ${level.level}: ${correctCount}/${questionsInLevel} (потрібно ${requiredCorrect})`)
 				
 				if (!passed) {
-					// Не пройшов цей рівень - визначаємо фінальний рівень
 					const finalLevel = i > 0 ? levelRanges[i - 1].level : level.level
 					const percentage = (correctCount / questionsInLevel) * 100
 					
 					console.log(`❌ Користувач не пройшов рівень ${level.level}, його рівень: ${finalLevel}`)
 					
-					// Завершуємо тест
 					setUserLevel({
 						level: finalLevel,
 						score: correctCount,
@@ -278,7 +263,6 @@ export default function EnglishLevelTest() {
 					console.log(`✅ Рівень ${level.level} пройдено`)
 				}
 			} else if (answeredCount > 0) {
-				// Якщо рівень не завершено але є відповіді - продовжуємо тест
 				console.log(`Рівень ${level.level} в процесі (${answeredCount}/${questionsInLevel}), продовжуємо`)
 				setShowPageResults(false)
 				setCurrentPage(currentPage + 1)
@@ -287,7 +271,6 @@ export default function EnglishLevelTest() {
 			}
 		}
 		
-		// Якщо всі рівні пройдено - завершуємо з максимальним рівнем
 		const lastLevel = levelRanges[levelRanges.length - 1]
 		const { correctCount, answeredCount } = getCorrectAnswersInLevel(lastLevel)
 		const percentage = (correctCount / (lastLevel.rangeEnd - lastLevel.rangeStart)) * 100
@@ -332,7 +315,6 @@ export default function EnglishLevelTest() {
 		}
 	}
 	
-	// Функція для обробки тексту з .space
 	const processQuestionText = (question, hovered = null) => {
 		let text = question.question
 		
@@ -377,22 +359,28 @@ export default function EnglishLevelTest() {
 			case 1:
 				return (
 					<>
-						<div className='questionDescription'>
+						<div className="questionDescription">
 							<p>{question.description}</p>
 						</div>
-						<p className='questionText' dangerouslySetInnerHTML={{ __html: processQuestionText(question, hovered) }} />
+						<div className="questionContainer">
+							<span className="questionNumber">{getQuestionNumber(question)}</span>
+							<p className="questionText" dangerouslySetInnerHTML={{__html: processQuestionText(question, hovered)}}/>
+						</div>
 					</>
 				)
 			
 			case 2:
 				return (
 					<>
-						<div className='audioContainer'>
+						<div className="audioContainer">
 							<audio controls src={question.task}>
 								Your browser does not support the audio element.
 							</audio>
 						</div>
-						<p className='questionText' dangerouslySetInnerHTML={{ __html: processQuestionText(question, hovered) }} />
+						<div className="questionContainer">
+							<span className="questionNumber">{getQuestionNumber(question)}</span>
+							<p className="questionText" dangerouslySetInnerHTML={{__html: processQuestionText(question, hovered)}}/>
+						</div>
 					</>
 				)
 			
@@ -413,7 +401,6 @@ export default function EnglishLevelTest() {
 	const isLastPage = currentPage >= pages.length - 1
 	const nextRange = getNextPageRange()
 	
-	// Рендер для type 0 (grid layout)
 	const renderType0Questions = () => (
 		<div className='questionsGrid'>
 			{currentQuestions.map((question) => {
@@ -494,7 +481,6 @@ export default function EnglishLevelTest() {
 		</div>
 	)
 	
-	// Рендер для type 1 та type 2 (vertical layout)
 	const renderType12Questions = () => (
 		<div className='questionsList'>
 			{currentQuestions.map((question) => {
@@ -504,7 +490,6 @@ export default function EnglishLevelTest() {
 					<div key={question.id}
 					     className={`questionItem ${showPageResults ? (isCorrect ? 'correct' : 'incorrect') : ''}`}>
 						<div className='questionHeader'>
-							<span className='questionNumber'>{getQuestionNumber(question)}</span>
 							{showPageResults && (
 								<span className='questionResult'>
 									{isCorrect ?
@@ -521,7 +506,6 @@ export default function EnglishLevelTest() {
 								</span>
 							)}
 						</div>
-						
 						{renderQuestion(question)}
 						
 						<div className="optionsContainer">
@@ -581,6 +565,14 @@ export default function EnglishLevelTest() {
 			<section className='english_test'>
 				<div className="container">
 					<h1 className='title'>English Level Test</h1>
+					
+					{currentType === 1 &&
+						<h2 className='task'>Read and select the best option</h2>
+					}
+					
+					{currentType === 2 &&
+						<h2 className='task'>Listen and answer the question</h2>
+					}
 					
 					{currentType === 0 ? renderType0Questions() : renderType12Questions()}
 					

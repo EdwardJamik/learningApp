@@ -6,14 +6,26 @@ import path from 'path';
 
 export async function GET() {
 	try {
-		// Шлях до JSON файлу
 		const filePath = path.join(process.cwd(), 'data', 'level_test.json');
-		
-		// Читаємо файл при КОЖНОМУ запиті (без кешування)
 		const fileContent = fs.readFileSync(filePath, 'utf8');
 		const data = JSON.parse(fileContent);
 		
-		return NextResponse.json(data);
+		// Оновлюємо шляхи до аудіо файлів
+		const updatedQuestions = data.questions.map(question => {
+			if (question.type === 2 && question.task) {
+				return {
+					...question,
+					task: `/api/level_test/audio/${question.task.replace('./', '')}`
+				};
+			}
+			return question;
+		});
+		
+		return NextResponse.json({
+			...data,
+			questions: updatedQuestions
+		});
+		
 	} catch (error) {
 		console.error('Помилка читання файлу:', error);
 		return NextResponse.json(

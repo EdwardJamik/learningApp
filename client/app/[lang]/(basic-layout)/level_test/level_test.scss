@@ -2,7 +2,7 @@
 	& > .container {
 		max-width: 1480px;
 		margin: 0 auto;
-		padding: 46px 16px 0;
+		padding: 40px 16px;
 
 
 		& .title {
@@ -12,6 +12,132 @@
 			margin-bottom: 40px;
 			color: #000;
 			background-image: none;
+		}
+
+		& .task{
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 130%;
+			margin-bottom: 20px;
+		}
+
+		& .description-task{
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 170%;
+			margin-bottom: 36px;
+		}
+
+		& .questionsList{
+			& .questionItem{
+
+				& .questionDescription{
+					& p{
+						font-weight: 500;
+						font-size: 17px;
+						line-height: 170%;
+						margin-bottom: 36px;
+
+					}
+				}
+
+				& .audioContainer{
+					margin-bottom: 50px;
+					padding-top: 20px;
+					width: 100%;
+
+					& audio{
+						width: 100%;
+						max-width: 1000px;
+					}
+				}
+
+				& .questionContainer{
+					display: flex;
+					align-items: center;
+					gap: 12px;
+
+					& .questionNumber{
+						font-weight: 700;
+						font-size: 16px;
+						text-align: center;
+						flex-shrink: 0;
+						min-width: 26px;
+						background-color: #E7E8FE;
+						width: 26px;
+						height: 26px;
+						border-radius: 100px;
+
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+
+					& .questionText{
+						font-size: 17px;
+						line-height: normal;
+						color: #000;
+						margin: 0;
+					}
+				}
+
+
+
+				& .optionsContainer {
+					padding: 28px 38px 32px;
+					border-bottom: 1px solid #E8E1E0;
+					margin-bottom: 32px;
+					gap: 15px;
+					display: flex;
+					align-items: center;
+					flex-direction: row;
+					flex-wrap: wrap;
+
+					& .optionButton{
+						border: 1px solid #D0D1FF;
+						font-weight: 500;
+						font-size: 17px;
+						line-height: 130%;
+						text-align: center;
+						background-color: #fff;
+						border-radius: 100px;
+						padding: 8px 14px;
+
+						@media screen and (max-width: 768px) {
+							width: 100%;
+						}
+
+						&:hover {
+							border-color: #7c7aff;
+							background-color: #e7e8fe;
+						}
+
+						&.selected {
+							background-color: #e8e7ff;
+							border-color: #b8b6ff;
+							color: #000;
+						}
+
+						&.wrongAnswer {
+							background-color: #ffebeb;
+							border-color: #FF2B00;
+							color: #FF2B00;
+						}
+
+						&.correctAnswer{
+							background-color: #00E156;
+							border-color: #00E156;
+							color: #fff;
+						}
+
+						&.correctAnswerTo{
+							border-color: #00E156;
+							color: #00E156;
+							background-color: transparent;
+						}
+					}
+				}
+			}
 		}
 
 		& .questionsGrid {

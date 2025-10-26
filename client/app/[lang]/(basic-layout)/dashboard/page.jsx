@@ -16,6 +16,7 @@ import levelImage6 from '../../../assets/Dashboard/b1+.jpg'
 import levelImage7 from '../../../assets/Dashboard/b2.jpg'
 import levelImage8 from '../../../assets/Dashboard/b2+.jpg'
 import levelImage9 from '../../../assets/Dashboard/c1.jpg'
+import Loader from '@/app/components/Loader/Loader'
 
 export default function Account() {
 	const { user, loading } = useAuth();
@@ -68,7 +69,7 @@ export default function Account() {
 		}
 	};
 	
-	if (loading) return <div>Завантаження...</div>;
+	if (loading) return <Loader/>;
 	if (!user) return null;
 	
 	return (
@@ -77,15 +78,13 @@ export default function Account() {
 				<div className="one-section">
 					<div className="flex-section-golov">
 						
-						{/* Кнопка "назад" */}
-						<button className="back-button" onClick={prevLevel}>
+						<button className={`back-button ${isLevel === 'a1' ? 'not-active' : ''}`} onClick={prevLevel}>
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
 								<path d="M8 15L1 8M1 8L8 1M1 8H15" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 							</svg>
 						</button>
 						
-						{/* Кнопка "вперед" */}
-						<button className="next-button" onClick={nextLevel}>
+						<button className={`next-button ${isLevel === 'c1' ? 'not-active' : ''}`} onClick={nextLevel}>
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
 								<path d="M8 1L15 8M15 8L8 15M15 8L1 8" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 							</svg>
@@ -102,19 +101,25 @@ export default function Account() {
 						
 							<div className="level-info-div">
 								<div className="info-level">
-									<div className="zagolovok-level">
-										<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M15.21 23L10.66 15.14C10.4638 14.8009 10.3715 14.4116 10.3946 14.0205C10.4177 13.6294 10.5552 13.2537 10.79 12.94L12.4 10.8C12.5863 10.5516 12.8278 10.35 13.1055 10.2111C13.3832 10.0723 13.6895 10 14 10H26C26.3104 10 26.6167 10.0723 26.8944 10.2111C27.1721 10.35 27.4137 10.5516 27.6 10.8L29.2 12.94C29.4363 13.2527 29.5755 13.6278 29.6004 14.019C29.6253 14.4101 29.5347 14.7999 29.34 15.14L24.79 23M19 20L13.12 10.2M21 20L26.88 10.2M16 15H24M20 26V24H19.5M25 25C25 27.7614 22.7614 30 20 30C17.2385 30 15 27.7614 15 25C15 22.2386 17.2385 20 20 20C22.7614 20 25 22.2386 25 25Z"
-												stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-										{user.level ?
-											<h3 className="medal-h3">Твій рівень</h3>
-											:
-											<h3 className="medal-h3">Визначи свій рівень</h3>
-										}
 									
-									</div>
+									{!user.level ?
+										<div className={`zagolovok-level`}>
+											<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M15.21 23L10.66 15.14C10.4638 14.8009 10.3715 14.4116 10.3946 14.0205C10.4177 13.6294 10.5552 13.2537 10.79 12.94L12.4 10.8C12.5863 10.5516 12.8278 10.35 13.1055 10.2111C13.3832 10.0723 13.6895 10 14 10H26C26.3104 10 26.6167 10.0723 26.8944 10.2111C27.1721 10.35 27.4137 10.5516 27.6 10.8L29.2 12.94C29.4363 13.2527 29.5755 13.6278 29.6004 14.019C29.6253 14.4101 29.5347 14.7999 29.34 15.14L24.79 23M19 20L13.12 10.2M21 20L26.88 10.2M16 15H24M20 26V24H19.5M25 25C25 27.7614 22.7614 30 20 30C17.2385 30 15 27.7614 15 25C15 22.2386 17.2385 20 20 20C22.7614 20 25 22.2386 25 25Z"
+													stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+											</svg>
+											<h3 className="medal-h3">Визначи свій рівень</h3>
+										</div> :
+										<div className={`zagolovok-level ${isLevel?.toUpperCase() === user?.level ? 'current' : ''}`}>
+											<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M15.21 23L10.66 15.14C10.4638 14.8009 10.3715 14.4116 10.3946 14.0205C10.4177 13.6294 10.5552 13.2537 10.79 12.94L12.4 10.8C12.5863 10.5516 12.8278 10.35 13.1055 10.2111C13.3832 10.0723 13.6895 10 14 10H26C26.3104 10 26.6167 10.0723 26.8944 10.2111C27.1721 10.35 27.4137 10.5516 27.6 10.8L29.2 12.94C29.4363 13.2527 29.5755 13.6278 29.6004 14.019C29.6253 14.4101 29.5347 14.7999 29.34 15.14L24.79 23M19 20L13.12 10.2M21 20L26.88 10.2M16 15H24M20 26V24H19.5M25 25C25 27.7614 22.7614 30 20 30C17.2385 30 15 27.7614 15 25C15 22.2386 17.2385 20 20 20C22.7614 20 25 22.2386 25 25Z"
+													stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+											</svg>
+												<h3 className="medal-h3">Твій рівень</h3>
+										</div>
+									}
 									<div className="level-pokaz-div">
 										
 										<div className="text-level-div">
@@ -141,19 +146,19 @@ export default function Account() {
 													{isLevel?.toLowerCase() === 'b1' &&
 														<>
 															<h2 className="zagolovok-lev-h2">{isLevel?.toUpperCase()}</h2>
-															<h2 className="zagolovok-lev-h22">Strong Intermediate</h2>
+															<h2 className="zagolovok-lev-h22">Intermediate</h2>
 														</>
 													}
 													{isLevel?.toLowerCase() === 'b1+' &&
 														<>
 															<h2 className="zagolovok-lev-h2">{isLevel?.toUpperCase()}</h2>
-															<h2 className="zagolovok-lev-h22">Upper-Intermediate</h2>
+															<h2 className="zagolovok-lev-h22">Strong-Intermediate</h2>
 														</>
 													}
 													{isLevel?.toLowerCase() === 'b2' &&
 														<>
 															<h2 className="zagolovok-lev-h2">{isLevel?.toUpperCase()}</h2>
-															<h2 className="zagolovok-lev-h22">Upper Intermediate</h2>
+															<h2 className="zagolovok-lev-h22">Upper-Intermediate</h2>
 														</>
 													}
 													{isLevel?.toLowerCase() === 'b2+' &&
@@ -177,12 +182,14 @@ export default function Account() {
 												<>
 													{isLevel?.toLowerCase() === 'a1' &&
 														<>
-															<h2 className="podzagolovok-level">Я знаю кілька слів. Говорю повільно. Але мене вже чують.</h2>
+															<h2 className="podzagolovok-level">Я знаю кілька слів. Говорю повільно. Але мене вже
+																чують.</h2>
 														</>
 													}
 													{isLevel?.toLowerCase() === 'a2' &&
 														<>
-															<h2 className="podzagolovok-level">Я можу розповісти про себе. Помиляюся — і йду далі.</h2>
+															<h2 className="podzagolovok-level">Я можу розповісти про себе. Помиляюся — і йду
+																далі.</h2>
 														</>
 													}
 													{isLevel?.toLowerCase() === 'a2+' &&
@@ -193,12 +200,14 @@ export default function Account() {
 													}
 													{isLevel?.toLowerCase() === 'b1' &&
 														<>
-															<h2 className="podzagolovok-level">Я можу пояснити, чому думаю так. І зробити це впевнено.</h2>
+															<h2 className="podzagolovok-level">Я можу пояснити, чому думаю так. І зробити це
+																впевнено.</h2>
 														</>
 													}
 													{isLevel?.toLowerCase() === 'b1+' &&
 														<>
-															<h2 className="podzagolovok-level">Ви можете вільно спілкуватися з носіями мови та розуміти складні тексти на різні теми.</h2>
+															<h2 className="podzagolovok-level">Ви можете вільно спілкуватися з носіями мови та
+																розуміти складні тексти на різні теми.</h2>
 														</>
 													}
 													{isLevel?.toLowerCase() === 'b2' &&
@@ -213,7 +222,8 @@ export default function Account() {
 													}
 													{isLevel?.toLowerCase() === 'c1' &&
 														<>
-															<h2 className="podzagolovok-level">Я думаю, жартую й відчуваю англійською. Це вже дім.</h2>
+															<h2 className="podzagolovok-level">Я думаю, жартую й відчуваю англійською. Це вже
+																дім.</h2>
 														</>
 													}
 												</>
@@ -242,33 +252,34 @@ export default function Account() {
 									</div>
 									<div className="level-btn-div">
 										{user.level ?
-											<Link href={`/level/${isLevel?.toLowerCase()}`} className="level-btn">Вдосконалити даний рівень</Link>
+											<Link href={`/level/${isLevel?.toLowerCase()}`} className="level-btn">Вдосконалити даний
+												рівень</Link>
 											:
 											<Link href={'/getlevel'} className="level-btn">Дізнатись свій рівень</Link>
 										}
 									</div>
 								</div>
 							</div>
-						</div>
 					</div>
-					<div className="two-section">
+				</div>
+				<div className="two-section">
 					
 					<div className="flex-two-section">
-							<div className="div-plaz">
-								<div className="info-total-progres">
-									<div className="icon-total-fine">
-										<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M36.4255 0V32.8305L7.16037 36.0241L3.57568 36.4153V3.58469C3.57568 2.59477 3.97646 1.6982 4.62522 1.04945C5.27397 0.400703 6.17045 0 7.16037 0H36.4255Z"
-												fill="#DA4A54"/>
-											<path
-												d="M7.16037 0V36.0241L3.57568 36.4153V3.58469C3.57568 2.59477 3.97646 1.6982 4.62522 1.04945C5.27397 0.400703 6.17045 0 7.16037 0Z"
-												fill="#C32430"/>
-											<path
-												d="M36.4258 32.8311H7.16021C5.18053 32.8311 3.57568 34.4359 3.57568 36.4156C3.57568 38.3953 5.18053 40.0001 7.16021 40.0001H36.4258V37.988L34.9673 36.4155L36.4258 34.843V32.8311Z"
-												fill="#C32430"/>
-											<path
-												d="M7.16039 37.9878C6.29328 37.9878 5.58789 37.2824 5.58789 36.4153C5.58789 35.5482 6.29328 34.8428 7.16039 34.8428H36.4259V37.9878H7.16039Z"
+						<div className="div-plaz">
+							<div className="info-total-progres">
+								<div className="icon-total-fine">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M36.4255 0V32.8305L7.16037 36.0241L3.57568 36.4153V3.58469C3.57568 2.59477 3.97646 1.6982 4.62522 1.04945C5.27397 0.400703 6.17045 0 7.16037 0H36.4255Z"
+											fill="#DA4A54"/>
+										<path
+											d="M7.16037 0V36.0241L3.57568 36.4153V3.58469C3.57568 2.59477 3.97646 1.6982 4.62522 1.04945C5.27397 0.400703 6.17045 0 7.16037 0Z"
+											fill="#C32430"/>
+										<path
+											d="M36.4258 32.8311H7.16021C5.18053 32.8311 3.57568 34.4359 3.57568 36.4156C3.57568 38.3953 5.18053 40.0001 7.16021 40.0001H36.4258V37.988L34.9673 36.4155L36.4258 34.843V32.8311Z"
+											fill="#C32430"/>
+										<path
+											d="M7.16039 37.9878C6.29328 37.9878 5.58789 37.2824 5.58789 36.4153C5.58789 35.5482 6.29328 34.8428 7.16039 34.8428H36.4259V37.9878H7.16039Z"
 												fill="#DFEAEF"/>
 											<path d="M16.4837 7.77195L13.8778 5.09742L11.272 7.77195V0H16.4837V7.77195Z" fill="#F4DD45"/>
 											<path

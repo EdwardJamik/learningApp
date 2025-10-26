@@ -53,9 +53,7 @@ export const login = async (req, res) => {
 		
 		const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, { expiresIn: "7d" });
 		
-		console.log("Setting cookie for user:", user.id);
 		
-		// Встановлюємо cookie з токеном
 		res.cookie("authToken", token, {
 			httpOnly: true,
 			secure: false, // для localhost завжди false
@@ -69,7 +67,8 @@ export const login = async (req, res) => {
 		const userData = {
 			id: user.id,
 			name: user.name,
-			email: user.email
+			email: user.email,
+			level: user.english_level
 		};
 		
 		console.log("Login successful, returning user data:", userData);

@@ -31,8 +31,8 @@
     {
       "id": 4,
       "type": 0,
-      "question": "<span class='space'></span> 20 chairs in the office.",
-      "answer": ["This is", "There is", "They are", "There are"],
+      "question": "We <span class='space'></span> vegetables for dinner.",
+      "answer": ["always to have", "have always", "always", "always have"],
       "correct_answer": 3
     },
     {
@@ -45,8 +45,8 @@
     {
       "id": 6,
       "type": 0,
-      "question": "Sorry, I can’t talk right now. I’ve <span class='space'></span> started my online English test.",
-      "answer": ["already", "yet", "just", "still"],
+      "question": "Do you like football? <span class='space'></span> Yes, ___.",
+      "answer": ["did", "am", "do", "will"],
       "correct_answer": 2
     },
     {
@@ -59,16 +59,17 @@
     {
       "id": 8,
       "type": 0,
-      "question": "I wasn’t expecting much, but I actually <span class='space'></span> the film we watched last night.",
+      "question": "I actually <span class='space'></span> the film last night.",
       "answer": ["liking", "liked", "like", "have liked"],
       "correct_answer": 1
     },
     {
       "id": 9,
-      "type": 0,
-      "question": "<span class='space'></span> a piece of cake? No, thank you.",
-      "answer": ["Do you like", "Would you like", "Want you", "Are you like"],
-      "correct_answer": 1
+      "type": 2,
+      "task": "a1.mp3",
+      "question": "??????????????????????????????????????????????",
+      "answer": ["The speaker likes the dog", "The speaker dislikes the dog", "The speaker is scared of the dog", "The speaker wants a dog"],
+      "correct_answer": 0
     },
     {
       "id": 10,
@@ -80,9 +81,9 @@
     {
       "id": 11,
       "type": 0,
-      "question": "The sightseeing bus is very old. If we don’t fix it this week, we’ll <span class='space'></span> a new one before the tourist season starts.",
-      "answer": ["be buying", "buy", "have bought", "to buy"],
-      "correct_answer": 1
+      "question": "What time do you need to be at <span class='space'></span> airport?",
+      "answer": ["the", "a", "one", "any"],
+      "correct_answer": 0
     },
     {
       "id": 12,
@@ -103,7 +104,7 @@
       "type": 0,
       "question": "The car park is <span class='space'></span> to the restaurant.",
       "answer": ["next", "opposite", "behind", "in front"],
-      "correct_answer": 1
+      "correct_answer": 0
     },
     {
       "id": 15,
@@ -129,72 +130,73 @@
     {
       "id": 18,
       "type": 0,
-      "question": "We’ve been friends <span class='space'></span> many years.",
-      "answer": ["since", "from", "during", "for"],
+      "question": "When did you decide <span class='space'></span> English?",
+      "answer": ["you learn", "learn", "learning", "to learn"],
       "correct_answer": 3
     },
     {
       "id": 19,
+      "type": 2,
+      "task": "a2.mp3",
+      "question": "What information does Ivan give about himself?",
+      "answer": ["His favorite food and city", "His name and where he is from", "His age and hobbies", "His family members"],
+      "correct_answer": 1
+    },
+    {
+      "id": 20,
       "type": 0,
       "question": "You <span class='space'></span> pay for the tickets. They’re free.",
       "answer": ["have to", "don’t have", "don’t need to", "doesn’t have to"],
       "correct_answer": 2
     },
     {
-      "id": 20,
+      "id": 21,
       "type": 0,
-      "question": "Jack was ill last week and he <span class='space'></span> go out.",
-      "answer": ["needn't", "can’t", "mustn’t", "couldn’t"],
-      "correct_answer": 3
+      "question": "We <span class='space'></span> a film at the cinema tonight. I’ve got the tickets.",
+      "answer": ["going to", "'re seeing", "see", "'s seeing"],
+      "correct_answer": 1
     },
     {
-      "id": 21,
+      "id": 22,
       "type": 0,
       "question": "These are the photos <span class='space'></span> I took on holiday.",
       "answer": ["which", "who", "what", "where"],
       "correct_answer": 0
     },
     {
-      "id": 22,
-      "type": 0,
-      "question": "We’ll stay at home if it <span class='space'></span> this afternoon.",
-      "answer": ["raining", "rains", "will rain", "rain"],
-      "correct_answer": 1
-    },
-    {
       "id": 23,
       "type": 0,
-      "question": "He doesn’t smoke now, but he <span class='space'></span> a lot when he was young.",
-      "answer": ["has smoked", "smokes", "used to smoke", "was smoked"],
+      "question": " <span class='space'></span> was watching TV in the living room.",
+      "answer": ["everywhere", "anybody", "everyone", "somewhere"],
       "correct_answer": 2
     },
     {
       "id": 24,
+      "type": 0,
+      "question": "She <span class='space'></span> these days.",
+      "answer": ["hardly ever visits us", "visits hardly ever us", "visits us hardly ever", "visit hardly us"],
+      "correct_answer": 0
+    },
+    {
+      "id": 25,
       "type": 0,
       "question": "Michael plays basketball <span class='space'></span> anyone else I know.",
       "answer": ["more good than", "as better as", "best than", "better than"],
       "correct_answer": 3
     },
     {
-      "id": 25,
-      "type": 0,
-      "question": "I promise I <span class='space'></span> you as soon as I’ve finished this cleaning.",
-      "answer": ["will help", "am helping", "going to help", "have helped"],
-      "correct_answer": 0
-    },
-    {
       "id": 26,
       "type": 0,
-      "question": "This town <span class='space'></span> by lots of tourists during the summer.",
-      "answer": ["visits", "visited", "is visiting", "is visited"],
-      "correct_answer": 3
+      "question": "We live on the south <span class='space'></span> of France.",
+      "answer": ["side", "border", "coast", "way"],
+      "correct_answer": 2
     },
     {
       "id": 27,
       "type": 0,
-      "question": "He said that his friends <span class='space'></span> to speak to him after they lost the football match.",
-      "answer": ["not want", "weren’t", "didn’t want", "aren’t wanting"],
-      "correct_answer": 2
+      "question": "We watched the spider make its <span class='space'></span> . It was amazing!",
+      "answer": ["web", "skin", "trunk", "shell"],
+      "correct_answer": 0
     },
     {
       "id": 28,
@@ -205,190 +207,271 @@
     },
     {
       "id": 29,
-      "type": 0,
-      "question": "Excuse me, can you <span class='space'></span> me the way to the station, please?",
-      "answer": ["give", "take", "tell", "say"],
-      "correct_answer": 2
+      "type": 2,
+      "task": "a2+.mp3",
+      "question": "What is the person unsure about?",
+      "answer": ["Choosing between coffee and tea", "Deciding what to eat", "Picking a movie", "Buying a ticket"],
+      "correct_answer": 0
     },
     {
       "id": 30,
+      "type": 0,
+      "question": "I promise I <span class='space'></span> you as soon as I’ve finished this cleaning.",
+      "answer": ["will help", "am helping", "going to help", "have helped"],
+      "correct_answer": 0
+    },
+    {
+      "id": 31,
+      "type": 0,
+      "question": "This town <span class='space'></span> by lots of tourists during the summer.",
+      "answer": ["visits", "visited", "is visiting", "is visited"],
+      "correct_answer": 3
+    },
+    {
+      "id": 32,
+      "type": 0,
+      "question": "He said that his friends <span class='space'></span> to speak to him after they lost the football match.",
+      "answer": ["not want", "weren’t", "didn’t want", "aren’t wanting"],
+      "correct_answer": 2
+    },
+    {
+      "id": 33,
       "type": 0,
       "question": "I wasn’t interested in the performance very much. <span class='space'></span>",
       "answer": ["I didn’t, too.", "Neither was I.", "Nor I did.", "So I wasn’t."],
       "correct_answer": 1
     },
     {
-      "id": 31,
+      "id": 34,
       "type": 0,
-      "question": "Take a warm coat, <span class='space'></span> you might get very cold outside.",
-      "answer": ["otherwise", "in case", "so that", "in order to"],
-      "correct_answer": 1
+      "question": "I <span class='space'></span> enjoy those long car journeys, but I don’t mind them now.",
+      "answer": ["did use to", "used to", "didn’t use to", "never used"],
+      "correct_answer": 2
     },
     {
-      "id": 32,
+      "id": 35,
       "type": 0,
       "question": "<span class='space'></span> this great book and I can’t wait to see how it ends.",
       "answer": ["I don’t read", "I’ve read", "I’ve been reading", "I read"],
       "correct_answer": 2
     },
     {
-      "id": 33,
-      "type": 0,
-      "question": "What I like more than anything else <span class='space'></span> at weekends.",
-      "answer": ["playing golf", "to play golf", "is playing golf", "is play golf"],
-      "correct_answer": 2
-    },
-    {
-      "id": 34,
-      "type": 0,
-      "question": "She <span class='space'></span> for her cat for two days when she finally found it in the garage.",
-      "answer": ["looked", "had been looked", "had been looking", "were looking"],
-      "correct_answer": 2
-    },
-    {
-      "id": 35,
-      "type": 0,
-      "question": "We won’t catch the plane <span class='space'></span> we leave home now! Please hurry up!",
-      "answer": ["if", "providing that", "except", "unless"],
-      "correct_answer": 3
-    },
-    {
       "id": 36,
       "type": 0,
-      "question": "If I hadn’t replied to your email, I <span class='space'></span> here with you now.",
-      "answer": ["can’t be", "wouldn’t be", "won’t be", "haven’t been"],
+      "question": "She <span class='space'></span> late today because it’s her birthday.",
+      "answer": ["ll work definitely", "definitely won’t work", "’ll definitely work", "won’t definitely work"],
       "correct_answer": 1
     },
     {
       "id": 37,
       "type": 0,
-      "question": "Do you think you <span class='space'></span> with my mobile phone soon? I need to make a call.",
-      "answer": ["finish", "are finishing", "will have finished", "are finished"],
-      "correct_answer": 2
+      "question": "My wife goes running by <span class='space'></span>.",
+      "answer": ["herself", "himself", "myself", "yourself"],
+      "correct_answer": 0
     },
     {
       "id": 38,
       "type": 0,
-      "question": "I don’t remember mentioning <span class='space'></span> dinner together tonight.",
-      "answer": ["go for", "you going to", "to go for", "going for"],
+      "question": "Earthquakes can be some of the world’s worst <span class='space'></span>.",
+      "answer": ["traffic jams", "campaigns", "rainforests", "natural disasters"],
       "correct_answer": 3
     },
     {
       "id": 39,
+      "type": 2,
+      "task": "b1.mp3",
+      "question": "What is the speaker planning to do next weekend?",
+      "answer": ["Stay at home and study", "Visit a friend and go to a concert", "Travel abroad for work", "Attend a football match"],
+      "correct_answer": 1
+    },
+    {
+      "id": 40,
+      "type": 0,
+      "question": "They all arrived on time <span class='space'></span> for Kieran.",
+      "answer": ["apart", "not even", "even", "except"],
+      "correct_answer": 3
+    },
+    {
+      "id": 41,
+      "type": 0,
+      "question": "I turned the oven down <span class='space'></span> burn the food.",
+      "answer": ["so not as to", "so as not to", "in order not", "not in order"],
+      "correct_answer": 1
+    },
+    {
+      "id": 42,
+      "type": 0,
+      "question": "What <span class='space'></span> do this afternoon? Go to the cinema or go to the park?",
+      "answer": ["you would prefer", "would you prefer", "you would rather", "would you rather"],
+      "correct_answer": 3
+    },
+    {
+      "id": 43,
+      "type": 0,
+      "question": "She couldn’t <span class='space'></span> a lie any longer.",
+      "answer": ["come", "deceive", "live", "pretend"],
+      "correct_answer": 2
+    },
+    {
+      "id": 44,
       "type": 0,
       "question": "Was it Captain Cook <span class='space'></span> New Zealand?",
       "answer": ["who discovered", "discovered", "that discover", "who was discovering"],
       "correct_answer": 0
     },
     {
-      "id": 40,
+      "id": 45,
       "type": 0,
       "question": "You may not like the cold weather here, but you’ll have to <span class='space'></span>, I’m afraid.",
       "answer": ["tell it off", "sort itself out", "put up with it", "put it off"],
       "correct_answer": 2
     },
     {
-      "id": 41,
-      "type": 0,
-      "question": "It’s cold so you should <span class='space'></span> on a warm jacket.",
-      "answer": ["put", "wear", "dress", "take"],
-      "correct_answer": 0
-    },
-    {
-      "id": 42,
-      "type": 0,
-      "question": "Lola will look <span class='space'></span> our dogs while we’re on holiday.",
-      "answer": ["at", "for", "into", "after"],
-      "correct_answer": 3
-    },
-    {
-      "id": 43,
-      "type": 0,
-      "question": "Although she works full time, she still manages to <span class='space'></span> a significant portion of her evenings reading novels.",
-      "answer": ["take", "use", "spend", "do"],
-      "correct_answer": 2
-    },
-    {
-      "id": 44,
-      "type": 0,
-      "question": "Hello, this is Jack. Could I <span class='space'></span> to Sharon, please?",
-      "answer": ["say", "tell", "call", "speak"],
-      "correct_answer": 3
-    },
-    {
-      "id": 45,
+      "id": 46,
       "type": 1,
       "description": "Emma had been looking forward to her hiking trip for weeks. However, the night before she was supposed to leave, a severe storm warning was issued. Even though she was disappointed, she decided to postpone the trip until the weather improved.",
       "question": "Why did Emma decide to postpone her hiking trip?",
       "answer": ["She didn’t feel well.", "There was a storm warning.", "Her friends couldn’t join her.", "She forgot to pack her things."],
-      "correct_answer": 0
-    },
-    {
-      "id": 46,
-      "type": 1,
-      "description": "After years of working at the same company, Mr. Thompson was finally offered a promotion. However, accepting it meant moving to another city. He spent several days thinking about it and ultimately decided to stay close to his family instead of taking the job.",
-      "question": "What was the main reason Mr. Thompson refused the promotion?",
-      "answer": ["He didn’t like the new position.", "He didn’t want to move away from his family.", "The salary increase was too small.", "He had already accepted another offer."],
-      "correct_answer": 0
-    },
-    {
-      "id": 47,
-      "type": 1,
-      "description": "Sophia joined a photography course because she wanted to improve her skills. At first, she struggled with the technical aspects, but over time, she learned how to use lighting and composition effectively. Her final project received the highest grade in the class.",
-      "question": "What does the text say about Sophia’s progress?",
-      "answer": ["She dropped out of the course early.", "She already had excellent skills before joining.", "She improved significantly during the course.", "She didn’t understand the lessons at all."],
       "correct_answer": 1
     },
     {
+      "id": 47,
+      "type": 0,
+      "question": "It <span class='space'></span> me nuts when people throw their rubbish on the floor.",
+      "answer": ["drives", "bugs", "bears", "annoys"],
+      "correct_answer": 0
+    },
+    {
       "id": 48,
-      "type": 1,
-      "description": "When Mark arrived at the airport, he realized he had left his passport at home. His flight was scheduled to depart in just one hour. Luckily, his brother managed to bring it to him just in time, and Mark boarded the plane with only minutes to spare.",
-      "question": "How did Mark manage to catch his flight?",
-      "answer": ["He found his passport at the airport.", "He delayed the flight himself.", "His brother brought his passport in time.", "He didn’t need his passport after all."],
+      "type": 0,
+      "question": "Taking everything <span class='space'></span> the latest smartwatch is great value for money.",
+      "answer": ["long story short", "into account", "in the end", "to the reviews"],
       "correct_answer": 1
     },
     {
       "id": 49,
-      "type": 1,
-      "description": "During the conference, Dr. Lewis presented her research on climate change. Many attendees were impressed by the depth of her analysis and asked her to collaborate on future projects. The success of her presentation boosted her confidence tremendously.",
-      "question": "What effect did the conference have on Dr. Lewis?",
-      "answer": ["It made her less interested in research.", "It damaged her professional reputation.", "It motivated her to quit her current job.", "It increased her confidence and recognition."],
+      "type": 2,
+      "task": "b1+.mp3",
+      "question": "What is the speaker’s opinion about social media?",
+      "answer": ["It is completely negative", "It is completely positive", "It has both good and bad effects", "It should be banned"],
       "correct_answer": 2
     },
     {
       "id": 50,
-      "type": 1,
-      "description": "After losing his job, Daniel decided to start his own online business. The first few months were challenging, but he gradually gained customers through social media marketing. Within a year, his small project turned into a profitable company.",
-      "question": "What helped Daniel’s business become successful?",
-      "answer": ["Financial support from his friends.", "Advertising through social media.", "A large inheritance from his uncle.", "Selling his products in local stores."],
-      "correct_answer": 0
+      "type": 0,
+      "question": "I remember <span class='space'></span> Keith at the work party last year.",
+      "answer": ["meet", "meeting", "to meet", "met"],
+      "correct_answer": 1
     },
     {
       "id": 51,
-      "type": 1,
-      "description": "The train was delayed due to heavy snow, and passengers began to worry they would miss their connections. To ease their frustration, the staff offered free hot drinks and updates about the situation. Their calm and polite attitude helped keep everyone patient.",
-      "question": "How did the train staff handle the delay?",
-      "answer": ["They ignored the passengers.", "They became angry at complaints.", "They comforted passengers with drinks and updates.", "They canceled the journey completely."],
-      "correct_answer": 1
+      "type": 0,
+      "question": "His latest book, <span class='space'></span> was written in French, comes out next week.",
+      "answer": ["which", "that", "when", "what"],
+      "correct_answer": 0
     },
     {
       "id": 52,
-      "type": 1,
-      "description": "Lisa had been training for the marathon for over six months. On the day of the race, she twisted her ankle halfway through. Despite the pain, she continued running and managed to cross the finish line. Her determination inspired many people watching.",
-      "question": "What can be said about Lisa’s attitude?",
-      "answer": ["She gave up easily.", "She showed great determination.", "She blamed others for her injury.", "She didn’t finish the race."],
-      "correct_answer": 1
+      "type": 0,
+      "question": "By the time we got to work, the meeting <span class='space'></span> .",
+      "answer": ["already started", "already had started", "had already started", "already had been starting"],
+      "correct_answer": 2
     },
     {
       "id": 53,
-      "type": 1,
-      "description": "James bought an old house in the countryside and decided to renovate it himself. He watched tutorials online and learned new skills along the way. After several months of hard work, the house was transformed into a cozy and modern home.",
-      "question": "How did James manage to renovate his house?",
-      "answer": ["He hired professional builders.", "He followed online tutorials and worked himself.", "He sold the house instead of fixing it.", "He left it unfinished."],
-      "correct_answer": 1
+      "type": 0,
+      "question": "Driving past my old house <span class='space'></span> .",
+      "answer": ["brought back memories", "childhood memories", "perfect recall", "remember every detail"],
+      "correct_answer": 0
     },
     {
       "id": 54,
+      "type": 0,
+      "question": "If you <span class='space'></span> , you don’t get much exercise at work.",
+      "answer": ["do a regular workout", "do a sedentary job", "keep mentally active", "vary your diet"],
+      "correct_answer": 1
+    },
+    {
+      "id": 55,
+      "type": 0,
+      "question": "He sometimes has trouble breathing because of his <span class='space'></span> .",
+      "answer": ["vaccine", "first aid", "antibiotics", "asthma"],
+      "correct_answer": 3
+    },
+    {
+      "id": 56,
+      "type": 1,
+      "description": "During the conference, Dr. Lewis presented her research on climate change. Many attendees were impressed by the depth of her analysis and asked her to collaborate on future projects. The success of her presentation boosted her confidence tremendously.",
+      "question": "What effect did the conference have on Dr. Lewis?",
+      "answer": ["It made her less interested in research.", "It damaged her professional reputation.", "It motivated her to quit her current job.", "It increased her confidence and recognition."],
+      "correct_answer": 3
+    },
+    {
+      "id": 57,
+      "type": 0,
+      "question": "I wouldn’t talk to Don. He’s  <span class='space'></span> ask you for money.",
+      "answer": ["clearly", "bet", "bound to", "certain"],
+      "correct_answer": 2
+    },
+    {
+      "id": 58,
+      "type": 0,
+      "question": "Perhaps you <span class='space'></span> to consider wearing something smarter.",
+      "answer": ["could", "might", "ought", "should"],
+      "correct_answer": 2
+    },
+    {
+      "id": 59,
+      "type": 2,
+      "task": "b2.mp3",
+      "question": "What was the protest about?",
+      "answer": ["Rising fuel prices", "Public transport problems", "A new shopping centre", "Education reforms", "New traffic laws"],
+      "correct_answer": 1
+    },
+    {
+      "id": 60,
+      "type": 0,
+      "question": "Mona’s <span class='space'></span> to complain about the slightest thing.",
+      "answer": ["tends", "got a tendency", "s constantly", "used"],
+      "correct_answer": 1
+    },
+    {
+      "id": 61,
+      "type": 0,
+      "question": "I’ll make sure you get to the show on time <span class='space'></span> .",
+      "answer": ["It doesn’t matter", "No matter that", "No matter when", "No matter what"],
+      "correct_answer": 3
+    },
+    {
+      "id": 62,
+      "type": 0,
+      "question": "Not <span class='space'></span> the day we went to the beach, but she also remembers what we had for lunch.",
+      "answer": ["only she does remember", "only does she remember", "before she does remember", "before does she remember"],
+      "correct_answer": 1
+    },
+    {
+      "id": 63,
+      "type": 0,
+      "question": "I’d love to get a pet dog. <span class='space'></span> I don’t think there’s enough space in my flat.",
+      "answer": ["At the same time", "Although", "Even though", "As that is"],
+      "correct_answer": 0
+    },
+    {
+      "id": 64,
+      "type": 0,
+      "question": "This photo is <span class='space'></span> . I can’t see your face clearly so I’d better take another one.",
+      "answer": ["posed", "blurred", "framed", "shot"],
+      "correct_answer": 1
+    },
+    {
+      "id": 65,
+      "type": 0,
+      "question": "Food waste has been practically <span class='space'></span> in our supermarkets. Less than one percent of our food is thrown away.",
+      "answer": ["implemented", "imposed", "eliminated", "restricted"],
+      "correct_answer": 2
+    },
+    {
+      "id": 66,
       "type": 1,
       "description": "Martha volunteered at an animal shelter every weekend. She cleaned cages, fed the animals, and helped find new homes for them. One day, she adopted a dog herself, saying it was the most rewarding decision she had ever made.",
       "question": "What was Martha’s motivation for adopting a dog?",
@@ -396,43 +479,96 @@
       "correct_answer": 1
     },
     {
-      "id": 55,
-      "type": 2,
-      "task": "./test.mp3",
-      "question": "What is the speaker planning to do next weekend?",
-      "answer": ["Stay at home and study", "Visit a friend and go to a concert", "Travel abroad for work", "Attend a football match"],
-      "correct_answer": 1
-    },
-    {
-      "id": 56,
-      "type": 2,
-      "task": "./test.mp3",
-      "question": "What is the speaker’s opinion about social media?",
-      "answer": ["It is completely negative", "It is completely positive", "It has both good and bad effects", "It should be banned"],
-      "correct_answer": 2
-    },
-    {
-      "id": 57,
-      "type": 2,
-      "task": "./test.mp3",
-      "question": "What was the protest about?",
-      "answer": ["Rising fuel prices", "Public transport problems", "A new shopping centre", "Education reforms"],
-      "correct_answer": 1
-    },
-    {
-      "id": 58,
-      "type": 2,
-      "task": "./test.mp3",
-      "question": "What does the speaker think about remote work?",
-      "answer": ["It’s only good for young people", "It’s completely negative", "It’s not popular anymore", "It has both good and bad sides"],
+      "id": 67,
+      "type": 0,
+      "question": "She’s just inherited some money so she’s going to  <span class='space'></span> out on a new sofa.",
+      "answer": ["blow", "put", "spend", "splash"],
       "correct_answer": 3
     },
     {
-      "id": 59,
+      "id": 68,
+      "type": 0,
+      "question": "He said the house was <span class='space'></span> , but it was actually a complete mess. There’s no way anyone could live there.",
+      "answer": ["derelict", "in ruins", "luxurious", "rotten"],
+      "correct_answer": 2
+    },
+    {
+      "id": 69,
       "type": 2,
-      "task": "./test.mp3",
+      "task": "b2+.mp3",
+      "question": "What does the speaker think about remote work?",
+      "answer": ["It’s only good for young people", "It’s completely negative", "It has both good and bad sides", "It’s not popular anymore", "It should be banned"],
+      "correct_answer": 2
+    },
+    {
+      "id": 70,
+      "type": 0,
+      "question": "I <span class='space'></span> remember meeting your sister once at a party.",
+      "answer": ["totally", "vaguely", "quite", "very"],
+      "correct_answer": 1
+    },
+    {
+      "id": 71,
+      "type": 0,
+      "question": "The police had no hesitation <span class='space'></span> closing the motorway after the collision.",
+      "answer": ["for", "on", "in", "to"],
+      "correct_answer": 2
+    },
+    {
+      "id": 72,
+      "type": 0,
+      "question": " <span class='space'></span> an hour ago that the train was delayed by 20 minutes, it’s ridiculous that it still hasn’t arrived.",
+      "answer": ["We are informed", "Having been informed", "Being informed", "Informing us"],
+      "correct_answer": 1
+    },
+    {
+      "id": 73,
+      "type": 0,
+      "question": "The spectators burst into a <span class='space'></span> song to encourage the football players.",
+      "answer": ["melodic", "resonant", "confrontational", "rousing"],
+      "correct_answer": 3
+    },
+    {
+      "id": 74,
+      "type": 0,
+      "question": "A(n) <span class='space'></span> young boy rescued a cat when it fell into the river and took it to a shelter.",
+      "answer": ["intuitive", "conscientious", "compassionate", "enterprising"],
+      "correct_answer": 2
+    },
+    {
+      "id": 75,
+      "type": 0,
+      "question": "Books about <span class='space'></span> cultures fascinate me and make me want to learn more about them.",
+      "answer": ["quintessential", "authentic", "turbulent", "indigenous"],
+      "correct_answer": 3
+    },
+    {
+      "id": 76,
+      "type": 0,
+      "question": "I’m sorry, I didn’t mean to <span class='space'></span> you off there.",
+      "answer": ["stop", "chop", "cut", "interrupt"],
+      "correct_answer": 2
+    },
+    {
+      "id": 77,
+      "type": 0,
+      "question": "There are no two  <span class='space'></span> about it, the answer is to have another vote.",
+      "answer": ["ways", "paths", "alternatives", "sides"],
+      "correct_answer": 0
+    },
+    {
+      "id": 78,
+      "type": 0,
+      "question": "With the benefit of <span class='space'></span> , it is clear that we made the wrong decision.",
+      "answer": ["hindsight", "perception", "reflection", "memory"],
+      "correct_answer": 0
+    },
+    {
+      "id": 79,
+      "type": 2,
+      "task": "c1.mp3",
       "question": "What does the speaker suggest about the concept of freedom?",
-      "answer": ["It means the same thing for everyone", " It has different meanings in different cultures and times", "It is easy to define clearly", "It doesn’t change with history"],
+      "answer": ["It means the same thing for everyone", "It has different meanings in different cultures and times", "It is easy to define clearly", "It mostly refers to political independence", "It doesn’t change with history"],
       "correct_answer": 1
     }
   ]
