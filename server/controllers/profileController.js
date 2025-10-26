@@ -208,12 +208,12 @@ export const submitTestLevel = async (req, res) => {
 		if (!token) {
 			return res.status(401).json({ message: "Not authenticated" });
 		}
-		
+
 		const decoded = jwt.verify(token, process.env.JWT_SECRET);
 		const { level } = req.body;
 		
-		// Валідація рівня
-		const validLevels = ['A0', 'A1', 'A2', 'B1', 'B2', 'C1'];
+		const validLevels = ['A1', 'A2', 'A2+', 'B1', 'B1+', 'B2', 'B2+', 'C1'];
+		
 		if (!validLevels.includes(level.toUpperCase())) {
 			return res.status(400).json({ message: "Invalid level" });
 		}

@@ -100,7 +100,7 @@ export default function Account() {
 						</div>
 						
 							<div className="level-info-div">
-								<div className="info-level">
+								<div className={`info-level ${isLevel?.toUpperCase() === user?.level ? 'current' : ''}`}>
 									
 									{!user.level ?
 										<div className={`zagolovok-level`}>

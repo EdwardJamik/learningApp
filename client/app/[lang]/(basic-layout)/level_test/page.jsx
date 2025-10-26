@@ -22,14 +22,14 @@ export default function EnglishLevelTest() {
 	const router = useRouter()
 	
 	const levelRanges = [
-		{ max: 10, level: "A1", rangeStart: 0, rangeEnd: 9 },
-		{ max: 20, level: "A2", rangeStart: 10, rangeEnd: 19 },
-		{ max: 30, level: "A2+", rangeStart: 21, rangeEnd: 29 },
-		{ max: 40, level: "B1", rangeStart: 30, rangeEnd: 39 },
-		{ max: 50, level: "B1+", rangeStart: 40, rangeEnd: 49 },
-		{ max: 60, level: "B2", rangeStart: 50, rangeEnd: 59 },
-		{ max: 70, level: "B2+", rangeStart: 60, rangeEnd: 69 },
-		{ max: 80, level: "C1", rangeStart: 70, rangeEnd: 79 }
+		{ level: "A1",  rangeStart: 0,  rangeEnd: 9  },
+		{ level: "A2",  rangeStart: 10, rangeEnd: 19 },
+		{ level: "A2+", rangeStart: 20, rangeEnd: 29 },
+		{ level: "B1",  rangeStart: 30, rangeEnd: 39 },
+		{ level: "B1+", rangeStart: 40, rangeEnd: 49 },
+		{ level: "B2",  rangeStart: 50, rangeEnd: 59 },
+		{ level: "B2+", rangeStart: 60, rangeEnd: 69 },
+		{ level: "C1",  rangeStart: 70, rangeEnd: 79 }
 	]
 	
 	useEffect(() => {
@@ -154,7 +154,7 @@ export default function EnglishLevelTest() {
 		let correctCount = 0
 		let answeredCount = 0
 		
-		for (let i = level.rangeStart; i < level.rangeEnd && i < isQuestion.length; i++) {
+		for (let i = level.rangeStart; i <= level.rangeEnd && i < isQuestion.length; i++) {
 			const question = isQuestion[i]
 			if (answers[question.id] !== undefined) {
 				answeredCount++
@@ -176,7 +176,8 @@ export default function EnglishLevelTest() {
 		for (let i = 0; i < levelRanges.length; i++) {
 			const level = levelRanges[i]
 			const { correctCount, answeredCount } = getCorrectAnswersInLevel(level)
-			const questionsInLevel = level.rangeEnd - level.rangeStart
+			const questionsInLevel = level.rangeEnd - level.rangeStart + 1
+
 			
 			console.log(`Перевірка рівня ${level.level}: ${answeredCount}/${questionsInLevel} відповідей`)
 			
@@ -199,7 +200,8 @@ export default function EnglishLevelTest() {
 		}
 		
 		const currentLevel = levelRanges[levelIndexToCheck]
-		const questionsInLevel = currentLevel.rangeEnd - currentLevel.rangeStart
+		const questionsInLevel = currentLevel.rangeEnd - currentLevel.rangeStart + 1
+
 		const { correctCount, answeredCount } = getCorrectAnswersInLevel(currentLevel)
 		const requiredCorrect = Math.ceil(questionsInLevel * 0.8)
 		const percentage = answeredCount > 0 ? (correctCount / questionsInLevel) * 100 : 0
@@ -232,59 +234,156 @@ export default function EnglishLevelTest() {
 	
 	const handleNextPage = async () => {
 		const isLastPage = currentPage >= pages.length - 1
+		const totalAnswered = Object.keys(answers).length
+		
+		console.log('\n=== handleNextPage ===')
+		console.log('Поточна сторінка:', currentPage)
+		console.log('Всього відповідей:', totalAnswered)
+		
+		// Знаходимо який рівень зараз проходить користувач
+		let currentLevelData = null
+		let lastCompletedLevelIndex = -1
 		
 		for (let i = 0; i < levelRanges.length; i++) {
 			const level = levelRanges[i]
-			const { correctCount, answeredCount } = getCorrectAnswersInLevel(level)
-			const questionsInLevel = level.rangeEnd - level.rangeStart
+			const questionsInLevel = level.rangeEnd - level.rangeStart + 1
 			
-			if (answeredCount === questionsInLevel) {
-				const requiredCorrect = Math.ceil(questionsInLevel * 0.8)
-				const passed = correctCount >= requiredCorrect
-				
-				console.log(`Перевірка завершеного рівня ${level.level}: ${correctCount}/${questionsInLevel} (потрібно ${requiredCorrect})`)
-				
-				if (!passed) {
-					const finalLevel = i > 0 ? levelRanges[i - 1].level : level.level
-					const percentage = (correctCount / questionsInLevel) * 100
-					
-					console.log(`❌ Користувач не пройшов рівень ${level.level}, його рівень: ${finalLevel}`)
-					
-					setUserLevel({
-						level: finalLevel,
-						score: correctCount,
-						total: questionsInLevel,
-						percentage: percentage
-					})
-					
-					await handleSetLevel(finalLevel)
-					return
-				} else {
-					console.log(`✅ Рівень ${level.level} пройдено`)
+			// Підраховуємо скільки відповідей є в цьому рівні
+			let answeredInLevel = 0
+			for (let q = level.rangeStart; q <= level.rangeEnd && q < isQuestion.length; q++) {
+				const question = isQuestion[q]
+				if (answers[question.id] !== undefined) {
+					answeredInLevel++
 				}
-			} else if (answeredCount > 0) {
-				console.log(`Рівень ${level.level} в процесі (${answeredCount}/${questionsInLevel}), продовжуємо`)
-				setShowPageResults(false)
-				setCurrentPage(currentPage + 1)
-				window.scrollTo({ top: 0, behavior: 'smooth' })
-				return
+			}
+			
+			console.log(`Рівень ${level.level} (${level.rangeStart}-${level.rangeEnd}): ${answeredInLevel}/${questionsInLevel} відповідей`)
+			
+			// Якщо рівень повністю пройдено
+			if (answeredInLevel === questionsInLevel) {
+				lastCompletedLevelIndex = i
+				console.log(`→ Рівень ${level.level} повністю завершено`)
+				// НЕ робимо break, продовжуємо шукати далі
+				continue
+			}
+			
+			// Якщо є відповіді в цьому рівні, але не всі - це поточний активний рівень
+			if (answeredInLevel > 0 && answeredInLevel < questionsInLevel) {
+				currentLevelData = { ...level, index: i, answeredInLevel, questionsInLevel }
+				console.log('→ Поточний активний рівень:', level.level)
+				break
 			}
 		}
 		
-		const lastLevel = levelRanges[levelRanges.length - 1]
-		const { correctCount, answeredCount } = getCorrectAnswersInLevel(lastLevel)
-		const percentage = (correctCount / (lastLevel.rangeEnd - lastLevel.rangeStart)) * 100
+		// Якщо не знайшли активний рівень, але є завершені - беремо останній завершений
+		if (!currentLevelData && lastCompletedLevelIndex >= 0) {
+			const level = levelRanges[lastCompletedLevelIndex]
+			const questionsInLevel = level.rangeEnd - level.rangeStart + 1
+			currentLevelData = {
+				...level,
+				index: lastCompletedLevelIndex,
+				answeredInLevel: questionsInLevel,
+				questionsInLevel
+			}
+			console.log('→ Аналізуємо останній завершений рівень:', level.level)
+		}
 		
-		console.log('Всі рівні пройдено! Фінальний рівень:', lastLevel.level)
+		console.log('Поточний рівень для перевірки:', currentLevelData)
 		
-		setUserLevel({
-			level: lastLevel.level,
-			score: correctCount,
-			total: lastLevel.rangeEnd - lastLevel.rangeStart,
-			percentage: percentage
-		})
+		if (!currentLevelData) {
+			// Не знайдено поточний рівень - просто переходимо далі
+			console.log('→ Рівень не визначено, переходимо далі')
+			setShowPageResults(false)
+			setCurrentPage(currentPage + 1)
+			window.scrollTo({ top: 0, behavior: 'smooth' })
+			return
+		}
 		
-		await handleSetLevel(lastLevel.level)
+		// Перевіряємо поточний рівень
+		const { correctCount, answeredCount } = getCorrectAnswersInLevel(currentLevelData)
+		const questionsInLevel = currentLevelData.questionsInLevel
+		const requiredCorrect = Math.ceil(questionsInLevel * 0.8)
+		const percentage = (correctCount / questionsInLevel) * 100
+		
+		console.log('Аналіз рівня:', currentLevelData.level)
+		console.log('Питань у рівні:', questionsInLevel)
+		console.log('Відповідей у рівні:', answeredCount)
+		console.log('Правильних:', correctCount)
+		console.log('Потрібно для проходження:', requiredCorrect)
+		console.log('Відсоток:', percentage.toFixed(1) + '%')
+		
+		// Перевіряємо чи завершено поточний рівень
+		const isLevelComplete = answeredCount === questionsInLevel
+		
+		if (!isLevelComplete) {
+			// Рівень ще не завершено - продовжуємо
+			console.log('→ Рівень в процесі, продовжуємо')
+			setShowPageResults(false)
+			setCurrentPage(currentPage + 1)
+			window.scrollTo({ top: 0, behavior: 'smooth' })
+			return
+		}
+		
+		// Рівень завершено - перевіряємо чи пройдено (80% правильних)
+		const passed = correctCount >= requiredCorrect
+		
+		if (!passed) {
+			// Не пройдено - ЗАВЕРШУЄМО ТЕСТ
+			// Фінальний рівень = попередній успішно пройдений рівень
+			const finalLevel = currentLevelData.index > 0
+				? levelRanges[currentLevelData.index - 1].level
+				: levelRanges[0].level // Якщо перший рівень не пройдено - все одно A1
+			
+			console.log('❌ Рівень не пройдено')
+			console.log('Фінальний рівень користувача:', finalLevel)
+			console.log('ЗАВЕРШУЄМО ТЕСТ')
+			
+			setUserLevel({
+				level: finalLevel,
+				score: correctCount,
+				total: questionsInLevel,
+				percentage: percentage
+			})
+			
+			await handleSetLevel(finalLevel)
+			return // ВАЖЛИВО: тут завершуємо тест, не йдемо далі
+		}
+		
+		console.log('✅ Рівень пройдено успішно')
+		
+		// Перевіряємо чи це останній рівень
+		if (currentLevelData.index === levelRanges.length - 1) {
+			// Останній рівень пройдено - це найвищий рівень C1
+			console.log('🎉 Досягнуто найвищий рівень!')
+			
+			setUserLevel({
+				level: currentLevelData.level,
+				score: correctCount,
+				total: questionsInLevel,
+				percentage: percentage
+			})
+			
+			await handleSetLevel(currentLevelData.level)
+			return
+		}
+		
+		// Рівень пройдено успішно і є ще рівні - продовжуємо тестування
+		if (!isLastPage) {
+			console.log('→ Переходимо до наступного рівня')
+			setShowPageResults(false)
+			setCurrentPage(currentPage + 1)
+			window.scrollTo({ top: 0, behavior: 'smooth' })
+		} else {
+			// На всякий випадок, якщо це остання сторінка
+			console.log('→ Остання сторінка, встановлюємо поточний рівень')
+			setUserLevel({
+				level: currentLevelData.level,
+				score: correctCount,
+				total: questionsInLevel,
+				percentage: percentage
+			})
+			await handleSetLevel(currentLevelData.level)
+		}
 	}
 	
 	const handleSetLevel = async (level) => {

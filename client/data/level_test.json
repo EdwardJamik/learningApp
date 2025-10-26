@@ -45,7 +45,7 @@
     {
       "id": 6,
       "type": 0,
-      "question": "Do you like football? <span class='space'></span> Yes, ___.",
+      "question": "Do you like football? Yes, <span class='space'></span>.",
       "answer": ["did", "am", "do", "will"],
       "correct_answer": 2
     },
