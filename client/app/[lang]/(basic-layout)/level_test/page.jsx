@@ -22,14 +22,14 @@ export default function EnglishLevelTest() {
 	const router = useRouter()
 	
 	const levelRanges = [
-		{ max: 8, level: "A1", rangeStart: 0, rangeEnd: 8 },
-		{ max: 17, level: "A2", rangeStart: 8, rangeEnd: 17 },
-		{ max: 22, level: "A2+", rangeStart: 17, rangeEnd: 22 },
-		{ max: 30, level: "B1", rangeStart: 22, rangeEnd: 30 },
-		{ max: 40, level: "B1+", rangeStart: 30, rangeEnd: 40 },
-		{ max: 48, level: "B2", rangeStart: 40, rangeEnd: 48 },
-		{ max: 55, level: "B2+", rangeStart: 48, rangeEnd: 55 },
-		{ max: 60, level: "C1", rangeStart: 55, rangeEnd: 60 }
+		{ max: 10, level: "A1", rangeStart: 0, rangeEnd: 9 },
+		{ max: 20, level: "A2", rangeStart: 10, rangeEnd: 19 },
+		{ max: 30, level: "A2+", rangeStart: 21, rangeEnd: 29 },
+		{ max: 40, level: "B1", rangeStart: 30, rangeEnd: 39 },
+		{ max: 50, level: "B1+", rangeStart: 40, rangeEnd: 49 },
+		{ max: 60, level: "B2", rangeStart: 50, rangeEnd: 59 },
+		{ max: 70, level: "B2+", rangeStart: 60, rangeEnd: 69 },
+		{ max: 80, level: "C1", rangeStart: 70, rangeEnd: 79 }
 	]
 	
 	useEffect(() => {
