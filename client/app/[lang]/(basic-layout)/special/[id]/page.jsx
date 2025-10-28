@@ -1,6 +1,5 @@
 'use client';
 
-import parse from 'html-react-parser';
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import './course.scss'
