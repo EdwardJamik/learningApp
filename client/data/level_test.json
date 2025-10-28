@@ -89,7 +89,7 @@
       "id": 12,
       "type": 0,
       "question": "Jennifer has followed a vegetarian diet for over a decade. That means she <span class='space'></span> meat or fish.",
-      "answer": ["arely eats", "never eats", "usually eats", "still eats"],
+      "answer": ["rarely eats", "never eats", "usually eats", "still eats"],
       "correct_answer": 1
     },
     {
@@ -259,8 +259,13 @@
       "id": 36,
       "type": 0,
       "question": "She <span class='space'></span> late today because it’s her birthday.",
-      "answer": ["ll work definitely", "definitely won’t work", "’ll definitely work", "won’t definitely work"],
-      "correct_answer": 1
+      "answer": [
+        "\"ll work definitely",
+        "definitely won’t work",
+        "’ll definitely work",
+        "won’t definitely work"
+      ],
+    "correct_answer": 1
     },
     {
       "id": 37,

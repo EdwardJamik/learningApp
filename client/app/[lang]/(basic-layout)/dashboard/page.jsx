@@ -252,7 +252,7 @@ export default function Account() {
 									</div>
 									<div className="level-btn-div">
 										{user.level ?
-											<Link href={`/level/${isLevel?.toLowerCase()}`} className="level-btn">Вдосконалити даний
+											<Link href={`/level/${isLevel?.toLowerCase()?.replace('+','-plus')}`} className="level-btn">Вдосконалити даний
 												рівень</Link>
 											:
 											<Link href={'/getlevel'} className="level-btn">Дізнатись свій рівень</Link>
