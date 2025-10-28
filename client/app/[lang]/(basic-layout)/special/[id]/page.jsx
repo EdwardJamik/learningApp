@@ -1,9 +1,11 @@
 'use client';
 
+import parse from 'html-react-parser';
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import './course.scss'
 import Loader from '@/app/components/Loader/Loader'
+import CustomSelect from '@/app/components/CustomSelect/CustomSelect'
 
 const Page = () => {
 	const params = useParams()
@@ -50,29 +52,37 @@ const Page = () => {
 	}
 	
 	const processTestText = (text) => {
-		if (!text) return ''
+		if (!text) return null
 		
-		let questionIndex = 0
-		return text.replace(/<span class='space'><\/span>/g, () => {
-			const currentIndex = questionIndex
-			questionIndex++
+		const parts = text.split(/<span class='space'><\/span>/g)
+		
+		return parts.map((part, i) => {
+			const select = course.answer[i]
 			
-			if (!course.answer[currentIndex]) return ''
-			
-			return `<span class="select-wrapper">
-        <select
-          data-index="${currentIndex}"
-          class="answer-select ${showResults ? (selectedAnswers[currentIndex] === course.correct_answer[currentIndex] ? 'correct' : 'incorrect') : ''}"
-          ${showResults ? 'disabled' : ''}
-        >
-          <option value="">Виберіть відповідь</option>
-          ${course.answer[currentIndex].map((option, idx) =>
-				`<option value="${idx}" ${selectedAnswers[currentIndex] === idx ? 'selected' : ''}>${option}</option>`
-			).join('')}
-        </select>
-      </span>`
+			return (
+				<p key={i} style={{ display: 'inline' }}>
+        <span dangerouslySetInnerHTML={{ __html: part }} style={{ display: 'inline' }} />
+					{i < parts.length - 1 && select && (
+						<>
+							{' '}
+							<CustomSelect
+								options={select}
+								value={selectedAnswers[i]}
+								onChange={(val) => {
+									const newAnswers = [...selectedAnswers]
+									newAnswers[i] = val
+									setSelectedAnswers(newAnswers)
+								}}
+								disabled={showResults}
+							/>
+							{' '}
+						</>
+					)}
+        </p>
+			)
 		})
 	}
+	
 	
 	const handleAnswerChange = (e) => {
 		const index = parseInt(e.target.dataset.index)
@@ -169,11 +179,9 @@ const Page = () => {
 				</div>
 				
 				<div className="test-content">
-					<h2 className="test-title">Тест</h2>
-					<div
-						className="questionText"
-						dangerouslySetInnerHTML={{ __html: processTestText(course.test) }}
-					/>
+					<div className="questionText">
+						{processTestText(course.test)}
+					</div>
 				</div>
 				
 				{showResults && (

@@ -1,0 +1,67 @@
+.custom-select {
+	display: inline-block;
+	position: relative;
+	font-size: 16px;
+	cursor: pointer;
+	vertical-align: center;
+//padding-right: 10px;
+	.selected {
+		border-bottom: 2px solid #838EFC;
+		padding: 2px 8px 0;
+		transition: 0.3s;
+		min-width: 60px;
+		display: inline-block;
+		text-align: center;
+		min-height: 26px;
+		font-weight: 700;
+		font-size: 17px;
+		line-height: 130%;
+		color: #838EFC;
+		margin: 0 .5rem;
+	}
+
+	& svg{
+		position: absolute;
+		top: 34%;
+		right: -18px;
+		transform: translate(-50%, 0%);
+		width: 24px;
+	}
+
+	.dropdown {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-top: 4px;
+		min-width: 100px;
+		background: #fff;
+		border: 2px solid #838EFC;
+		border-radius: 12px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+		overflow: hidden;
+		z-index: 1000;
+		animation: fadeIn 0.2s ease;
+
+		.option {
+			padding: 10px 16px;
+			transition: background 0.2s;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		.option:hover {
+			background: #E7E8FE;
+		}
+	}
+
+	&.disabled {
+		opacity: 0.6;
+		pointer-events: none;
+	}
+
+	@keyframes fadeIn {
+		from { opacity: 0; transform: translateX(-50%) translateY(-4px); }
+		to { opacity: 1; transform: translateX(-50%) translateY(0); }
+	}
+}
