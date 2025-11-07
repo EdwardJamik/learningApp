@@ -485,7 +485,6 @@ header .container .right-side #menu-toggle:checked ~ .mobile-menu {
   background-position: right bottom;
   border-radius: 40px;
   padding: 0 6dvw;
-  
 }
 @media screen and (max-width: 1210px) {
   .home .container {
@@ -958,7 +957,7 @@ footer .container .bottom-side {
 }
 
 header {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .btn {
